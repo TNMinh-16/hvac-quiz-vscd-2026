@@ -1,0 +1,27 @@
+# Dependency directories
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build outputs
+dist/
+client/dist/
+build/
+
+# Environmental & local overrides
+.env
+.env.*
+!.env.example
+*.local
+
+# Database & local quiz history / temp test data
+data/history*.json
+data/.test_api_tmp/
+data/*.bak
+
+# Logs & OS debris
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+

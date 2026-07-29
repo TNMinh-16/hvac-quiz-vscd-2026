@@ -1,0 +1,31 @@
+{
+  "name": "hvac-quiz-ashrae-vscd-2026",
+  "version": "1.0.0",
+  "description": "Website luyện tập trắc nghiệm HVAC – ASHRAE VSCD 2026",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "import-docx":  "python scripts/import_docx.py",
+    "dev":          "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server":   "node --watch server/index.js",
+    "dev:client":   "npm run dev --prefix client",
+    "build":        "npm run build --prefix client",
+    "start":        "node server/index.js",
+    "test":         "jest --passWithNoTests --testPathIgnorePatterns client/",
+    "test:data":    "jest tests/data_validation.test.js",
+    "test:scoring": "jest tests/scoring.test.js",
+    "test:api":     "jest tests/server_api.test.js"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.test.js"],
+    "testTimeout": 15000,
+    "forceExit": true
+  }
+}
