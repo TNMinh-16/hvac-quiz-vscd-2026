@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Website luyện tập trắc nghiệm HVAC – ASHRAE VSCD 2026",
   "private": true,
+  "workspaces": ["client", "server"],
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "type": "commonjs",
   "scripts": {
     "import-docx":  "python scripts/import_docx.py",
