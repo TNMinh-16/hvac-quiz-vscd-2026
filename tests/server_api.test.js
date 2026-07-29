@@ -73,6 +73,7 @@ beforeAll(done => {
 
   // Redirect console để giảm noise
   const app = require("../server/index");
+  serverInstance = app.server;
   setTimeout(done, 1500);
 }, 10000);
 
@@ -82,11 +83,22 @@ afterAll(done => {
       fs.rmSync(TEST_DATA_DIR, { recursive: true, force: true });
     }
   } catch {}
-  done();
+  if (serverInstance && serverInstance.close) {
+    serverInstance.close(() => done());
+  } else {
+    done();
+  }
 }, 5000);
 
 // ─── Tests ────────────────────────────────────────────────────────────────────
 describe("Server API", () => {
+  test("GET /api/health – trả về healthy và đúng 304 câu hỏi", async () => {
+    const res = await httpGet(`${BASE}/api/health`);
+    expect(res.status).toBe(200);
+    expect(res.body.status).toBe("healthy");
+    expect(res.body.questionCount).toBe(304);
+  });
+
   test("GET /api/metadata – 304 câu, có standards", async () => {
     const res = await httpGet(`${BASE}/api/metadata`);
     expect(res.status).toBe(200);
@@ -227,4 +239,13 @@ describe("Server API", () => {
       expect(prev).toBeGreaterThanOrEqual(cur);
     }
   });
+
+  test("API từ chối ID và mode không hợp lệ", async () => {
+    const badId = await httpGet(`${BASE}/api/sessions/invalid_id_w_symbols;drop table`);
+    expect(badId.status).toBe(400);
+
+    const badMode = await httpPost(`${BASE}/api/sessions`, { mode: "hack_mode" });
+    expect(badMode.status).toBe(400);
+  });
 });
+
