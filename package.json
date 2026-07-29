@@ -21,9 +21,7 @@
     "test:api":     "jest tests/server_api.test.js"
   },
   "dependencies": {
-    "concurrently": "^8.2.2"
-  },
-  "devDependencies": {
+    "concurrently": "^8.2.2",
     "jest": "^29.7.0"
   },
   "jest": {
