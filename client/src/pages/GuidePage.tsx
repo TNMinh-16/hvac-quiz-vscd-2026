@@ -244,32 +244,46 @@ export default function GuidePage({ lang }: Props) {
             </div>
           )}
 
-          {/* SECTION 5: LOCAL PC STARTUP */}
+          {/* SECTION 5: DEPLOYMENT & STORAGE ARCHITECTURE */}
           {(activeSection === 'all' || activeSection === 'local') && (
             <div className="card card-hover" style={{ borderLeft: '5px solid var(--clr-neutral-700)', padding: '1.75rem' }}>
               <div className="flex items-center gap-3 mb-3" style={{ marginBottom: '1rem' }}>
-                <span style={{ fontSize: '2rem' }}>💻</span>
+                <span style={{ fontSize: '2rem' }}>🌐</span>
                 <div>
                   <h2 style={{ fontSize: '1.35rem', margin: 0 }}>
-                    {isVi ? '5. Hướng Dẫn Vận Hành Ngay Trên PC' : '5. Zero-Cloud PC Local Operations'}
+                    {isVi ? '5. Kiến Trúc Triển Khai Cloud & Vận Hành Local' : '5. Dual Cloud Deployment & Local Operations'}
                   </h2>
-                  <div className="text-sm text-muted">Hoạt động trơn tru trên máy cá nhân không phụ thuộc internet</div>
+                  <div className="text-sm text-muted">Hỗ trợ trọn vẹn Supabase PostgreSQL Cloud và máy cá nhân Offline</div>
                 </div>
               </div>
 
               <p style={{ color: 'var(--clr-neutral-700)', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '1.25rem' }}>
-                Toàn bộ website và bộ cơ sở dữ liệu Word/JSON được lập trình chạy mượt mà ngay trên nội bộ PC của bạn (Cống localhost:3000), đảm bảo quyền riêng tư dữ liệu và tốc độ trễ gần bằng 0ms.
+                Dự án được thiết kế đặc biệt theo mô hình <strong>ôn thi cá nhân chuyên sâu</strong>: Hoàn toàn <strong>không yêu cầu đăng ký hay đăng nhập (No Auth)</strong>. Lịch sử làm bài trên cloud là một bộ <strong>Lịch sử chung toàn cầu</strong> lưu trên <strong>Supabase PostgreSQL</strong>, với các lớp bảo mật vững chắc:
               </p>
 
-              <div style={{ background: 'var(--clr-neutral-900)', color: '#a5b4fc', padding: '1.25rem', borderRadius: 'var(--radius-lg)', fontFamily: 'var(--font-mono)', fontSize: '0.9rem', position: 'relative' }}>
-                <div style={{ color: '#fff', fontWeight: 700, marginBottom: '0.5rem', fontFamily: 'var(--font-sans)' }}>
-                  ⚡ Thao Tác Khởi Động Hàng Ngày (Mỗi Khi Ôn Thi):
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '1.5rem' }}>
+                <div style={{ background: '#f8fafc', padding: '1.125rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--clr-neutral-200)' }}>
+                  <h3 style={{ fontSize: '1rem', color: 'var(--clr-primary-900)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <span>☁️</span> Triển khai Internet (Render & Supabase)
+                  </h3>
+                  <ul style={{ paddingLeft: '1.25rem', fontSize: '0.88rem', color: 'var(--clr-neutral-700)', lineHeight: '1.6', margin: 0 }}>
+                    <li><strong>Supabase PostgreSQL:</strong> Bảng <code>quiz_sessions</code> được bảo mật trong schema <code>private</code>, khóa hoàn toàn truy cập trực tiếp từ trình duyệt và REST API công cộng.</li>
+                    <li><strong>Render Web Service:</strong> Máy chủ Node.js/Express kiểm soát 100% logic chấm bài, ẩn lời giải (Mã lỗi 403) và giao tiếp an toàn qua Connection Pooler (Cổng 6543).</li>
+                    <li><strong>Chống Xung Đột & Idempotent:</strong> Tích hợp gộp Atomic JSONB (<code>||</code>), bảo đảm lưu tiến độ ngay cả khi đứt kết nối hoặc đóng trang web (<code>keepalive / sendBeacon</code>).</li>
+                  </ul>
                 </div>
-                <div style={{ color: '#d1fae5', marginBottom: '0.35rem' }}>
-                  &gt; Nháy đúp (Double-click) vào tệp lệnh: <span style={{ textDecoration: 'underline', fontWeight: 'bold' }}>start.bat</span> trong thư mục dự án.
-                </div>
-                <div style={{ color: '#94a3b8', fontSize: '0.82rem', marginTop: '0.5rem', fontFamily: 'var(--font-sans)' }}>
-                  ✓ Script sẽ tự động kiểm tra Node.js, xác thực bộ 304 câu hỏi từ tệp Word VSCD 2026, kích hoạt server nghe cổng 3000 và tự khởi mở trình duyệt trực tiếp cho bạn!
+
+                <div style={{ background: '#eff6ff', padding: '1.125rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--clr-primary-200)' }}>
+                  <h3 style={{ fontSize: '1rem', color: 'var(--clr-primary-900)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <span>💻</span> Vận Hành Offline Tại Máy Bàn (Local PC)
+                  </h3>
+                  <p style={{ fontSize: '0.88rem', color: 'var(--clr-neutral-700)', lineHeight: '1.6', margin: '0 0 0.75rem 0' }}>
+                    Khi chạy tại máy tính cá nhân ở chế độ <code>DATA_BACKEND=json</code>, hệ thống tự động lưu lịch sử vào <code>data/history.json</code> với tốc độ phản hồi 0ms:
+                  </p>
+                  <div style={{ background: 'var(--clr-neutral-900)', color: '#a5b4fc', padding: '0.75rem', borderRadius: 'var(--radius)', fontFamily: 'var(--font-mono)', fontSize: '0.85rem' }}>
+                    <div style={{ color: '#d1fae5' }}>&gt; Nháy đúp lệnh: <strong>start.bat</strong></div>
+                    <div style={{ color: '#94a3b8', fontSize: '0.78rem', marginTop: '0.25rem', fontFamily: 'var(--font-sans)' }}>Tự mở server cổng 3000 và khởi chạy web ngay trên trình duyệt mà không cần cài đặt phức tạp!</div>
+                  </div>
                 </div>
               </div>
             </div>
