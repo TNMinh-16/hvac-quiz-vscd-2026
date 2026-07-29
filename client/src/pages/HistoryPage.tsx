@@ -13,6 +13,8 @@ export default function HistoryPage({ lang }: Props) {
   const [error, setError]       = useState('');
   const [filter, setFilter]     = useState<'all' | 'completed' | 'in_progress'>('all');
 
+  const [visibleCount, setVisibleCount] = useState(20);
+
   useEffect(() => {
     getAllSessions()
       .then(setSessions)
@@ -28,6 +30,8 @@ export default function HistoryPage({ lang }: Props) {
     if (filter === 'in_progress')  return s.status === 'in_progress';
     return true;
   });
+
+  const visibleSessions = filtered.slice(0, visibleCount);
 
   return (
     <div className="page">
@@ -48,7 +52,7 @@ export default function HistoryPage({ lang }: Props) {
             <button
               key={k}
               className={`filter-tab ${filter === k ? 'active' : ''}`}
-              onClick={() => setFilter(k)}
+              onClick={() => { setFilter(k); setVisibleCount(20); }}
               role="tab"
               aria-selected={filter === k}
             >
@@ -68,7 +72,7 @@ export default function HistoryPage({ lang }: Props) {
         )}
 
         <div className="flex flex-col gap-3">
-          {filtered.map((s, idx) => (
+          {visibleSessions.map((s, idx) => (
             <HistoryRow
               key={s.id}
               session={s}
@@ -80,6 +84,19 @@ export default function HistoryPage({ lang }: Props) {
             />
           ))}
         </div>
+
+        {/* Nút Tải thêm để tối ưu hiệu suất khi lịch sử rất lớn */}
+        {filtered.length > visibleCount && (
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem', marginBottom: '2rem' }}>
+            <button
+              className="btn btn-outline"
+              style={{ padding: '0.75rem 2rem', fontWeight: 600 }}
+              onClick={() => setVisibleCount(prev => prev + 20)}
+            >
+              ▼ Tải thêm 20 lượt bài làm (Còn {filtered.length - visibleCount} lượt)
+            </button>
+          </div>
+        )}
 
       </div>
     </div>
@@ -121,7 +138,7 @@ function HistoryRow({ session: s, index, onOpen }: {
       </div>
 
       {/* Divider */}
-      <div style={{ width: 1, height: 48, background: 'var(--clr-neutral-200)', margin: '0 .25rem', flexShrink: 0 }} />
+      <div className="history-divider" style={{ width: 1, height: 48, background: 'var(--clr-neutral-200)', margin: '0 .25rem', flexShrink: 0 }} />
 
       {/* Info */}
       <div className="flex-1">
@@ -141,7 +158,7 @@ function HistoryRow({ session: s, index, onOpen }: {
       </div>
 
       {/* Status & Action */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 history-actions">
         {isCompleted
           ? <span className="badge badge-green">Hoàn thành</span>
           : <span className="badge badge-orange">Đang làm</span>

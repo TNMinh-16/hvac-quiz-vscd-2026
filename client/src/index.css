@@ -717,6 +717,45 @@ input:focus, select:focus, textarea:focus {
   .stat-row { gap: .5rem; }
   .stat-box { min-width: 80px; padding: .75rem .5rem; }
   .stat-num { font-size: 1.25rem; }
+
+  /* Responsive cards trên mobile: xếp dọc, không để badge và nút tràn màn hình */
+  .history-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+  }
+  .history-score {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    min-width: unset;
+  }
+  .history-divider {
+    display: none !important;
+  }
+  .history-actions {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.25rem;
+    border-top: 1px dashed var(--clr-neutral-200);
+    padding-top: 0.75rem;
+  }
+
+  /* Tối ưu modal và cuộn mượt cho ngón tay */
+  .modal {
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 1.25rem;
+    width: 95%;
+  }
+  .modal-actions {
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+  }
+  .modal-actions .btn {
+    width: 100%;
+  }
 }
 
 /* ─── Timer ──────────────────────────────────────────────────────────── */

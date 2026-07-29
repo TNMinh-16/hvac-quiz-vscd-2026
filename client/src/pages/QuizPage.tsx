@@ -33,10 +33,11 @@ export default function QuizPage({ lang }: Props) {
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
   const savingPromiseRef = useRef<Promise<any> | null>(null);
   const debounceTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const isSubmittedRef = useRef(false);
 
   // Robust Sequential & Stable Autosave Logic
   const triggerSave = useCallback(async () => {
-    if (!id || !session || session.status === 'completed') return;
+    if (!id || !session || session.status === 'completed' || isSubmittedRef.current) return;
     if (savingPromiseRef.current) {
       try { await savingPromiseRef.current; } catch { /* ignore */ }
     }
@@ -108,12 +109,39 @@ export default function QuizPage({ lang }: Props) {
     return () => clearInterval(timer);
   }, [triggerSave]);
 
-  // Save when exiting page or unmounting
+  // Reliable flush on exit / visibility change / unmount to save changes made in the last 1.5s
+  const flushSave = useCallback(() => {
+    if (!id || isSubmittedRef.current || (session && session.status === 'completed')) return;
+    if (debounceTimeoutRef.current) {
+      clearTimeout(debounceTimeoutRef.current);
+      debounceTimeoutRef.current = null;
+    }
+    const totalDuration = startSecondsRef.current + elapsedRef.current;
+    try {
+      const payloadAnswers = JSON.stringify({ answers: answersRef.current, durationSeconds: totalDuration });
+      const payloadMarks   = JSON.stringify({ markedQuestionIds: markedRef.current });
+      if (navigator.sendBeacon && document.visibilityState === 'hidden') {
+        navigator.sendBeacon(`/api/sessions/${id}/answers`, new Blob([payloadAnswers], { type: 'application/json' }));
+        navigator.sendBeacon(`/api/sessions/${id}/marks`, new Blob([payloadMarks], { type: 'application/json' }));
+      } else {
+        fetch(`/api/sessions/${id}/answers`, { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: payloadAnswers, keepalive: true }).catch(() => {});
+        fetch(`/api/sessions/${id}/marks`, { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: payloadMarks, keepalive: true }).catch(() => {});
+      }
+    } catch {
+      triggerSave();
+    }
+  }, [id, session?.status, triggerSave]);
+
   useEffect(() => {
+    const handleExit = () => flushSave();
+    window.addEventListener('pagehide', handleExit);
+    document.addEventListener('visibilitychange', handleExit);
     return () => {
-      if (debounceTimeoutRef.current) clearTimeout(debounceTimeoutRef.current);
+      window.removeEventListener('pagehide', handleExit);
+      document.removeEventListener('visibilitychange', handleExit);
+      flushSave();
     };
-  }, []);
+  }, [flushSave]);
 
   // Keyboard shortcuts
   useEffect(() => {
@@ -166,6 +194,7 @@ export default function QuizPage({ lang }: Props) {
   async function handleConfirmSubmit() {
     if (!id) return;
     setSubmitting(true);
+    isSubmittedRef.current = true;
     if (debounceTimeoutRef.current) clearTimeout(debounceTimeoutRef.current);
     if (savingPromiseRef.current) {
       try { await savingPromiseRef.current; } catch { /* ignore */ }
@@ -197,7 +226,7 @@ export default function QuizPage({ lang }: Props) {
       {/* Top bar */}
       <div className="quiz-topbar">
         <div className="flex items-center gap-3 flex-1 flex-wrap">
-          <button className="btn btn-ghost btn-sm" onClick={() => navigate('/')}>← Thoát</button>
+          <button className="btn btn-ghost btn-sm" onClick={() => { flushSave(); navigate('/'); }}>← Thoát</button>
           <div className="flex-1" style={{ minWidth: 160 }}>
             <div className="progress-bar-outer">
               <div className="progress-bar-inner" style={{ width: `${progress}%` }} />

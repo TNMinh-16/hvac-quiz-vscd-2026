@@ -90,7 +90,8 @@ export default function HomePage({ lang }: Props) {
                 <div key={s.id} className="history-item card-hover" style={{ cursor: 'pointer' }}
                   onClick={() => navigate(`/quiz/${s.id}`)} role="button" tabIndex={0}
                   onKeyDown={e => e.key === 'Enter' && navigate(`/quiz/${s.id}`)}>
-                  <div style={{ fontSize: '1.5rem' }}>{s.mode === 'sequential' ? '📚' : '🔀'}</div>
+                  <div className="history-score" style={{ fontSize: '1.5rem' }}>{s.mode === 'sequential' ? '📚' : '🔀'}</div>
+                  <div className="history-divider" style={{ width: 1, height: 48, margin: '0 .5rem', background: 'var(--clr-neutral-200)' }} />
                   <div className="flex-1">
                     <div className="font-semibold" style={{ color: 'var(--clr-primary-700)' }}>
                       {s.mode === 'sequential' ? 'Luyện tuần tự' : 'Luyện xáo trộn'}
@@ -99,7 +100,7 @@ export default function HomePage({ lang }: Props) {
                       {Object.keys(s.answers).length}/{s.questionOrder.length} câu · Bắt đầu {formatDate(s.startedAt)}
                     </div>
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex items-center gap-2 history-actions">
                     <span className="badge badge-orange">Đang làm</span>
                     <button className="btn btn-primary btn-sm">Tiếp tục</button>
                   </div>
@@ -237,7 +238,7 @@ function RecentItem({ session, onOpen }: { session: QuizSession; onOpen: () => v
         <div className="history-score-num" style={{ color: scoreColor(pct) }}>{pct}%</div>
         <div className="history-score-pct">điểm</div>
       </div>
-      <div className="divider" style={{ width: 1, height: 48, margin: '0 .5rem', background: 'var(--clr-neutral-200)' }} />
+      <div className="history-divider" style={{ width: 1, height: 48, margin: '0 .5rem', background: 'var(--clr-neutral-200)' }} />
       <div className="flex-1">
         <div className="font-semibold" style={{ fontSize: '.9375rem' }}>
           {session.mode === 'sequential' ? '📚 Tuần tự' : '🔀 Xáo trộn'}
@@ -246,7 +247,10 @@ function RecentItem({ session, onOpen }: { session: QuizSession; onOpen: () => v
           {session.correctCount}/{session.questionOrder.length} đúng · {formatDuration(session.durationSeconds)} · {formatDate(session.completedAt || session.startedAt)}
         </div>
       </div>
-      <button className="btn btn-outline btn-sm">Xem lại</button>
+      <div className="flex items-center gap-2 history-actions">
+        <span className="badge badge-green">Hoàn thành</span>
+        <button className="btn btn-outline btn-sm">Xem lại</button>
+      </div>
     </div>
   );
 }
