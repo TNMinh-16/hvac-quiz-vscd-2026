@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS private.quiz_sessions (
     correct_count INTEGER NOT NULL DEFAULT 0 CHECK (correct_count >= 0),
     wrong_count INTEGER NOT NULL DEFAULT 0 CHECK (wrong_count >= 0),
     unanswered_count INTEGER NOT NULL DEFAULT 0 CHECK (unanswered_count >= 0),
-    score_percent INTEGER NOT NULL DEFAULT 0 CHECK (score_percent >= 0 AND score_percent <= 100),
+    score_percent NUMERIC(5,1) NOT NULL DEFAULT 0 CHECK (score_percent >= 0 AND score_percent <= 100),
     duration_seconds INTEGER NOT NULL DEFAULT 0 CHECK (duration_seconds >= 0),
     revision INTEGER NOT NULL DEFAULT 1 CHECK (revision >= 1),
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),

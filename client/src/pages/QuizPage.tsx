@@ -194,8 +194,13 @@ export default function QuizPage({ lang }: Props) {
   async function handleConfirmSubmit() {
     if (!id) return;
     setSubmitting(true);
+    // Hủy debounce trước, rồi mới set isSubmittedRef để tránh autosave chạy lại
+    if (debounceTimeoutRef.current) {
+      clearTimeout(debounceTimeoutRef.current);
+      debounceTimeoutRef.current = null;
+    }
     isSubmittedRef.current = true;
-    if (debounceTimeoutRef.current) clearTimeout(debounceTimeoutRef.current);
+    // Đợi autosave đang chạy hoàn thành trước khi submit
     if (savingPromiseRef.current) {
       try { await savingPromiseRef.current; } catch { /* ignore */ }
     }
@@ -204,12 +209,15 @@ export default function QuizPage({ lang }: Props) {
       await saveAnswers(id, answersRef.current, finalDuration);
       await saveMarks(id, markedRef.current);
       await submitSession(id, finalDuration);
+      setShowSubmitModal(false);
       navigate(`/result/${id}`);
     } catch (e: any) {
-      alert('Lỗi khi nộp bài: ' + e.message);
+      // Reset để người dùng có thể thử nộp lại
+      isSubmittedRef.current = false;
       setSubmitting(false);
+      setShowSubmitModal(false);
+      alert('Lỗi khi nộp bài: ' + e.message);
     }
-    setShowSubmitModal(false);
   }
 
   if (loading) return <div className="loading-screen"><div className="loading-spinner" /><span>Đang tải bài thi...</span></div>;
