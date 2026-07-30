@@ -102,18 +102,15 @@ describe("questions.json validation", () => {
     expect(orders).toEqual(expected);
   });
 
-  test("đúng 445 liên kết ảnh-câu và ảnh bìa không bị gắn vào câu hỏi", () => {
+  test("đúng 31 liên kết ảnh-câu", () => {
     let totalRefs = 0;
     const errors = [];
     for (const q of db.questions) {
       for (const imgPath of (q.images || [])) {
         totalRefs += 1;
-        if (imgPath.includes("img_0001")) {
-          errors.push(`${q.id}: bị gắn ảnh bìa img_0001`);
-        }
       }
     }
-    expect(totalRefs).toBe(445);
+    expect(totalRefs).toBe(31);
     expect(errors).toHaveLength(0);
   });
 
@@ -130,8 +127,8 @@ describe("questions.json validation", () => {
     expect(errors).toHaveLength(0);
   });
 
-  test("cấu trúc cây phân cấp sections đúng (1 L0, 6 L1, 24 L2)", () => {
-    expect(db.sections).toHaveLength(31);
+  test("cấu trúc cây phân cấp sections đúng (1 L0, 6 L1, 30 L2)", () => {
+    expect(db.sections).toHaveLength(37);
     const root = db.sections.filter(s => s.level === 0);
     const blooms = db.sections.filter(s => s.level === 1);
     const standards = db.sections.filter(s => s.level === 2);
@@ -144,7 +141,7 @@ describe("questions.json validation", () => {
       expect(b.parentId).toBe(root[0].id);
     }
 
-    expect(standards).toHaveLength(24);
+    expect(standards).toHaveLength(30);
     const bloomIds = new Set(blooms.map(b => b.id));
     for (const std of standards) {
       expect(bloomIds.has(std.parentId)).toBe(true);

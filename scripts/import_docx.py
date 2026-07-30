@@ -50,7 +50,7 @@ except ImportError:
 # ─── Paths ────────────────────────────────────────────────────────────────────
 SCRIPT_DIR   = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
-DOCX_NAME    = "HVAC_ASHRAE_VSCD_2026_Question_Bank_3000_Bilingual_EN_VI.docx"
+DOCX_NAME    = "HVAC_Standards_Challenge_3000_Bilingual_MCQs.docx"
 DOCX_PATH    = PROJECT_ROOT / DOCX_NAME
 DATA_DIR     = PROJECT_ROOT / "data"
 IMG_DIR      = PROJECT_ROOT / "public" / "assets" / "questions"
@@ -246,268 +246,147 @@ def parse_docx(doc_path: Path):
     paras = doc.paragraphs
     print(f"  Tổng số paragraph: {len(paras)}")
     
-    # ── PASS 1: Thu thập câu hỏi (phần I) ─────────────────────────────────
-    questions_raw = {}   # qid -> dict
+    questions_raw = {}
     sections = []
-    q_order_counter = 0
     current_qid = None
-    
     current_bloom = ""
     current_standard = ""
     current_section_id = None
     section_counter = 0
-    root_sec_id = None
+    q_order_counter = 0
+    
+    root_sec_id = "sec-001"
+    sections.append({
+        "id": root_sec_id, "order": 1, "titleEn": "PHẦN I · ĐỀ TRẮC NGHIỆM", "titleVi": "PHẦN I · ĐỀ TRẮC NGHIỆM",
+        "level": 0, "bloomLevel": None, "standard": None, "parentId": None, "questionIds": []
+    })
+    section_counter = 1
     curr_bloom_sec_id = None
     
-    # Heading stack: track current section hierarchy
-    in_questions_part = False
+    in_questions = False
     
-    i = 0
-    while i < len(paras):
-        para = paras[i]
+    for i, para in enumerate(paras):
         style = para.style.name
         txt = para_full_text(para).strip()
         img_rids = get_para_image_rids(para)
         
-        # ── Heading ──────────────────────────────────────────────────────
-        if style.startswith("Heading"):
-            if "PHẦN II" in txt or "ĐÁP ÁN" in txt.upper():
-                in_questions_part = False
-            elif "PHẦN I" in txt:
-                in_questions_part = True
-            
-            # Detect Bloom level from heading
-            bm = BLOOM_H_RE.search(txt)
-            if bm:
-                bloom_en  = bm.group(2).capitalize()
-                current_bloom = f"{bloom_en}"
-            
-            # Detect standard from sub-heading
-            sm = STD_H_RE.search(txt)
-            if sm and style == "Heading 2":
-                current_standard = sm.group(1).strip()
-            
-            if in_questions_part and txt:
+        if style == "Heading 1":
+            if "Questions —" in txt or "Câu hỏi —" in txt:
+                in_questions = True
+                bloom_en = txt.split("—")[1].split("\n")[0].strip()
+                current_bloom = bloom_en
                 section_counter += 1
                 sec_id = f"sec-{section_counter:03d}"
-                
-                # Determine hierarchy level and parentId
-                if "PHẦN I" in txt or section_counter == 1:
-                    lvl = 0
-                    parent_id = None
-                    root_sec_id = sec_id
-                elif bm or "BLOOM" in txt.upper() or style == "Heading 1":
-                    lvl = 1
-                    parent_id = root_sec_id
-                    curr_bloom_sec_id = sec_id
-                else:
-                    lvl = 2
-                    parent_id = curr_bloom_sec_id
-                
-                sec = {
-                    "id": sec_id,
-                    "order": section_counter,
-                    "titleEn": txt,
-                    "titleVi": txt,
-                    "level": lvl,
-                    "bloomLevel": current_bloom if lvl > 0 else None,
-                    "standard": current_standard if lvl == 2 else None,
-                    "parentId": parent_id,
-                    "questionIds": [],
-                }
-                sections.append(sec)
-                current_section_id = sec["id"]
+                curr_bloom_sec_id = sec_id
+                sections.append({
+                    "id": sec_id, "order": section_counter, "titleEn": txt, "titleVi": txt,
+                    "level": 1, "bloomLevel": current_bloom, "standard": None, "parentId": root_sec_id, "questionIds": []
+                })
+                current_section_id = sec_id
+            elif "Answer" in txt or "Đáp án" in txt or "PHẦN II" in txt:
+                in_questions = False
+            continue
             
-            i += 1
+        if style == "Heading 2" and in_questions:
+            std_en = txt.split("—")[0].strip()
+            current_standard = std_en
+            section_counter += 1
+            sec_id = f"sec-{section_counter:03d}"
+            sections.append({
+                "id": sec_id, "order": section_counter, "titleEn": txt, "titleVi": txt,
+                "level": 2, "bloomLevel": current_bloom, "standard": current_standard, "parentId": curr_bloom_sec_id, "questionIds": []
+            })
+            current_section_id = sec_id
             continue
-        
-        # ── Question Header ────────────────────────────────────────────────
-        if style == "Question Header" and txt:
-            parsed = parse_question_header(txt)
-            if parsed:
-                qid, std, topic_en, topic_vi = parsed
-                q_order_counter += 1
-                current_qid = qid
-                questions_raw[qid] = {
-                    "id": qid,
-                    "order": q_order_counter,
-                    "sectionId": current_section_id or "sec-000",
-                    "standard": std or current_standard,
-                    "bloomLevel": current_bloom,
-                    "topic": {"en": topic_en, "vi": topic_vi},
-                    "stem": {"en": "", "vi": ""},
-                    "options": [],
-                    "correctOptionId": "",
-                    "explanation": {"en": "", "vi": ""},
-                    "sourceText": "",
-                    "images": [],
-                    "_cur_qid": qid,
-                }
-                # Add to section
-                if current_section_id:
-                    for sec in sections:
-                        if sec["id"] == current_section_id:
-                            sec["questionIds"].append(qid)
-                            break
-                # Ảnh trong chính dòng Question Header
-                for rid in img_rids:
-                    if rid in img_map:
-                        questions_raw[qid]["images"].append(img_map[rid])
-            i += 1
+            
+        if not in_questions:
             continue
-        
-        # ── Stem English ───────────────────────────────────────────────────
-        if style == "Stem English" and txt:
-            last_qid = current_qid
-            if last_qid and last_qid in questions_raw:
-                questions_raw[last_qid]["stem"]["en"] = txt
-                for rid in img_rids:
-                    if rid in img_map:
-                        wp = img_map[rid]
-                        if wp not in questions_raw[last_qid]["images"]:
-                            questions_raw[last_qid]["images"].append(wp)
-            i += 1
-            continue
-        
-        # ── Stem Vietnamese ────────────────────────────────────────────────
-        if style == "Stem Vietnamese" and txt:
-            last_qid = current_qid
-            if last_qid and last_qid in questions_raw:
-                questions_raw[last_qid]["stem"]["vi"] = txt
-                for rid in img_rids:
-                    if rid in img_map:
-                        wp = img_map[rid]
-                        if wp not in questions_raw[last_qid]["images"]:
-                            questions_raw[last_qid]["images"].append(wp)
-            i += 1
-            continue
-        
-        # ── Figure Caption ─────────────────────────────────────────────────
-        if style == "Figure Caption" and txt:
-            last_qid = current_qid
-            if last_qid and last_qid in questions_raw:
-                for rid in img_rids:
-                    if rid in img_map:
-                        wp = img_map[rid]
-                        if wp not in questions_raw[last_qid]["images"]:
-                            questions_raw[last_qid]["images"].append(wp)
-                # Lưu caption vào stem hoặc không (không làm thay đổi nội dung)
-            # Kiểm tra paragraph TRƯỚC figure caption có ảnh không
-            # (ảnh thường ở paragraph Normal trước caption)
-            if i > 0 and last_qid and last_qid in questions_raw:
-                prev_para = paras[i-1]
-                prev_rids = get_para_image_rids(prev_para)
-                if prev_rids:
-                    for rid in prev_rids:
-                        if rid in img_map:
-                            wp = img_map[rid]
-                            if wp not in questions_raw[last_qid]["images"]:
-                                questions_raw[last_qid]["images"].append(wp)
-            i += 1
-            continue
-        
-        # ── Option ────────────────────────────────────────────────────────
-        if style == "Option" and txt:
-            last_qid = current_qid
-            if last_qid and last_qid in questions_raw:
-                opt = parse_option(txt)
-                if opt:
-                    # Kiểm tra trùng
-                    existing = [o for o in questions_raw[last_qid]["options"] if o["id"] == opt["id"]]
-                    if not existing:
-                        questions_raw[last_qid]["options"].append(opt)
-                    else:
-                        warnings.append(f"{last_qid}: Trùng option {opt['id']}")
+            
+        if style == "Question Meta" and txt:
+            parts = [p.strip() for p in txt.split("•")]
+            qid = parts[0]
+            topic = parts[4] if len(parts) > 4 else ""
+            t_en = topic.split("/")[0].strip() if "/" in topic else topic
+            t_vi = topic.split("/")[1].strip() if "/" in topic else ""
+            current_qid = qid
+            q_order_counter += 1
+            questions_raw[qid] = {
+                "id": qid,
+                "order": q_order_counter,
+                "sectionId": current_section_id or "sec-000",
+                "standard": current_standard,
+                "bloomLevel": current_bloom,
+                "topic": {"en": t_en, "vi": t_vi},
+                "stem": {"en": "", "vi": ""},
+                "options": {},
+                "correctOptionId": "",
+                "explanation": {"en": "", "vi": ""},
+                "sourceText": "",
+                "images": []
+            }
+            for sec in sections:
+                if sec["id"] == current_section_id:
+                    sec["questionIds"].append(qid)
+                    
+        if style == "Question EN" and txt and current_qid:
+            questions_raw[current_qid]["stem"]["en"] = txt
+        if style == "Question VI" and txt and current_qid:
+            questions_raw[current_qid]["stem"]["vi"] = txt
+        if style == "Option EN" and txt and current_qid:
+            m = re.match(r"^([A-D])[.)]\s+(.+)$", txt, re.DOTALL)
+            if m:
+                let = m.group(1).upper()
+                if let not in questions_raw[current_qid]["options"]:
+                    questions_raw[current_qid]["options"][let] = {"id": let, "en": m.group(2).strip(), "vi": ""}
                 else:
-                    warnings.append(f"{last_qid}: Không parse được option: {repr(txt[:80])}")
-            i += 1
-            continue
-        
-        # ── Normal paragraph with images (inline images) ───────────────────
-        if style == "Normal" and img_rids:
-            last_qid = current_qid
-            if last_qid and last_qid in questions_raw:
-                for rid in img_rids:
-                    if rid in img_map:
-                        wp = img_map[rid]
-                        if wp not in questions_raw[last_qid]["images"]:
-                            questions_raw[last_qid]["images"].append(wp)
-            i += 1
-            continue
-        
-        i += 1
+                    questions_raw[current_qid]["options"][let]["en"] = m.group(2).strip()
+            else:
+                warnings.append(f"{current_qid}: Không parse được option EN: {repr(txt[:60])}")
+        if style == "Option VI" and txt and current_qid:
+            m = re.match(r"^([A-D])[.)]\s+(.+)$", txt, re.DOTALL)
+            if m:
+                let = m.group(1).upper()
+                if let not in questions_raw[current_qid]["options"]:
+                    questions_raw[current_qid]["options"][let] = {"id": let, "en": "", "vi": m.group(2).strip()}
+                else:
+                    questions_raw[current_qid]["options"][let]["vi"] = m.group(2).strip()
+            else:
+                warnings.append(f"{current_qid}: Không parse được option VI: {repr(txt[:60])}")
+                
+        if current_qid and img_rids:
+            for rid in img_rids:
+                if rid in img_map:
+                    wp = img_map[rid]
+                    if wp not in questions_raw[current_qid]["images"]:
+                        questions_raw[current_qid]["images"].append(wp)
     
     # ── PASS 2: Thu thập đáp án và giải thích (phần II) ───────────────────
     print("  Đọc phần II (đáp án và giải thích)...")
-    in_answers_part = False
-    current_ans_qid = None
-    
-    i = 0
-    while i < len(paras):
-        para = paras[i]
-        style = para.style.name
-        txt = para_full_text(para).strip()
-        
-        # Phát hiện bắt đầu phần II
-        if style.startswith("Heading"):
-            if "PHẦN II" in txt or "ĐÁP ÁN" in txt.upper():
-                in_answers_part = True
-        
-        if not in_answers_part:
-            i += 1
-            continue
-        
-        # ── Answer Header ────────────────────────────────────────────────
-        if style == "Answer Header" and txt:
-            parsed_ah = parse_answer_header(txt)
-            if parsed_ah:
-                qid, letter = parsed_ah
-                current_ans_qid = qid
-                if qid in questions_raw:
-                    questions_raw[qid]["correctOptionId"] = letter
-                else:
-                    warnings.append(f"Answer Header: {qid} không có trong danh sách câu hỏi")
-            i += 1
-            continue
-        
-        # ── Answer Text (chứa correct answer text) ────────────────────────
-        if style == "Answer Text" and txt and current_ans_qid:
-            i += 1
-            continue
-        
-        # ── Explanation ───────────────────────────────────────────────────
-        if style == "Explanation" and txt and current_ans_qid:
-            if current_ans_qid in questions_raw:
-                m_expl = EXPL_RE.match(txt)
-                if m_expl:
-                    expl_text = m_expl.group(1).strip()
-                else:
-                    expl_text = txt
-                questions_raw[current_ans_qid]["explanation"]["vi"] = expl_text
-                if not questions_raw[current_ans_qid]["explanation"]["en"]:
-                    questions_raw[current_ans_qid]["explanation"]["en"] = expl_text
-            i += 1
-            continue
-        
-        # ── Source Line ───────────────────────────────────────────────────
-        if style == "Source Line" and txt and current_ans_qid:
-            if current_ans_qid in questions_raw:
-                m_src = SRC_RE.match(txt)
-                if m_src:
-                    questions_raw[current_ans_qid]["sourceText"] = m_src.group(1).strip()
-                else:
-                    questions_raw[current_ans_qid]["sourceText"] = txt
-            i += 1
-            continue
-        
-        i += 1
-    
+    for para in paras:
+        if para.style.name == "Answer Entry":
+            txt = para_full_text(para).strip()
+            lines = [l.strip() for l in txt.split("\n") if l.strip()]
+            if not lines: continue
+            m_qid = re.search(r"^[A-Z0-9]+", lines[0], re.IGNORECASE)
+            if not m_qid: continue
+            qid = m_qid.group(0).upper()
+            let_m = re.search(r"[—–-]\s*([A-D])\s*[—–-]", lines[0], re.IGNORECASE)
+            if let_m and qid in questions_raw:
+                questions_raw[qid]["correctOptionId"] = let_m.group(1).upper()
+                for l in lines[1:]:
+                    if l.lower().startswith("explanation:"):
+                        questions_raw[qid]["explanation"]["en"] = l[len("Explanation:"):].strip()
+                    elif l.lower().startswith("giải thích:"):
+                        questions_raw[qid]["explanation"]["vi"] = l[len("Giải thích:"):].strip()
+                    elif any(l.lower().startswith(p) for p in ["source / nguồn:", "source:", "nguồn:"]):
+                        questions_raw[qid]["sourceText"] = l.split(":", 1)[1].strip()
+            elif qid not in questions_raw:
+                warnings.append(f"Answer Entry: {qid} không có trong danh sách câu hỏi")
+
     # Chuyển dict → list, sắp xếp theo order
+    for q in questions_raw.values():
+        q["options"] = [q["options"][k] for k in sorted(q["options"].keys())]
     questions = sorted(questions_raw.values(), key=lambda q: q["order"])
-    
-    # Xóa field tạm
-    for q in questions:
-        q.pop("_cur_qid", None)
     
     return sections, questions, warnings, img_map, img_blobs
 
@@ -534,10 +413,10 @@ def validate(questions, sections, warnings, img_blobs):
         errors.append(f"Cấu trúc section: mong đợi 1 Root level 0, thực tế {len(root_secs)}")
     if len(bloom_secs) != 6:
         errors.append(f"Cấu trúc section: mong đợi 6 Bloom level 1, thực tế {len(bloom_secs)}")
-    if len(std_secs) != 24:
-        errors.append(f"Cấu trúc section: mong đợi 24 Standard level 2, thực tế {len(std_secs)}")
-    if len(sections) != 31:
-        errors.append(f"Cấu trúc section: mong đợi tổng 31 section, thực tế {len(sections)}")
+    if len(std_secs) != 30:
+        errors.append(f"Cấu trúc section: mong đợi 30 Standard level 2, thực tế {len(std_secs)}")
+    if len(sections) != 37:
+        errors.append(f"Cấu trúc section: mong đợi tổng 37 section, thực tế {len(sections)}")
         
     # Kiểm tra parentId hợp lệ
     for s in sections:
@@ -558,41 +437,39 @@ def validate(questions, sections, warnings, img_blobs):
         std_counts[std] = std_counts.get(std, 0) + 1
         
     expected_blooms = {
-        "Remember": 750, "Understand": 611, "Apply": 641,
-        "Analyze": 454, "Evaluate": 346, "Create": 198
+        "Remember": 600, "Understand": 600, "Apply": 750,
+        "Analyze": 600, "Evaluate": 300, "Create": 150
     }
     for b, count in expected_blooms.items():
         if bloom_counts.get(b, 0) != count:
             errors.append(f"Số câu Bloom '{b}' sai: mong đợi {count}, thực tế {bloom_counts.get(b, 0)}")
 
     expected_stds = {
-        "ASHRAE 55-2023": 642, "ASHRAE 52.2": 690,
-        "ASHRAE 62.1-2013": 346, "ASHRAE 90.1-2022": 1322
+        "ASHRAE 90.1": 1050, "ASHRAE 62.1": 600,
+        "ASHRAE 52.2": 450, "ASHRAE 55": 450, "HVAC Fundamentals": 450
     }
     for std, count in expected_stds.items():
         if std_counts.get(std, 0) != count:
             errors.append(f"Số câu Tiêu chuẩn '{std}' sai: mong đợi {count}, thực tế {std_counts.get(std, 0)}")
 
     # Kiểm tra ảnh
-    if len(img_blobs) != 13:
-        errors.append(f"Số file ảnh trích xuất không đúng: mong đợi 13, thực tế {len(img_blobs)}")
+    if len(img_blobs) != 20:
+        errors.append(f"Số file ảnh trích xuất không đúng: mong đợi 20, thực tế {len(img_blobs)}")
     
     total_img_refs = sum(len(q["images"]) for q in questions)
-    if total_img_refs != 445:
-        errors.append(f"Tổng số liên kết ảnh–câu không đúng: mong đợi 445, thực tế {total_img_refs}")
+    if total_img_refs != 31:
+        errors.append(f"Tổng số liên kết ảnh–câu không đúng: mong đợi 31, thực tế {total_img_refs}")
 
     used_images = set()
     for q in questions:
         qid = q["id"]
         for img_path in q["images"]:
             used_images.add(img_path)
-            if "img_0001" in img_path:
-                errors.append(f"{qid}: Ảnh bìa img_0001 bị gắn vào câu hỏi!")
             if img_path not in img_blobs:
                 errors.append(f"{qid}: Ảnh bị gắn không tồn tại trong tập trích xuất: {img_path}")
 
-    if len(used_images) != 12:
-        errors.append(f"Số ảnh nội dung được dùng trong câu hỏi không đúng: mong đợi 12, thực tế {len(used_images)}")
+    if len(used_images) != 20:
+        errors.append(f"Số ảnh nội dung được dùng trong câu hỏi không đúng: mong đợi 20, thực tế {len(used_images)}")
 
     for q in questions:
         qid = q["id"]

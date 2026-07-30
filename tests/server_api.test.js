@@ -142,9 +142,9 @@ describe("Server API", () => {
     expect(res.body.status).toBe("in_progress");
     expect(res.body.mode).toBe("sequential");
     expect(res.body.questionOrder).toHaveLength(3000);
-    // Thứ tự phải từ Q001 đến E2696 (tuần tự)
-    expect(res.body.questionOrder[0]).toBe("Q001");
-    expect(res.body.questionOrder[2999]).toBe("E2696");
+    // Thứ tự phải từ Q0001 đến Q3000 (tuần tự)
+    expect(res.body.questionOrder[0]).toBe("Q0001");
+    expect(res.body.questionOrder[2999]).toBe("Q3000");
   });
 
   test("POST /api/sessions – shuffled count=10, không trùng câu", async () => {
