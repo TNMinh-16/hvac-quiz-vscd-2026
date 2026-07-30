@@ -104,7 +104,7 @@ export default function SectionsPage({ lang }: Props) {
                   color: '#fff', fontWeight: 800, fontSize: '.9rem',
                   flexShrink: 0,
                 }}>
-                  B{b1.titleEn.match(/BLOOM\s+(\d)/i)?.[1] || '?'}
+                  B{(bloom1.indexOf(b1) + 1)}
                 </div>
                 <div>
                   <div className="font-bold" style={{ color, fontSize: '1.0625rem' }}>

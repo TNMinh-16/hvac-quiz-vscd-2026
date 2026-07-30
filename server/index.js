@@ -199,10 +199,11 @@ app.post("/api/sessions", writeLimiter, async (req, res) => {
         const secSet = new Set(sectionIds);
         questionOrder = db.questions
           .filter((q) => secSet.has(q.sectionId))
+          .slice()
           .sort((a, b) => a.order - b.order)
           .map((q) => q.id);
       } else {
-        questionOrder = db.questions
+        questionOrder = [...db.questions]
           .sort((a, b) => a.order - b.order)
           .map((q) => q.id);
       }

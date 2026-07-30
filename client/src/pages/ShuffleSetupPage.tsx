@@ -30,9 +30,7 @@ export default function ShuffleSetupPage({ lang }: Props) {
 
   // Estimate filtered count
   const subsections = sections.filter(s => s.level === 2);
-  let filteredCount = sections
-    .flatMap(s => s.questionIds)
-    .filter((_, __, all) => true).length;
+  let filteredCount = subsections.reduce((sum, s) => sum + s.questionIds.length, 0);
 
   // Rough estimate (full estimate needs backend)
   // Just show total for now; backend will filter precisely

@@ -78,7 +78,7 @@ export default function ResultPage({ lang }: Props) {
             aria-label={`Điểm: ${pct}%`}
           >
             <div className="score-circle-inner">
-              <div className="score-pct" style={{ color }}>{pct}%</div>
+              <div className="score-pct" style={{ color }}>{pct.toFixed(1)}%</div>
               <div className="score-label">ĐIỂM</div>
             </div>
           </div>

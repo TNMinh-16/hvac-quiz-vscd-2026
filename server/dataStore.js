@@ -65,10 +65,21 @@ function writeJson(filePath, data) {
 // ─── Questions (read-only after import) ─────────────────────────────
 let _questionsCache = null;
 let _mapsCache = null;
+let _questionsMtime = 0;
 
 function getQuestions() {
-  if (_questionsCache) return _questionsCache;
   const filePath = getPath("questions.json");
+  // Invalidate cache if file has been modified since last load
+  try {
+    const mtime = fs.statSync(filePath).mtimeMs;
+    if (mtime !== _questionsMtime) {
+      _questionsCache = null;
+      _mapsCache = null;
+      _questionsMtime = mtime;
+    }
+  } catch { /* file may not exist yet */ }
+
+  if (_questionsCache) return _questionsCache;
   const data = readJson(filePath, null);
   if (!data) {
     throw new Error(
