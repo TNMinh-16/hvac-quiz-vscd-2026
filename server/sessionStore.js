@@ -130,6 +130,11 @@ async function createSession(session) {
   } else {
     const history = dataStore.getHistory();
     history.sessions.push(session);
+    // Giới hạn lưu tối đa 200 session gần nhất để tránh history.json phình to
+    // (mỗi session 3000 câu chiếm ~50KB dữ liệu questionOrder)
+    if (history.sessions.length > 200) {
+      history.sessions = history.sessions.slice(-200);
+    }
     dataStore.saveHistory(history);
     return session;
   }

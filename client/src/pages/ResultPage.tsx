@@ -43,7 +43,7 @@ export default function ResultPage({ lang }: Props) {
 
   const pct = session.scorePercent;
   const color = scoreColor(pct);
-  const scoPctStr = (session.scorePercent / 100 * 100).toFixed(1) + '%';
+  const scoPctStr = session.scorePercent.toFixed(1) + '%';
 
   function getGradeEmoji(pct: number) {
     if (pct >= 90) return '🏆';

@@ -20,6 +20,7 @@ function getDataDir() {
 function setDataDir(dir) {
   currentDataDir = path.resolve(dir);
   _questionsCache = null;
+  _mapsCache = null;
   ensureDir(currentDataDir);
 }
 
@@ -61,8 +62,9 @@ function writeJson(filePath, data) {
   }
 }
 
-// ─── Questions (read-only after import) ──────────────────────────────────
+// ─── Questions (read-only after import) ─────────────────────────────
 let _questionsCache = null;
+let _mapsCache = null;
 
 function getQuestions() {
   if (_questionsCache) return _questionsCache;
@@ -77,14 +79,16 @@ function getQuestions() {
   return _questionsCache;
 }
 
-// Build lookup maps
+// Build lookup maps (cached – rebuilt only when questions file changes)
 function getQuestionMaps() {
+  if (_mapsCache) return _mapsCache;
   const db = getQuestions();
   const qMap  = {};
   const sMap  = {};
   for (const q of db.questions)  qMap[q.id] = q;
   for (const s of db.sections)   sMap[s.id] = s;
-  return { db, qMap, sMap };
+  _mapsCache = { db, qMap, sMap };
+  return _mapsCache;
 }
 
 // ─── History ──────────────────────────────────────────────────────────────
