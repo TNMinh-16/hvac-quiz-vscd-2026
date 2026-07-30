@@ -1,4 +1,4 @@
-import { Routes, Route, NavLink, useNavigate } from 'react-router-dom';
+import { Routes, Route, NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import type { Language } from './types';
 import { useLang } from './utils';
@@ -15,6 +15,8 @@ import GuidePage       from './pages/GuidePage';
 
 export default function App() {
   const [lang, setLang] = useLang();
+  const location = useLocation();
+  const hideBottomNav = location.pathname.startsWith('/quiz');
 
   const LANG_LABELS: Record<Language, string> = {
     bilingual: '🌐 Song ngữ',
@@ -106,6 +108,31 @@ export default function App() {
         <Route path="/guide"       element={<GuidePage lang={lang} />} />
         <Route path="*"            element={<NotFound />} />
       </Routes>
+
+      {!hideBottomNav && (
+        <nav className="bottom-nav" role="navigation" aria-label="Điều hướng di động">
+          <NavLink to="/" end className={({ isActive }) => `bottom-nav-link${isActive ? ' active' : ''}`}>
+            <span className="bottom-nav-icon">🏠</span>
+            <span className="bottom-nav-label">Trang chủ</span>
+          </NavLink>
+          <NavLink to="/sections" className={({ isActive }) => `bottom-nav-link${isActive ? ' active' : ''}`}>
+            <span className="bottom-nav-icon">📚</span>
+            <span className="bottom-nav-label">Theo phần</span>
+          </NavLink>
+          <NavLink to="/shuffle" className={({ isActive }) => `bottom-nav-link${isActive ? ' active' : ''}`}>
+            <span className="bottom-nav-icon">🔀</span>
+            <span className="bottom-nav-label">Xáo trộn</span>
+          </NavLink>
+          <NavLink to="/history" className={({ isActive }) => `bottom-nav-link${isActive ? ' active' : ''}`}>
+            <span className="bottom-nav-icon">📋</span>
+            <span className="bottom-nav-label">Lịch sử</span>
+          </NavLink>
+          <NavLink to="/guide" className={({ isActive }) => `bottom-nav-link${isActive ? ' active' : ''}`}>
+            <span className="bottom-nav-icon">📖</span>
+            <span className="bottom-nav-label">Hướng dẫn</span>
+          </NavLink>
+        </nav>
+      )}
     </>
   );
 }
