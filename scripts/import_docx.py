@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-import_docx.py – Trích xuất 304 câu hỏi HVAC_ASHRAE_VSCD_2026 từ file Word
+import_docx.py – Trích xuất 3000 câu hỏi HVAC_ASHRAE_VSCD_2026 từ file Word
                   → data/questions.json + data/import-report.json
 
 Cách dùng:
@@ -50,14 +50,14 @@ except ImportError:
 # ─── Paths ────────────────────────────────────────────────────────────────────
 SCRIPT_DIR   = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
-DOCX_NAME    = "HVAC_ASHRAE_VSCD_2026_Question_Bank_Full_Bilingual_EN_VI.docx"
+DOCX_NAME    = "HVAC_ASHRAE_VSCD_2026_Question_Bank_3000_Bilingual_EN_VI.docx"
 DOCX_PATH    = PROJECT_ROOT / DOCX_NAME
 DATA_DIR     = PROJECT_ROOT / "data"
 IMG_DIR      = PROJECT_ROOT / "public" / "assets" / "questions"
 QUESTIONS_JSON = DATA_DIR / "questions.json"
 REPORT_JSON    = DATA_DIR / "import-report.json"
 
-EXPECTED_COUNT = 304
+EXPECTED_COUNT = 3000
 
 # ─── Validate DOCX exists ─────────────────────────────────────────────────────
 if not DOCX_PATH.exists():
@@ -206,14 +206,14 @@ def parse_question_header(txt: str):
     if len(parts) < 2:
         return None
     
-    qid_raw = parts[0].strip()
-    if not re.match(r"^Q\d+$", qid_raw, re.IGNORECASE):
+    qid_raw = parts[0].strip().upper()
+    if not re.match(r"^[A-Z0-9]+$", qid_raw, re.IGNORECASE):
         return None
     
-    qid = f"Q{int(qid_raw[1:]):03d}"
+    qid = qid_raw
     standard = parts[1].strip() if len(parts) > 1 else ""
     
-    topic_raw = parts[2].strip() if len(parts) > 2 else ""
+    topic_raw = " · ".join(parts[2:]).strip() if len(parts) > 2 else ""
     # Tách topic EN / VI
     topic_parts = re.split(r"\s*/\s*", topic_raw, maxsplit=1)
     topic_en = topic_parts[0].strip()
@@ -227,10 +227,9 @@ def parse_answer_header(txt: str):
     Mẫu: "Q001  ·  ĐÁP ÁN B  ·  Topic"
     """
     txt = txt.strip()
-    m = re.match(r"^(Q\d+)\s*[·\-]\s*(?:ĐÁP\s*ÁN|CORRECT(?:\s*ANSWER)?)\s+([A-D])", txt, re.IGNORECASE)
+    m = re.match(r"^([A-Z0-9]+)\s*[·\-]\s*(?:ĐÁP\s*ÁN|CORRECT(?:\s*ANSWER)?)\s+([A-D])", txt, re.IGNORECASE)
     if m:
-        qid_raw = m.group(1)
-        qid = f"Q{int(qid_raw[1:]):03d}"
+        qid = m.group(1).upper()
         letter = m.group(2).upper()
         return qid, letter
     return None
@@ -251,6 +250,7 @@ def parse_docx(doc_path: Path):
     questions_raw = {}   # qid -> dict
     sections = []
     q_order_counter = 0
+    current_qid = None
     
     current_bloom = ""
     current_standard = ""
@@ -327,6 +327,7 @@ def parse_docx(doc_path: Path):
             if parsed:
                 qid, std, topic_en, topic_vi = parsed
                 q_order_counter += 1
+                current_qid = qid
                 questions_raw[qid] = {
                     "id": qid,
                     "order": q_order_counter,
@@ -357,10 +358,8 @@ def parse_docx(doc_path: Path):
         
         # ── Stem English ───────────────────────────────────────────────────
         if style == "Stem English" and txt:
-            # Gắn vào câu hỏi gần nhất (order = q_order_counter)
-            # Tìm câu hỏi có order = q_order_counter
-            last_qid = f"Q{q_order_counter:03d}"
-            if last_qid in questions_raw:
+            last_qid = current_qid
+            if last_qid and last_qid in questions_raw:
                 questions_raw[last_qid]["stem"]["en"] = txt
                 for rid in img_rids:
                     if rid in img_map:
@@ -372,8 +371,8 @@ def parse_docx(doc_path: Path):
         
         # ── Stem Vietnamese ────────────────────────────────────────────────
         if style == "Stem Vietnamese" and txt:
-            last_qid = f"Q{q_order_counter:03d}"
-            if last_qid in questions_raw:
+            last_qid = current_qid
+            if last_qid and last_qid in questions_raw:
                 questions_raw[last_qid]["stem"]["vi"] = txt
                 for rid in img_rids:
                     if rid in img_map:
@@ -385,9 +384,8 @@ def parse_docx(doc_path: Path):
         
         # ── Figure Caption ─────────────────────────────────────────────────
         if style == "Figure Caption" and txt:
-            # Gắn ảnh với câu hỏi hiện tại
-            last_qid = f"Q{q_order_counter:03d}"
-            if last_qid in questions_raw:
+            last_qid = current_qid
+            if last_qid and last_qid in questions_raw:
                 for rid in img_rids:
                     if rid in img_map:
                         wp = img_map[rid]
@@ -396,10 +394,10 @@ def parse_docx(doc_path: Path):
                 # Lưu caption vào stem hoặc không (không làm thay đổi nội dung)
             # Kiểm tra paragraph TRƯỚC figure caption có ảnh không
             # (ảnh thường ở paragraph Normal trước caption)
-            if i > 0:
+            if i > 0 and last_qid and last_qid in questions_raw:
                 prev_para = paras[i-1]
                 prev_rids = get_para_image_rids(prev_para)
-                if prev_rids and last_qid in questions_raw:
+                if prev_rids:
                     for rid in prev_rids:
                         if rid in img_map:
                             wp = img_map[rid]
@@ -410,8 +408,8 @@ def parse_docx(doc_path: Path):
         
         # ── Option ────────────────────────────────────────────────────────
         if style == "Option" and txt:
-            last_qid = f"Q{q_order_counter:03d}"
-            if last_qid in questions_raw:
+            last_qid = current_qid
+            if last_qid and last_qid in questions_raw:
                 opt = parse_option(txt)
                 if opt:
                     # Kiểm tra trùng
@@ -427,8 +425,8 @@ def parse_docx(doc_path: Path):
         
         # ── Normal paragraph with images (inline images) ───────────────────
         if style == "Normal" and img_rids:
-            last_qid = f"Q{q_order_counter:03d}"
-            if last_qid in questions_raw:
+            last_qid = current_qid
+            if last_qid and last_qid in questions_raw:
                 for rid in img_rids:
                     if rid in img_map:
                         wp = img_map[rid]
@@ -560,16 +558,16 @@ def validate(questions, sections, warnings, img_blobs):
         std_counts[std] = std_counts.get(std, 0) + 1
         
     expected_blooms = {
-        "Remember": 76, "Understand": 62, "Apply": 65,
-        "Analyze": 46, "Evaluate": 35, "Create": 20
+        "Remember": 750, "Understand": 611, "Apply": 641,
+        "Analyze": 454, "Evaluate": 346, "Create": 198
     }
     for b, count in expected_blooms.items():
         if bloom_counts.get(b, 0) != count:
             errors.append(f"Số câu Bloom '{b}' sai: mong đợi {count}, thực tế {bloom_counts.get(b, 0)}")
 
     expected_stds = {
-        "ASHRAE 55-2023": 65, "ASHRAE 52.2": 70,
-        "ASHRAE 62.1-2013": 35, "ASHRAE 90.1-2022": 134
+        "ASHRAE 55-2023": 642, "ASHRAE 52.2": 690,
+        "ASHRAE 62.1-2013": 346, "ASHRAE 90.1-2022": 1322
     }
     for std, count in expected_stds.items():
         if std_counts.get(std, 0) != count:
@@ -580,8 +578,8 @@ def validate(questions, sections, warnings, img_blobs):
         errors.append(f"Số file ảnh trích xuất không đúng: mong đợi 13, thực tế {len(img_blobs)}")
     
     total_img_refs = sum(len(q["images"]) for q in questions)
-    if total_img_refs != 44:
-        errors.append(f"Tổng số liên kết ảnh–câu không đúng: mong đợi 44, thực tế {total_img_refs}")
+    if total_img_refs != 445:
+        errors.append(f"Tổng số liên kết ảnh–câu không đúng: mong đợi 445, thực tế {total_img_refs}")
 
     used_images = set()
     for q in questions:
