@@ -360,7 +360,7 @@ export default function QuizPage({ lang }: Props) {
                 >
                   {isMarked ? '🔖 Đã đánh dấu' : '🔖 Đánh dấu'}
                 </button>
-                <div className="text-xs text-muted" style={{ marginLeft: 'auto' }}>
+                <div className="quiz-kbd-hint text-xs text-muted" style={{ marginLeft: 'auto' }}>
                   Phím tắt: <span className="kbd">A</span><span className="kbd">B</span><span className="kbd">C</span><span className="kbd">D</span> · <span className="kbd">←</span><span className="kbd">→</span> · <span className="kbd">M</span> đánh dấu
                 </div>
               </div>

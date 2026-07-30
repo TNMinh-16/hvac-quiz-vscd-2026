@@ -756,6 +756,17 @@ input:focus, select:focus, textarea:focus {
   .modal-actions .btn {
     width: 100%;
   }
+
+  /* Score circle nhỏ hơn trên mobile */
+  .score-circle {
+    width: 120px;
+    height: 120px;
+  }
+  .score-circle-inner {
+    width: 94px;
+    height: 94px;
+  }
+  .score-pct { font-size: 1.5rem; }
 }
 
 /* ─── Timer ──────────────────────────────────────────────────────────── */
@@ -986,6 +997,13 @@ input:focus, select:focus, textarea:focus {
   animation: subtlePulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+/* ─── Safe area cho iPhone notch / home bar ─────────────────────────── */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  body { padding-bottom: env(safe-area-inset-bottom); }
+  .navbar { padding-left: max(1.25rem, env(safe-area-inset-left)); padding-right: max(1.25rem, env(safe-area-inset-right)); }
+  .quiz-topbar { padding-left: max(1rem, env(safe-area-inset-left)); padding-right: max(1rem, env(safe-area-inset-right)); }
+}
+
 /* ─── Structured Mobile Viewports & Responsive Architecture ──────────── */
 @media (max-width: 768px) {
   .container, .container-wide {
@@ -994,17 +1012,30 @@ input:focus, select:focus, textarea:focus {
   h1 { font-size: 1.625rem; }
   h2 { font-size: 1.35rem; }
   h3 { font-size: 1.15rem; }
+
+  /* Hero banner gọn hơn trên tablet */
+  .hero-banner {
+    padding: 2rem 1.5rem;
+    border-radius: var(--radius-xl);
+  }
   .hero-title { font-size: 1.75rem; }
   .hero-sub { font-size: 0.95rem; margin-bottom: 1.25rem; }
-  
+
+  /* Quiz topbar: 2 hàng rõ ràng */
   .quiz-topbar {
-    padding: 0.75rem 1rem;
-    top: 56px;
-    gap: 0.75rem;
-    justify-content: space-between;
+    padding: 0.6rem 1rem;
+    top: 52px;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: stretch;
   }
-  .quiz-topbar > div {
-    flex: 1 1 100%;
+  .quiz-topbar > div:first-child {
+    flex: 1;
+  }
+  .quiz-topbar > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     justify-content: space-between;
   }
   .quiz-layout {
@@ -1026,31 +1057,134 @@ input:focus, select:focus, textarea:focus {
   .page-header {
     margin-bottom: 1.25rem;
   }
+
+  /* Filter tabs cuộn ngang thay vì wrap */
+  .filter-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 0.25rem;
+  }
+  .filter-tabs::-webkit-scrollbar { display: none; }
+  .filter-tab { white-space: nowrap; flex-shrink: 0; }
+
+  /* Navbar trên tablet */
+  .navbar { padding: 0.6rem 1rem; }
+  .navbar-inner { gap: 0.5rem; }
+  .navbar-link { padding: 0.35rem 0.55rem; font-size: 0.85rem; }
 }
 
 @media (max-width: 480px) {
   html { font-size: 15px; }
   h1 { font-size: 1.4rem; }
-  .btn {
-    padding: 0.55rem 0.9rem;
-    font-size: 0.875rem;
+
+  /* Hero banner mobile */
+  .hero-banner {
+    padding: 1.5rem 1.25rem;
+    border-radius: var(--radius-lg);
+    margin-bottom: 1.25rem;
+  }
+  .hero-title { font-size: 1.5rem; }
+  .hero-sub { font-size: 0.875rem; }
+
+  /* Nút bấm: chỉ full-width ngoài quiz */
+  .page .btn-lg, .page .btn-xl {
     width: 100%;
     justify-content: center;
   }
+  /* Nút trong quiz topbar không full-width */
   .quiz-topbar .btn {
     width: auto;
+    padding: 0.45rem 0.8rem;
+    font-size: 0.8rem;
   }
+
+  /* Quiz topbar cực gọn trên phone */
   .quiz-topbar {
-    font-size: 0.85rem;
-    padding: 0.6rem 0.75rem;
+    padding: 0.5rem 0.75rem;
+    top: 48px;
+    gap: 0.4rem;
   }
+  .timer {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  /* Option button: touch target lớn hơn */
+  .option-btn {
+    padding: 0.875rem 1rem;
+    font-size: 0.9rem;
+    gap: 0.75rem;
+    min-height: 52px;
+  }
+  .option-letter {
+    min-width: 1.75rem;
+    height: 1.75rem;
+    font-size: 0.8rem;
+  }
+
+  /* Ẩn phím tắt bàn phím trên mobile (không có bàn phím) */
+  .kbd, [class*='Phím tắt'] { display: none !important; }
+  .quiz-kbd-hint { display: none !important; }
+
+  /* Navbar mobile: rút gọn text */
+  .navbar { padding: 0.5rem 0.75rem; }
+  .navbar-brand span { display: none; } /* Ẩn text, chỉ hiện icon */
+  .navbar-link { padding: 0.3rem 0.4rem; font-size: 0.78rem; }
+
+  /* Badge nhỏ hơn */
   .badge {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.6rem;
+    font-size: 0.72rem;
+    padding: 0.2rem 0.5rem;
   }
+
+  /* Ảnh câu hỏi */
   .question-img {
-    max-height: 220px !important;
+    max-height: 200px !important;
     width: 100%;
     object-fit: contain;
   }
+
+  /* Card padding nhỏ hơn */
+  .card { padding: 0.875rem; }
+
+  /* Modal full-screen hơn */
+  .modal {
+    width: 100%;
+    max-height: 90vh;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    animation: slideUpFull 0.25s ease;
+  }
+  .modal-overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+  @keyframes slideUpFull {
+    from { transform: translateY(100%); }
+    to   { transform: translateY(0); }
+  }
+
+  /* Nav grid câu hỏi: ô lớn hơn cho ngón tay */
+  .nav-grid {
+    grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
+    gap: 0.35rem;
+  }
+  .nav-cell {
+    min-height: 40px;
+  }
+
+  /* Score circle mobile */
+  .score-circle { width: 110px; height: 110px; }
+  .score-circle-inner { width: 86px; height: 86px; }
+  .score-pct { font-size: 1.4rem; }
+
+  /* Stat boxes nhỏ hơn */
+  .stat-box { min-width: 70px; padding: 0.65rem 0.4rem; }
+  .stat-num { font-size: 1.15rem; }
+  .stat-desc { font-size: 0.72rem; }
 }
