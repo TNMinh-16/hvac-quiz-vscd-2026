@@ -1,174 +1,174 @@
 {
-  "sourceFile": "HVAC_Standards_Challenge_3000_Bilingual_MCQs.docx",
-  "sha256": "2bdf62c77f3feee1af58b674a02c16555609304695d139cd7b3eb2da52fc2814",
-  "importedAt": "2026-07-30T17:00:22.364843Z",
-  "questionCount": 3000,
+  "sourceFile": "HVAC_Competition_1000_Questions_Bloom_EN-VI.docx",
+  "sha256": "b12f88b0e83711d9f64c8b99cbbb548775fee2ab0fbf0a179d06dcdb750b3c4e",
+  "importedAt": "2026-08-01T02:32:26.894050Z",
+  "questionCount": 1000,
   "sectionCount": 37,
-  "imageCount": 20,
+  "imageCount": 28,
   "distributionBySection": {
     "sec-001": {
       "title": "PHẦN I · ĐỀ TRẮC NGHIỆM",
       "count": 0
     },
     "sec-002": {
-      "title": "Questions — Remember\nCâu hỏi — Ghi nhớ",
+      "title": "Questions — Remember",
       "count": 0
     },
     "sec-003": {
-      "title": "ASHRAE 52.2 — 100 questions\nASHRAE 52.2 — 100 câu",
-      "count": 100
+      "title": "ASHRAE 52.2",
+      "count": 55
     },
     "sec-004": {
-      "title": "ASHRAE 55 — 90 questions\nASHRAE 55 — 90 câu",
-      "count": 90
+      "title": "ASHRAE 55",
+      "count": 45
     },
     "sec-005": {
-      "title": "ASHRAE 62.1 — 120 questions\nASHRAE 62.1 — 120 câu",
-      "count": 120
+      "title": "ASHRAE 62.1",
+      "count": 55
     },
     "sec-006": {
-      "title": "ASHRAE 90.1 — 200 questions\nASHRAE 90.1 — 200 câu",
-      "count": 200
+      "title": "ASHRAE 90.1",
+      "count": 65
     },
     "sec-007": {
-      "title": "HVAC Fundamentals — 90 questions\nKiến thức HVAC cơ bản — 90 câu",
-      "count": 90
+      "title": "HVAC Fundamentals",
+      "count": 40
     },
     "sec-008": {
-      "title": "Questions — Understand\nCâu hỏi — Thông hiểu",
+      "title": "Questions — Understand",
       "count": 0
     },
     "sec-009": {
-      "title": "ASHRAE 52.2 — 90 questions\nASHRAE 52.2 — 90 câu",
-      "count": 90
+      "title": "ASHRAE 52.2",
+      "count": 40
     },
     "sec-010": {
-      "title": "ASHRAE 55 — 90 questions\nASHRAE 55 — 90 câu",
-      "count": 90
+      "title": "ASHRAE 55",
+      "count": 45
     },
     "sec-011": {
-      "title": "ASHRAE 62.1 — 120 questions\nASHRAE 62.1 — 120 câu",
-      "count": 120
+      "title": "ASHRAE 62.1",
+      "count": 50
     },
     "sec-012": {
-      "title": "ASHRAE 90.1 — 210 questions\nASHRAE 90.1 — 210 câu",
-      "count": 210
+      "title": "ASHRAE 90.1",
+      "count": 65
     },
     "sec-013": {
-      "title": "HVAC Fundamentals — 90 questions\nKiến thức HVAC cơ bản — 90 câu",
-      "count": 90
+      "title": "HVAC Fundamentals",
+      "count": 40
     },
     "sec-014": {
-      "title": "Questions — Apply\nCâu hỏi — Vận dụng",
+      "title": "Questions — Apply",
       "count": 0
     },
     "sec-015": {
-      "title": "ASHRAE 52.2 — 110 questions\nASHRAE 52.2 — 110 câu",
-      "count": 110
+      "title": "ASHRAE 52.2",
+      "count": 40
     },
     "sec-016": {
-      "title": "ASHRAE 55 — 115 questions\nASHRAE 55 — 115 câu",
-      "count": 115
+      "title": "ASHRAE 55",
+      "count": 50
     },
     "sec-017": {
-      "title": "ASHRAE 62.1 — 155 questions\nASHRAE 62.1 — 155 câu",
-      "count": 155
+      "title": "ASHRAE 62.1",
+      "count": 60
     },
     "sec-018": {
-      "title": "ASHRAE 90.1 — 260 questions\nASHRAE 90.1 — 260 câu",
-      "count": 260
+      "title": "ASHRAE 90.1",
+      "count": 70
     },
     "sec-019": {
-      "title": "HVAC Fundamentals — 110 questions\nKiến thức HVAC cơ bản — 110 câu",
-      "count": 110
+      "title": "HVAC Fundamentals",
+      "count": 40
     },
     "sec-020": {
-      "title": "Questions — Analyze\nCâu hỏi — Phân tích",
+      "title": "Questions — Analyze",
       "count": 0
     },
     "sec-021": {
-      "title": "ASHRAE 52.2 — 90 questions\nASHRAE 52.2 — 90 câu",
-      "count": 90
+      "title": "ASHRAE 52.2",
+      "count": 25
     },
     "sec-022": {
-      "title": "ASHRAE 55 — 90 questions\nASHRAE 55 — 90 câu",
-      "count": 90
+      "title": "ASHRAE 55",
+      "count": 25
     },
     "sec-023": {
-      "title": "ASHRAE 62.1 — 120 questions\nASHRAE 62.1 — 120 câu",
-      "count": 120
+      "title": "ASHRAE 62.1",
+      "count": 35
     },
     "sec-024": {
-      "title": "ASHRAE 90.1 — 210 questions\nASHRAE 90.1 — 210 câu",
-      "count": 210
+      "title": "ASHRAE 90.1",
+      "count": 40
     },
     "sec-025": {
-      "title": "HVAC Fundamentals — 90 questions\nKiến thức HVAC cơ bản — 90 câu",
-      "count": 90
+      "title": "HVAC Fundamentals",
+      "count": 25
     },
     "sec-026": {
-      "title": "Questions — Evaluate\nCâu hỏi — Đánh giá",
+      "title": "Questions — Evaluate",
       "count": 0
     },
     "sec-027": {
-      "title": "ASHRAE 52.2 — 40 questions\nASHRAE 52.2 — 40 câu",
-      "count": 40
+      "title": "ASHRAE 52.2",
+      "count": 8
     },
     "sec-028": {
-      "title": "ASHRAE 55 — 45 questions\nASHRAE 55 — 45 câu",
-      "count": 45
+      "title": "ASHRAE 55",
+      "count": 12
     },
     "sec-029": {
-      "title": "ASHRAE 62.1 — 55 questions\nASHRAE 62.1 — 55 câu",
-      "count": 55
+      "title": "ASHRAE 62.1",
+      "count": 15
     },
     "sec-030": {
-      "title": "ASHRAE 90.1 — 115 questions\nASHRAE 90.1 — 115 câu",
-      "count": 115
+      "title": "ASHRAE 90.1",
+      "count": 23
     },
     "sec-031": {
-      "title": "HVAC Fundamentals — 45 questions\nKiến thức HVAC cơ bản — 45 câu",
-      "count": 45
+      "title": "HVAC Fundamentals",
+      "count": 12
     },
     "sec-032": {
-      "title": "Questions — Create\nCâu hỏi — Sáng tạo",
+      "title": "Questions — Create",
       "count": 0
     },
     "sec-033": {
-      "title": "ASHRAE 52.2 — 20 questions\nASHRAE 52.2 — 20 câu",
-      "count": 20
+      "title": "ASHRAE 52.2",
+      "count": 2
     },
     "sec-034": {
-      "title": "ASHRAE 55 — 20 questions\nASHRAE 55 — 20 câu",
-      "count": 20
+      "title": "ASHRAE 55",
+      "count": 3
     },
     "sec-035": {
-      "title": "ASHRAE 62.1 — 30 questions\nASHRAE 62.1 — 30 câu",
-      "count": 30
+      "title": "ASHRAE 62.1",
+      "count": 5
     },
     "sec-036": {
-      "title": "ASHRAE 90.1 — 55 questions\nASHRAE 90.1 — 55 câu",
-      "count": 55
+      "title": "ASHRAE 90.1",
+      "count": 7
     },
     "sec-037": {
-      "title": "HVAC Fundamentals — 25 questions\nKiến thức HVAC cơ bản — 25 câu",
-      "count": 25
+      "title": "HVAC Fundamentals",
+      "count": 3
     }
   },
   "distributionByBloom": {
-    "Remember": 600,
-    "Understand": 600,
-    "Apply": 750,
-    "Analyze": 600,
-    "Evaluate": 300,
-    "Create": 150
+    "Remember": 260,
+    "Understand": 240,
+    "Apply": 260,
+    "Analyze": 150,
+    "Evaluate": 70,
+    "Create": 20
   },
   "distributionByStandard": {
-    "ASHRAE 52.2": 450,
-    "ASHRAE 55": 450,
-    "ASHRAE 62.1": 600,
-    "ASHRAE 90.1": 1050,
-    "HVAC Fundamentals": 450
+    "ASHRAE 52.2": 170,
+    "ASHRAE 55": 180,
+    "ASHRAE 62.1": 220,
+    "ASHRAE 90.1": 270,
+    "HVAC Fundamentals": 160
   },
   "warnings": [],
   "errors": [],

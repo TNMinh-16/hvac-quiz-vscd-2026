@@ -97,7 +97,7 @@ def verify_snapshot():
                         print(f"    Trường '{k}' khác nhau:\n      Cũ: {old_q.get(k)}\n      Mới: {new_q.get(k)}")
         sys.exit(1)
         
-    print("XÁC MINH THÀNH CÔNG: Toàn bộ 3000 câu hỏi và các trường dữ liệu khớp 100% với snapshot gốc!")
+    print(f"XÁC MINH THÀNH CÔNG: Toàn bộ {len(extracted)} câu hỏi và các trường dữ liệu khớp 100% với snapshot gốc!")
     print(f"  SHA-256 fingerprint: {current_hash}")
 
 if __name__ == "__main__":

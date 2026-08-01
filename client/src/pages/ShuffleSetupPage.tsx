@@ -178,14 +178,14 @@ export default function ShuffleSetupPage({ lang }: Props) {
 
               {countMode === 'custom' && (
                 <div className="form-group" style={{ marginBottom: '1rem' }}>
-                  <label className="form-label" htmlFor="custom-count">Số câu (1–3000)</label>
+                  <label className="form-label" htmlFor="custom-count">Số câu (1–1000)</label>
                   <input
                     id="custom-count"
                     type="number"
                     min={1}
-                    max={3000}
+                    max={1000}
                     value={customCount}
-                    onChange={e => setCustomCount(Math.max(1, Math.min(3000, +e.target.value)))}
+                    onChange={e => setCustomCount(Math.max(1, Math.min(1000, +e.target.value)))}
                   />
                 </div>
               )}

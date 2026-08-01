@@ -25,8 +25,8 @@ describe("questions.json validation", () => {
     expect(db.schemaVersion).toBe(1);
   });
 
-  test("đúng 3000 câu hỏi", () => {
-    expect(db.questions).toHaveLength(3000);
+  test("đúng 1000 câu hỏi", () => {
+    expect(db.questions).toHaveLength(1000);
   });
 
   test("không có ID câu hỏi trùng nhau", () => {
@@ -71,7 +71,7 @@ describe("questions.json validation", () => {
     expect(errors).toHaveLength(0);
   });
 
-  test("tất cả 12.000 phương án có đầy đủ tiếng Anh và tiếng Việt", () => {
+  test("tất cả 4.000 phương án có đầy đủ tiếng Anh và tiếng Việt", () => {
     const errors = [];
     let totalOptions = 0;
     for (const q of db.questions) {
@@ -82,11 +82,11 @@ describe("questions.json validation", () => {
         }
       }
     }
-    expect(totalOptions).toBe(12000);
+    expect(totalOptions).toBe(4000);
     expect(errors).toHaveLength(0);
   });
 
-  test("đủ 3000 lời giải thích bằng cả tiếng Anh và tiếng Việt", () => {
+  test("đủ 1000 lời giải thích bằng cả tiếng Anh và tiếng Việt", () => {
     const errors = [];
     for (const q of db.questions) {
       if (!q.explanation?.en || !q.explanation?.vi) {
@@ -98,11 +98,11 @@ describe("questions.json validation", () => {
 
   test("thứ tự câu hỏi liên tục (order = 1..N)", () => {
     const orders = db.questions.map(q => q.order).sort((a, b) => a - b);
-    const expected = Array.from({ length: 3000 }, (_, i) => i + 1);
+    const expected = Array.from({ length: 1000 }, (_, i) => i + 1);
     expect(orders).toEqual(expected);
   });
 
-  test("đúng 31 liên kết ảnh-câu", () => {
+  test("đúng 211 liên kết ảnh-câu", () => {
     let totalRefs = 0;
     const errors = [];
     for (const q of db.questions) {
@@ -110,7 +110,7 @@ describe("questions.json validation", () => {
         totalRefs += 1;
       }
     }
-    expect(totalRefs).toBe(31);
+    expect(totalRefs).toBe(211);
     expect(errors).toHaveLength(0);
   });
 
