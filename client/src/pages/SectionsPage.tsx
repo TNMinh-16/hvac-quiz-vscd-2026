@@ -80,9 +80,9 @@ export default function SectionsPage({ lang }: Props) {
             className="btn btn-primary"
             onClick={startAll}
             disabled={starting === 'all'}
-            aria-label="Luyện toàn bộ 379 câu theo thứ tự"
+            aria-label="Luyện toàn bộ 439 câu theo thứ tự"
           >
-            {starting === 'all' ? '⏳ Đang tạo...' : '▶ Luyện toàn bộ 379 câu'}
+            {starting === 'all' ? '⏳ Đang tạo...' : '▶ Luyện toàn bộ 439 câu'}
           </button>
         </div>
 

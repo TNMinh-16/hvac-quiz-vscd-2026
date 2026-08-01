@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "source": {
-    "fileName": "HVAC_ASHRAE_VSCD_2026_Question_Bank_Full_Bilingual_EN_VI.docx, Bo_75_cau_trac_nghiem_HVAC_song_ngu_Anh_Viet_ASHRAE_62_1_2022.docx",
-    "sha256": "f56e685cc94cc7a9cc2ddf48666c177fe40df7c5a386bdfecd1b54fc8374dab0_32307d835031cd3dc78e5483935d593fa28f4361af7c6db0c712cba5b28237ef",
-    "importedAt": "2026-08-01T17:22:25.482830Z",
-    "questionCount": 379
+    "fileName": "HVAC_ASHRAE_VSCD_2026_Question_Bank_Full_Bilingual_EN_VI.docx, Bo_75_cau_trac_nghiem_HVAC_song_ngu_Anh_Viet_ASHRAE_62_1_2022.docx, Bo_60_cau_trac_nghiem_ASHRAE_52_2_2017_Bloom_Song_ngu_EN_VI.docx",
+    "sha256": "f56e685cc94cc7a9cc2ddf48666c177fe40df7c5a386bdfecd1b54fc8374dab0_32307d835031cd3dc78e5483935d593fa28f4361af7c6db0c712cba5b28237ef_e95965524933cecac65558511d36cdd07897ef2e5cd78c61373883aebc10cbb9",
+    "importedAt": "2026-08-01T17:53:09.932723Z",
+    "questionCount": 439
   },
   "sections": [
     {
@@ -94,6 +94,34 @@
     {
       "id": "sec-005",
       "order": 5,
+      "titleEn": "ASHRAE 52.2-2017 · 16 câu",
+      "titleVi": "ASHRAE 52.2-2017 · 16 câu",
+      "level": 2,
+      "bloomLevel": null,
+      "standard": "ASHRAE 52.2-2017",
+      "parentId": "sec-002",
+      "questionIds": [
+        "Q380",
+        "Q381",
+        "Q382",
+        "Q383",
+        "Q384",
+        "Q385",
+        "Q386",
+        "Q387",
+        "Q388",
+        "Q389",
+        "Q390",
+        "Q391",
+        "Q392",
+        "Q393",
+        "Q394",
+        "Q395"
+      ]
+    },
+    {
+      "id": "sec-006",
+      "order": 6,
       "titleEn": "ASHRAE 62.1-2013 · Addendum p · 8 câu",
       "titleVi": "ASHRAE 62.1-2013 · Addendum p · 8 câu",
       "level": 2,
@@ -112,8 +140,8 @@
       ]
     },
     {
-      "id": "sec-036",
-      "order": 6,
+      "id": "sec-007",
+      "order": 7,
       "titleEn": "ASHRAE 62.1-2022 · 15 câu",
       "titleVi": "ASHRAE 62.1-2022 · 15 câu",
       "level": 2,
@@ -139,8 +167,8 @@
       ]
     },
     {
-      "id": "sec-007",
-      "order": 7,
+      "id": "sec-008",
+      "order": 8,
       "titleEn": "ASHRAE 90.1-2022 · HVAC · 30 câu",
       "titleVi": "ASHRAE 90.1-2022 · HVAC · 30 câu",
       "level": 2,
@@ -181,8 +209,8 @@
       ]
     },
     {
-      "id": "sec-008",
-      "order": 8,
+      "id": "sec-009",
+      "order": 9,
       "titleEn": "BLOOM 2 · UNDERSTAND / THÔNG HIỂU",
       "titleVi": "BLOOM 2 · UNDERSTAND / THÔNG HIỂU",
       "level": 1,
@@ -192,14 +220,14 @@
       "questionIds": []
     },
     {
-      "id": "sec-009",
-      "order": 9,
+      "id": "sec-010",
+      "order": 10,
       "titleEn": "ASHRAE 55-2023 · 14 câu",
       "titleVi": "ASHRAE 55-2023 · 14 câu",
       "level": 2,
       "bloomLevel": "Understand",
       "standard": "ASHRAE 55-2023",
-      "parentId": "sec-008",
+      "parentId": "sec-009",
       "questionIds": [
         "Q077",
         "Q078",
@@ -218,14 +246,14 @@
       ]
     },
     {
-      "id": "sec-010",
-      "order": 10,
+      "id": "sec-011",
+      "order": 11,
       "titleEn": "ASHRAE 52.2 · Addendum d supplied · 14 câu",
       "titleVi": "ASHRAE 52.2 · Addendum d supplied · 14 câu",
       "level": 2,
       "bloomLevel": "Understand",
       "standard": "ASHRAE 52.2",
-      "parentId": "sec-008",
+      "parentId": "sec-009",
       "questionIds": [
         "Q091",
         "Q092",
@@ -244,14 +272,40 @@
       ]
     },
     {
-      "id": "sec-011",
-      "order": 11,
+      "id": "sec-012",
+      "order": 12,
+      "titleEn": "ASHRAE 52.2-2017 · 14 câu",
+      "titleVi": "ASHRAE 52.2-2017 · 14 câu",
+      "level": 2,
+      "bloomLevel": null,
+      "standard": "ASHRAE 52.2-2017",
+      "parentId": "sec-009",
+      "questionIds": [
+        "Q396",
+        "Q397",
+        "Q398",
+        "Q399",
+        "Q400",
+        "Q401",
+        "Q402",
+        "Q403",
+        "Q404",
+        "Q405",
+        "Q406",
+        "Q407",
+        "Q408",
+        "Q409"
+      ]
+    },
+    {
+      "id": "sec-013",
+      "order": 13,
       "titleEn": "ASHRAE 62.1-2013 · Addendum p · 7 câu",
       "titleVi": "ASHRAE 62.1-2013 · Addendum p · 7 câu",
       "level": 2,
       "bloomLevel": "Understand",
       "standard": "ASHRAE 62.1-2013",
-      "parentId": "sec-008",
+      "parentId": "sec-009",
       "questionIds": [
         "Q105",
         "Q106",
@@ -263,14 +317,14 @@
       ]
     },
     {
-      "id": "sec-036",
-      "order": 12,
+      "id": "sec-014",
+      "order": 14,
       "titleEn": "ASHRAE 62.1-2022 · 15 câu",
       "titleVi": "ASHRAE 62.1-2022 · 15 câu",
       "level": 2,
       "bloomLevel": null,
       "standard": "ASHRAE 62.1-2022",
-      "parentId": "sec-008",
+      "parentId": "sec-009",
       "questionIds": [
         "Q320",
         "Q321",
@@ -290,14 +344,14 @@
       ]
     },
     {
-      "id": "sec-013",
-      "order": 13,
+      "id": "sec-015",
+      "order": 15,
       "titleEn": "ASHRAE 90.1-2022 · HVAC · 27 câu",
       "titleVi": "ASHRAE 90.1-2022 · HVAC · 27 câu",
       "level": 2,
       "bloomLevel": "Understand",
       "standard": "ASHRAE 90.1-2022",
-      "parentId": "sec-008",
+      "parentId": "sec-009",
       "questionIds": [
         "Q112",
         "Q113",
@@ -329,8 +383,8 @@
       ]
     },
     {
-      "id": "sec-014",
-      "order": 14,
+      "id": "sec-016",
+      "order": 16,
       "titleEn": "BLOOM 3 · APPLY / VẬN DỤNG",
       "titleVi": "BLOOM 3 · APPLY / VẬN DỤNG",
       "level": 1,
@@ -340,14 +394,14 @@
       "questionIds": []
     },
     {
-      "id": "sec-015",
-      "order": 15,
+      "id": "sec-017",
+      "order": 17,
       "titleEn": "ASHRAE 55-2023 · 14 câu",
       "titleVi": "ASHRAE 55-2023 · 14 câu",
       "level": 2,
       "bloomLevel": "Apply",
       "standard": "ASHRAE 55-2023",
-      "parentId": "sec-014",
+      "parentId": "sec-016",
       "questionIds": [
         "Q139",
         "Q140",
@@ -366,14 +420,14 @@
       ]
     },
     {
-      "id": "sec-016",
-      "order": 16,
+      "id": "sec-018",
+      "order": 18,
       "titleEn": "ASHRAE 52.2 · Addendum d supplied · 15 câu",
       "titleVi": "ASHRAE 52.2 · Addendum d supplied · 15 câu",
       "level": 2,
       "bloomLevel": "Apply",
       "standard": "ASHRAE 52.2",
-      "parentId": "sec-014",
+      "parentId": "sec-016",
       "questionIds": [
         "Q153",
         "Q154",
@@ -393,14 +447,38 @@
       ]
     },
     {
-      "id": "sec-017",
-      "order": 17,
+      "id": "sec-019",
+      "order": 19,
+      "titleEn": "ASHRAE 52.2-2017 · 12 câu",
+      "titleVi": "ASHRAE 52.2-2017 · 12 câu",
+      "level": 2,
+      "bloomLevel": null,
+      "standard": "ASHRAE 52.2-2017",
+      "parentId": "sec-016",
+      "questionIds": [
+        "Q410",
+        "Q411",
+        "Q412",
+        "Q413",
+        "Q414",
+        "Q415",
+        "Q416",
+        "Q417",
+        "Q418",
+        "Q419",
+        "Q420",
+        "Q421"
+      ]
+    },
+    {
+      "id": "sec-020",
+      "order": 20,
       "titleEn": "ASHRAE 62.1-2013 · Addendum p · 8 câu",
       "titleVi": "ASHRAE 62.1-2013 · Addendum p · 8 câu",
       "level": 2,
       "bloomLevel": "Apply",
       "standard": "ASHRAE 62.1-2013",
-      "parentId": "sec-014",
+      "parentId": "sec-016",
       "questionIds": [
         "Q168",
         "Q169",
@@ -413,14 +491,14 @@
       ]
     },
     {
-      "id": "sec-036",
-      "order": 18,
+      "id": "sec-021",
+      "order": 21,
       "titleEn": "ASHRAE 62.1-2022 · 20 câu",
       "titleVi": "ASHRAE 62.1-2022 · 20 câu",
       "level": 2,
       "bloomLevel": null,
       "standard": "ASHRAE 62.1-2022",
-      "parentId": "sec-014",
+      "parentId": "sec-016",
       "questionIds": [
         "Q335",
         "Q336",
@@ -445,14 +523,14 @@
       ]
     },
     {
-      "id": "sec-019",
-      "order": 19,
+      "id": "sec-022",
+      "order": 22,
       "titleEn": "ASHRAE 90.1-2022 · HVAC · 28 câu",
       "titleVi": "ASHRAE 90.1-2022 · HVAC · 28 câu",
       "level": 2,
       "bloomLevel": "Apply",
       "standard": "ASHRAE 90.1-2022",
-      "parentId": "sec-014",
+      "parentId": "sec-016",
       "questionIds": [
         "Q176",
         "Q177",
@@ -485,8 +563,8 @@
       ]
     },
     {
-      "id": "sec-020",
-      "order": 20,
+      "id": "sec-023",
+      "order": 23,
       "titleEn": "BLOOM 4 · ANALYZE / PHÂN TÍCH",
       "titleVi": "BLOOM 4 · ANALYZE / PHÂN TÍCH",
       "level": 1,
@@ -496,14 +574,14 @@
       "questionIds": []
     },
     {
-      "id": "sec-021",
-      "order": 21,
+      "id": "sec-024",
+      "order": 24,
       "titleEn": "ASHRAE 55-2023 · 9 câu",
       "titleVi": "ASHRAE 55-2023 · 9 câu",
       "level": 2,
       "bloomLevel": "Analyze",
       "standard": "ASHRAE 55-2023",
-      "parentId": "sec-020",
+      "parentId": "sec-023",
       "questionIds": [
         "Q204",
         "Q205",
@@ -517,14 +595,14 @@
       ]
     },
     {
-      "id": "sec-022",
-      "order": 22,
+      "id": "sec-025",
+      "order": 25,
       "titleEn": "ASHRAE 52.2 · Addendum d supplied · 10 câu",
       "titleVi": "ASHRAE 52.2 · Addendum d supplied · 10 câu",
       "level": 2,
       "bloomLevel": "Analyze",
       "standard": "ASHRAE 52.2",
-      "parentId": "sec-020",
+      "parentId": "sec-023",
       "questionIds": [
         "Q213",
         "Q214",
@@ -539,14 +617,36 @@
       ]
     },
     {
-      "id": "sec-023",
-      "order": 23,
+      "id": "sec-026",
+      "order": 26,
+      "titleEn": "ASHRAE 52.2-2017 · 10 câu",
+      "titleVi": "ASHRAE 52.2-2017 · 10 câu",
+      "level": 2,
+      "bloomLevel": null,
+      "standard": "ASHRAE 52.2-2017",
+      "parentId": "sec-023",
+      "questionIds": [
+        "Q422",
+        "Q423",
+        "Q424",
+        "Q425",
+        "Q426",
+        "Q427",
+        "Q428",
+        "Q429",
+        "Q430",
+        "Q431"
+      ]
+    },
+    {
+      "id": "sec-027",
+      "order": 27,
       "titleEn": "ASHRAE 62.1-2013 · Addendum p · 5 câu",
       "titleVi": "ASHRAE 62.1-2013 · Addendum p · 5 câu",
       "level": 2,
       "bloomLevel": "Analyze",
       "standard": "ASHRAE 62.1-2013",
-      "parentId": "sec-020",
+      "parentId": "sec-023",
       "questionIds": [
         "Q223",
         "Q224",
@@ -556,14 +656,14 @@
       ]
     },
     {
-      "id": "sec-036",
-      "order": 24,
+      "id": "sec-028",
+      "order": 28,
       "titleEn": "ASHRAE 62.1-2022 · 15 câu",
       "titleVi": "ASHRAE 62.1-2022 · 15 câu",
       "level": 2,
       "bloomLevel": null,
       "standard": "ASHRAE 62.1-2022",
-      "parentId": "sec-020",
+      "parentId": "sec-023",
       "questionIds": [
         "Q355",
         "Q356",
@@ -583,14 +683,14 @@
       ]
     },
     {
-      "id": "sec-025",
-      "order": 25,
+      "id": "sec-029",
+      "order": 29,
       "titleEn": "ASHRAE 90.1-2022 · HVAC · 22 câu",
       "titleVi": "ASHRAE 90.1-2022 · HVAC · 22 câu",
       "level": 2,
       "bloomLevel": "Analyze",
       "standard": "ASHRAE 90.1-2022",
-      "parentId": "sec-020",
+      "parentId": "sec-023",
       "questionIds": [
         "Q228",
         "Q229",
@@ -617,8 +717,8 @@
       ]
     },
     {
-      "id": "sec-026",
-      "order": 26,
+      "id": "sec-030",
+      "order": 30,
       "titleEn": "BLOOM 5 · EVALUATE / ĐÁNH GIÁ",
       "titleVi": "BLOOM 5 · EVALUATE / ĐÁNH GIÁ",
       "level": 1,
@@ -628,14 +728,14 @@
       "questionIds": []
     },
     {
-      "id": "sec-027",
-      "order": 27,
+      "id": "sec-031",
+      "order": 31,
       "titleEn": "ASHRAE 55-2023 · 7 câu",
       "titleVi": "ASHRAE 55-2023 · 7 câu",
       "level": 2,
       "bloomLevel": "Evaluate",
       "standard": "ASHRAE 55-2023",
-      "parentId": "sec-026",
+      "parentId": "sec-030",
       "questionIds": [
         "Q250",
         "Q251",
@@ -647,14 +747,14 @@
       ]
     },
     {
-      "id": "sec-028",
-      "order": 28,
+      "id": "sec-032",
+      "order": 32,
       "titleEn": "ASHRAE 52.2 · Addendum d supplied · 7 câu",
       "titleVi": "ASHRAE 52.2 · Addendum d supplied · 7 câu",
       "level": 2,
       "bloomLevel": "Evaluate",
       "standard": "ASHRAE 52.2",
-      "parentId": "sec-026",
+      "parentId": "sec-030",
       "questionIds": [
         "Q257",
         "Q258",
@@ -666,14 +766,31 @@
       ]
     },
     {
-      "id": "sec-029",
-      "order": 29,
+      "id": "sec-033",
+      "order": 33,
+      "titleEn": "ASHRAE 52.2-2017 · 5 câu",
+      "titleVi": "ASHRAE 52.2-2017 · 5 câu",
+      "level": 2,
+      "bloomLevel": null,
+      "standard": "ASHRAE 52.2-2017",
+      "parentId": "sec-030",
+      "questionIds": [
+        "Q432",
+        "Q433",
+        "Q434",
+        "Q435",
+        "Q436"
+      ]
+    },
+    {
+      "id": "sec-034",
+      "order": 34,
       "titleEn": "ASHRAE 62.1-2013 · Addendum p · 4 câu",
       "titleVi": "ASHRAE 62.1-2013 · Addendum p · 4 câu",
       "level": 2,
       "bloomLevel": "Evaluate",
       "standard": "ASHRAE 62.1-2013",
-      "parentId": "sec-026",
+      "parentId": "sec-030",
       "questionIds": [
         "Q264",
         "Q265",
@@ -682,14 +799,14 @@
       ]
     },
     {
-      "id": "sec-036",
-      "order": 30,
+      "id": "sec-035",
+      "order": 35,
       "titleEn": "ASHRAE 62.1-2022 · 7 câu",
       "titleVi": "ASHRAE 62.1-2022 · 7 câu",
       "level": 2,
       "bloomLevel": null,
       "standard": "ASHRAE 62.1-2022",
-      "parentId": "sec-026",
+      "parentId": "sec-030",
       "questionIds": [
         "Q370",
         "Q371",
@@ -701,14 +818,14 @@
       ]
     },
     {
-      "id": "sec-031",
-      "order": 31,
+      "id": "sec-036",
+      "order": 36,
       "titleEn": "ASHRAE 90.1-2022 · HVAC · 17 câu",
       "titleVi": "ASHRAE 90.1-2022 · HVAC · 17 câu",
       "level": 2,
       "bloomLevel": "Evaluate",
       "standard": "ASHRAE 90.1-2022",
-      "parentId": "sec-026",
+      "parentId": "sec-030",
       "questionIds": [
         "Q268",
         "Q269",
@@ -730,8 +847,8 @@
       ]
     },
     {
-      "id": "sec-032",
-      "order": 32,
+      "id": "sec-037",
+      "order": 37,
       "titleEn": "BLOOM 6 · CREATE / SÁNG TẠO",
       "titleVi": "BLOOM 6 · CREATE / SÁNG TẠO",
       "level": 1,
@@ -741,14 +858,14 @@
       "questionIds": []
     },
     {
-      "id": "sec-033",
-      "order": 33,
+      "id": "sec-038",
+      "order": 38,
       "titleEn": "ASHRAE 55-2023 · 3 câu",
       "titleVi": "ASHRAE 55-2023 · 3 câu",
       "level": 2,
       "bloomLevel": "Create",
       "standard": "ASHRAE 55-2023",
-      "parentId": "sec-032",
+      "parentId": "sec-037",
       "questionIds": [
         "Q285",
         "Q286",
@@ -756,14 +873,14 @@
       ]
     },
     {
-      "id": "sec-034",
-      "order": 34,
+      "id": "sec-039",
+      "order": 39,
       "titleEn": "ASHRAE 52.2 · Addendum d supplied · 4 câu",
       "titleVi": "ASHRAE 52.2 · Addendum d supplied · 4 câu",
       "level": 2,
       "bloomLevel": "Create",
       "standard": "ASHRAE 52.2",
-      "parentId": "sec-032",
+      "parentId": "sec-037",
       "questionIds": [
         "Q288",
         "Q289",
@@ -772,14 +889,29 @@
       ]
     },
     {
-      "id": "sec-035",
-      "order": 35,
+      "id": "sec-040",
+      "order": 40,
+      "titleEn": "ASHRAE 52.2-2017 · 3 câu",
+      "titleVi": "ASHRAE 52.2-2017 · 3 câu",
+      "level": 2,
+      "bloomLevel": null,
+      "standard": "ASHRAE 52.2-2017",
+      "parentId": "sec-037",
+      "questionIds": [
+        "Q437",
+        "Q438",
+        "Q439"
+      ]
+    },
+    {
+      "id": "sec-041",
+      "order": 41,
       "titleEn": "ASHRAE 62.1-2013 · Addendum p · 3 câu",
       "titleVi": "ASHRAE 62.1-2013 · Addendum p · 3 câu",
       "level": 2,
       "bloomLevel": "Create",
       "standard": "ASHRAE 62.1-2013",
-      "parentId": "sec-032",
+      "parentId": "sec-037",
       "questionIds": [
         "Q292",
         "Q293",
@@ -787,14 +919,14 @@
       ]
     },
     {
-      "id": "sec-036",
-      "order": 36,
+      "id": "sec-042",
+      "order": 42,
       "titleEn": "ASHRAE 62.1-2022 · 3 câu",
       "titleVi": "ASHRAE 62.1-2022 · 3 câu",
       "level": 2,
       "bloomLevel": null,
       "standard": "ASHRAE 62.1-2022",
-      "parentId": "sec-032",
+      "parentId": "sec-037",
       "questionIds": [
         "Q377",
         "Q378",
@@ -802,14 +934,14 @@
       ]
     },
     {
-      "id": "sec-037",
-      "order": 37,
+      "id": "sec-043",
+      "order": 43,
       "titleEn": "ASHRAE 90.1-2022 · HVAC · 10 câu",
       "titleVi": "ASHRAE 90.1-2022 · HVAC · 10 câu",
       "level": 2,
       "bloomLevel": "Create",
       "standard": "ASHRAE 90.1-2022",
-      "parentId": "sec-032",
+      "parentId": "sec-037",
       "questionIds": [
         "Q295",
         "Q296",
@@ -2512,7 +2644,7 @@
     {
       "id": "Q039",
       "order": 39,
-      "sectionId": "sec-005",
+      "sectionId": "sec-006",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Remember",
       "topic": {
@@ -2558,7 +2690,7 @@
     {
       "id": "Q040",
       "order": 40,
-      "sectionId": "sec-005",
+      "sectionId": "sec-006",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Remember",
       "topic": {
@@ -2602,7 +2734,7 @@
     {
       "id": "Q041",
       "order": 41,
-      "sectionId": "sec-005",
+      "sectionId": "sec-006",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Remember",
       "topic": {
@@ -2646,7 +2778,7 @@
     {
       "id": "Q042",
       "order": 42,
-      "sectionId": "sec-005",
+      "sectionId": "sec-006",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Remember",
       "topic": {
@@ -2690,7 +2822,7 @@
     {
       "id": "Q043",
       "order": 43,
-      "sectionId": "sec-005",
+      "sectionId": "sec-006",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Remember",
       "topic": {
@@ -2734,7 +2866,7 @@
     {
       "id": "Q044",
       "order": 44,
-      "sectionId": "sec-005",
+      "sectionId": "sec-006",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Remember",
       "topic": {
@@ -2778,7 +2910,7 @@
     {
       "id": "Q045",
       "order": 45,
-      "sectionId": "sec-005",
+      "sectionId": "sec-006",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Remember",
       "topic": {
@@ -2822,7 +2954,7 @@
     {
       "id": "Q046",
       "order": 46,
-      "sectionId": "sec-005",
+      "sectionId": "sec-006",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Remember",
       "topic": {
@@ -2866,7 +2998,7 @@
     {
       "id": "Q047",
       "order": 47,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -2910,7 +3042,7 @@
     {
       "id": "Q048",
       "order": 48,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -2956,7 +3088,7 @@
     {
       "id": "Q049",
       "order": 49,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3000,7 +3132,7 @@
     {
       "id": "Q050",
       "order": 50,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3044,7 +3176,7 @@
     {
       "id": "Q051",
       "order": 51,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3088,7 +3220,7 @@
     {
       "id": "Q052",
       "order": 52,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3132,7 +3264,7 @@
     {
       "id": "Q053",
       "order": 53,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3176,7 +3308,7 @@
     {
       "id": "Q054",
       "order": 54,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3220,7 +3352,7 @@
     {
       "id": "Q055",
       "order": 55,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3264,7 +3396,7 @@
     {
       "id": "Q056",
       "order": 56,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3308,7 +3440,7 @@
     {
       "id": "Q057",
       "order": 57,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3352,7 +3484,7 @@
     {
       "id": "Q058",
       "order": 58,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3396,7 +3528,7 @@
     {
       "id": "Q059",
       "order": 59,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3440,7 +3572,7 @@
     {
       "id": "Q060",
       "order": 60,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3484,7 +3616,7 @@
     {
       "id": "Q061",
       "order": 61,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3528,7 +3660,7 @@
     {
       "id": "Q062",
       "order": 62,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3572,7 +3704,7 @@
     {
       "id": "Q063",
       "order": 63,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3616,7 +3748,7 @@
     {
       "id": "Q064",
       "order": 64,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3660,7 +3792,7 @@
     {
       "id": "Q065",
       "order": 65,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3704,7 +3836,7 @@
     {
       "id": "Q066",
       "order": 66,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3748,7 +3880,7 @@
     {
       "id": "Q067",
       "order": 67,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3794,7 +3926,7 @@
     {
       "id": "Q068",
       "order": 68,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3838,7 +3970,7 @@
     {
       "id": "Q069",
       "order": 69,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3882,7 +4014,7 @@
     {
       "id": "Q070",
       "order": 70,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3926,7 +4058,7 @@
     {
       "id": "Q071",
       "order": 71,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -3970,7 +4102,7 @@
     {
       "id": "Q072",
       "order": 72,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -4014,7 +4146,7 @@
     {
       "id": "Q073",
       "order": 73,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -4058,7 +4190,7 @@
     {
       "id": "Q074",
       "order": 74,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -4104,7 +4236,7 @@
     {
       "id": "Q075",
       "order": 75,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -4148,7 +4280,7 @@
     {
       "id": "Q076",
       "order": 76,
-      "sectionId": "sec-007",
+      "sectionId": "sec-008",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -4192,7 +4324,7 @@
     {
       "id": "Q077",
       "order": 77,
-      "sectionId": "sec-009",
+      "sectionId": "sec-010",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Understand",
       "topic": {
@@ -4238,7 +4370,7 @@
     {
       "id": "Q078",
       "order": 78,
-      "sectionId": "sec-009",
+      "sectionId": "sec-010",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Understand",
       "topic": {
@@ -4282,7 +4414,7 @@
     {
       "id": "Q079",
       "order": 79,
-      "sectionId": "sec-009",
+      "sectionId": "sec-010",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Understand",
       "topic": {
@@ -4328,7 +4460,7 @@
     {
       "id": "Q080",
       "order": 80,
-      "sectionId": "sec-009",
+      "sectionId": "sec-010",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Understand",
       "topic": {
@@ -4372,7 +4504,7 @@
     {
       "id": "Q081",
       "order": 81,
-      "sectionId": "sec-009",
+      "sectionId": "sec-010",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Understand",
       "topic": {
@@ -4416,7 +4548,7 @@
     {
       "id": "Q082",
       "order": 82,
-      "sectionId": "sec-009",
+      "sectionId": "sec-010",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Understand",
       "topic": {
@@ -4460,7 +4592,7 @@
     {
       "id": "Q083",
       "order": 83,
-      "sectionId": "sec-009",
+      "sectionId": "sec-010",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Understand",
       "topic": {
@@ -4504,7 +4636,7 @@
     {
       "id": "Q084",
       "order": 84,
-      "sectionId": "sec-009",
+      "sectionId": "sec-010",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Understand",
       "topic": {
@@ -4548,7 +4680,7 @@
     {
       "id": "Q085",
       "order": 85,
-      "sectionId": "sec-009",
+      "sectionId": "sec-010",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Understand",
       "topic": {
@@ -4592,7 +4724,7 @@
     {
       "id": "Q086",
       "order": 86,
-      "sectionId": "sec-009",
+      "sectionId": "sec-010",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Understand",
       "topic": {
@@ -4638,7 +4770,7 @@
     {
       "id": "Q087",
       "order": 87,
-      "sectionId": "sec-009",
+      "sectionId": "sec-010",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Understand",
       "topic": {
@@ -4682,7 +4814,7 @@
     {
       "id": "Q088",
       "order": 88,
-      "sectionId": "sec-009",
+      "sectionId": "sec-010",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Understand",
       "topic": {
@@ -4726,7 +4858,7 @@
     {
       "id": "Q089",
       "order": 89,
-      "sectionId": "sec-009",
+      "sectionId": "sec-010",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Understand",
       "topic": {
@@ -4770,7 +4902,7 @@
     {
       "id": "Q090",
       "order": 90,
-      "sectionId": "sec-009",
+      "sectionId": "sec-010",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Understand",
       "topic": {
@@ -4814,7 +4946,7 @@
     {
       "id": "Q091",
       "order": 91,
-      "sectionId": "sec-010",
+      "sectionId": "sec-011",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Understand",
       "topic": {
@@ -4860,7 +4992,7 @@
     {
       "id": "Q092",
       "order": 92,
-      "sectionId": "sec-010",
+      "sectionId": "sec-011",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Understand",
       "topic": {
@@ -4906,7 +5038,7 @@
     {
       "id": "Q093",
       "order": 93,
-      "sectionId": "sec-010",
+      "sectionId": "sec-011",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Understand",
       "topic": {
@@ -4950,7 +5082,7 @@
     {
       "id": "Q094",
       "order": 94,
-      "sectionId": "sec-010",
+      "sectionId": "sec-011",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Understand",
       "topic": {
@@ -4994,7 +5126,7 @@
     {
       "id": "Q095",
       "order": 95,
-      "sectionId": "sec-010",
+      "sectionId": "sec-011",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Understand",
       "topic": {
@@ -5038,7 +5170,7 @@
     {
       "id": "Q096",
       "order": 96,
-      "sectionId": "sec-010",
+      "sectionId": "sec-011",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Understand",
       "topic": {
@@ -5082,7 +5214,7 @@
     {
       "id": "Q097",
       "order": 97,
-      "sectionId": "sec-010",
+      "sectionId": "sec-011",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Understand",
       "topic": {
@@ -5126,7 +5258,7 @@
     {
       "id": "Q098",
       "order": 98,
-      "sectionId": "sec-010",
+      "sectionId": "sec-011",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Understand",
       "topic": {
@@ -5170,7 +5302,7 @@
     {
       "id": "Q099",
       "order": 99,
-      "sectionId": "sec-010",
+      "sectionId": "sec-011",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Understand",
       "topic": {
@@ -5214,7 +5346,7 @@
     {
       "id": "Q100",
       "order": 100,
-      "sectionId": "sec-010",
+      "sectionId": "sec-011",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Understand",
       "topic": {
@@ -5258,7 +5390,7 @@
     {
       "id": "Q101",
       "order": 101,
-      "sectionId": "sec-010",
+      "sectionId": "sec-011",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Understand",
       "topic": {
@@ -5302,7 +5434,7 @@
     {
       "id": "Q102",
       "order": 102,
-      "sectionId": "sec-010",
+      "sectionId": "sec-011",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Understand",
       "topic": {
@@ -5346,7 +5478,7 @@
     {
       "id": "Q103",
       "order": 103,
-      "sectionId": "sec-010",
+      "sectionId": "sec-011",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Understand",
       "topic": {
@@ -5390,7 +5522,7 @@
     {
       "id": "Q104",
       "order": 104,
-      "sectionId": "sec-010",
+      "sectionId": "sec-011",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Understand",
       "topic": {
@@ -5434,7 +5566,7 @@
     {
       "id": "Q105",
       "order": 105,
-      "sectionId": "sec-011",
+      "sectionId": "sec-013",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Understand",
       "topic": {
@@ -5478,7 +5610,7 @@
     {
       "id": "Q106",
       "order": 106,
-      "sectionId": "sec-011",
+      "sectionId": "sec-013",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Understand",
       "topic": {
@@ -5524,7 +5656,7 @@
     {
       "id": "Q107",
       "order": 107,
-      "sectionId": "sec-011",
+      "sectionId": "sec-013",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Understand",
       "topic": {
@@ -5568,7 +5700,7 @@
     {
       "id": "Q108",
       "order": 108,
-      "sectionId": "sec-011",
+      "sectionId": "sec-013",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Understand",
       "topic": {
@@ -5612,7 +5744,7 @@
     {
       "id": "Q109",
       "order": 109,
-      "sectionId": "sec-011",
+      "sectionId": "sec-013",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Understand",
       "topic": {
@@ -5656,7 +5788,7 @@
     {
       "id": "Q110",
       "order": 110,
-      "sectionId": "sec-011",
+      "sectionId": "sec-013",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Understand",
       "topic": {
@@ -5700,7 +5832,7 @@
     {
       "id": "Q111",
       "order": 111,
-      "sectionId": "sec-011",
+      "sectionId": "sec-013",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Understand",
       "topic": {
@@ -5744,7 +5876,7 @@
     {
       "id": "Q112",
       "order": 112,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -5790,7 +5922,7 @@
     {
       "id": "Q113",
       "order": 113,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -5834,7 +5966,7 @@
     {
       "id": "Q114",
       "order": 114,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -5878,7 +6010,7 @@
     {
       "id": "Q115",
       "order": 115,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -5922,7 +6054,7 @@
     {
       "id": "Q116",
       "order": 116,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -5966,7 +6098,7 @@
     {
       "id": "Q117",
       "order": 117,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6010,7 +6142,7 @@
     {
       "id": "Q118",
       "order": 118,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6054,7 +6186,7 @@
     {
       "id": "Q119",
       "order": 119,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6098,7 +6230,7 @@
     {
       "id": "Q120",
       "order": 120,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6142,7 +6274,7 @@
     {
       "id": "Q121",
       "order": 121,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6186,7 +6318,7 @@
     {
       "id": "Q122",
       "order": 122,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6230,7 +6362,7 @@
     {
       "id": "Q123",
       "order": 123,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6276,7 +6408,7 @@
     {
       "id": "Q124",
       "order": 124,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6320,7 +6452,7 @@
     {
       "id": "Q125",
       "order": 125,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6364,7 +6496,7 @@
     {
       "id": "Q126",
       "order": 126,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6408,7 +6540,7 @@
     {
       "id": "Q127",
       "order": 127,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6452,7 +6584,7 @@
     {
       "id": "Q128",
       "order": 128,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6496,7 +6628,7 @@
     {
       "id": "Q129",
       "order": 129,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6540,7 +6672,7 @@
     {
       "id": "Q130",
       "order": 130,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6584,7 +6716,7 @@
     {
       "id": "Q131",
       "order": 131,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6628,7 +6760,7 @@
     {
       "id": "Q132",
       "order": 132,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6672,7 +6804,7 @@
     {
       "id": "Q133",
       "order": 133,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6718,7 +6850,7 @@
     {
       "id": "Q134",
       "order": 134,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6762,7 +6894,7 @@
     {
       "id": "Q135",
       "order": 135,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6806,7 +6938,7 @@
     {
       "id": "Q136",
       "order": 136,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6850,7 +6982,7 @@
     {
       "id": "Q137",
       "order": 137,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6896,7 +7028,7 @@
     {
       "id": "Q138",
       "order": 138,
-      "sectionId": "sec-013",
+      "sectionId": "sec-015",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -6940,7 +7072,7 @@
     {
       "id": "Q139",
       "order": 139,
-      "sectionId": "sec-015",
+      "sectionId": "sec-017",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Apply",
       "topic": {
@@ -6984,7 +7116,7 @@
     {
       "id": "Q140",
       "order": 140,
-      "sectionId": "sec-015",
+      "sectionId": "sec-017",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Apply",
       "topic": {
@@ -7030,7 +7162,7 @@
     {
       "id": "Q141",
       "order": 141,
-      "sectionId": "sec-015",
+      "sectionId": "sec-017",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Apply",
       "topic": {
@@ -7074,7 +7206,7 @@
     {
       "id": "Q142",
       "order": 142,
-      "sectionId": "sec-015",
+      "sectionId": "sec-017",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Apply",
       "topic": {
@@ -7120,7 +7252,7 @@
     {
       "id": "Q143",
       "order": 143,
-      "sectionId": "sec-015",
+      "sectionId": "sec-017",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Apply",
       "topic": {
@@ -7164,7 +7296,7 @@
     {
       "id": "Q144",
       "order": 144,
-      "sectionId": "sec-015",
+      "sectionId": "sec-017",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Apply",
       "topic": {
@@ -7208,7 +7340,7 @@
     {
       "id": "Q145",
       "order": 145,
-      "sectionId": "sec-015",
+      "sectionId": "sec-017",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Apply",
       "topic": {
@@ -7252,7 +7384,7 @@
     {
       "id": "Q146",
       "order": 146,
-      "sectionId": "sec-015",
+      "sectionId": "sec-017",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Apply",
       "topic": {
@@ -7296,7 +7428,7 @@
     {
       "id": "Q147",
       "order": 147,
-      "sectionId": "sec-015",
+      "sectionId": "sec-017",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Apply",
       "topic": {
@@ -7340,7 +7472,7 @@
     {
       "id": "Q148",
       "order": 148,
-      "sectionId": "sec-015",
+      "sectionId": "sec-017",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Apply",
       "topic": {
@@ -7384,7 +7516,7 @@
     {
       "id": "Q149",
       "order": 149,
-      "sectionId": "sec-015",
+      "sectionId": "sec-017",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Apply",
       "topic": {
@@ -7428,7 +7560,7 @@
     {
       "id": "Q150",
       "order": 150,
-      "sectionId": "sec-015",
+      "sectionId": "sec-017",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Apply",
       "topic": {
@@ -7472,7 +7604,7 @@
     {
       "id": "Q151",
       "order": 151,
-      "sectionId": "sec-015",
+      "sectionId": "sec-017",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Apply",
       "topic": {
@@ -7516,7 +7648,7 @@
     {
       "id": "Q152",
       "order": 152,
-      "sectionId": "sec-015",
+      "sectionId": "sec-017",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Apply",
       "topic": {
@@ -7560,7 +7692,7 @@
     {
       "id": "Q153",
       "order": 153,
-      "sectionId": "sec-016",
+      "sectionId": "sec-018",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Apply",
       "topic": {
@@ -7604,7 +7736,7 @@
     {
       "id": "Q154",
       "order": 154,
-      "sectionId": "sec-016",
+      "sectionId": "sec-018",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Apply",
       "topic": {
@@ -7648,7 +7780,7 @@
     {
       "id": "Q155",
       "order": 155,
-      "sectionId": "sec-016",
+      "sectionId": "sec-018",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Apply",
       "topic": {
@@ -7692,7 +7824,7 @@
     {
       "id": "Q156",
       "order": 156,
-      "sectionId": "sec-016",
+      "sectionId": "sec-018",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Apply",
       "topic": {
@@ -7736,7 +7868,7 @@
     {
       "id": "Q157",
       "order": 157,
-      "sectionId": "sec-016",
+      "sectionId": "sec-018",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Apply",
       "topic": {
@@ -7780,7 +7912,7 @@
     {
       "id": "Q158",
       "order": 158,
-      "sectionId": "sec-016",
+      "sectionId": "sec-018",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Apply",
       "topic": {
@@ -7824,7 +7956,7 @@
     {
       "id": "Q159",
       "order": 159,
-      "sectionId": "sec-016",
+      "sectionId": "sec-018",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Apply",
       "topic": {
@@ -7868,7 +8000,7 @@
     {
       "id": "Q160",
       "order": 160,
-      "sectionId": "sec-016",
+      "sectionId": "sec-018",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Apply",
       "topic": {
@@ -7912,7 +8044,7 @@
     {
       "id": "Q161",
       "order": 161,
-      "sectionId": "sec-016",
+      "sectionId": "sec-018",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Apply",
       "topic": {
@@ -7956,7 +8088,7 @@
     {
       "id": "Q162",
       "order": 162,
-      "sectionId": "sec-016",
+      "sectionId": "sec-018",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Apply",
       "topic": {
@@ -8000,7 +8132,7 @@
     {
       "id": "Q163",
       "order": 163,
-      "sectionId": "sec-016",
+      "sectionId": "sec-018",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Apply",
       "topic": {
@@ -8044,7 +8176,7 @@
     {
       "id": "Q164",
       "order": 164,
-      "sectionId": "sec-016",
+      "sectionId": "sec-018",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Apply",
       "topic": {
@@ -8088,7 +8220,7 @@
     {
       "id": "Q165",
       "order": 165,
-      "sectionId": "sec-016",
+      "sectionId": "sec-018",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Apply",
       "topic": {
@@ -8132,7 +8264,7 @@
     {
       "id": "Q166",
       "order": 166,
-      "sectionId": "sec-016",
+      "sectionId": "sec-018",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Apply",
       "topic": {
@@ -8176,7 +8308,7 @@
     {
       "id": "Q167",
       "order": 167,
-      "sectionId": "sec-016",
+      "sectionId": "sec-018",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Apply",
       "topic": {
@@ -8220,7 +8352,7 @@
     {
       "id": "Q168",
       "order": 168,
-      "sectionId": "sec-017",
+      "sectionId": "sec-020",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Apply",
       "topic": {
@@ -8264,7 +8396,7 @@
     {
       "id": "Q169",
       "order": 169,
-      "sectionId": "sec-017",
+      "sectionId": "sec-020",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Apply",
       "topic": {
@@ -8308,7 +8440,7 @@
     {
       "id": "Q170",
       "order": 170,
-      "sectionId": "sec-017",
+      "sectionId": "sec-020",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Apply",
       "topic": {
@@ -8354,7 +8486,7 @@
     {
       "id": "Q171",
       "order": 171,
-      "sectionId": "sec-017",
+      "sectionId": "sec-020",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Apply",
       "topic": {
@@ -8398,7 +8530,7 @@
     {
       "id": "Q172",
       "order": 172,
-      "sectionId": "sec-017",
+      "sectionId": "sec-020",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Apply",
       "topic": {
@@ -8442,7 +8574,7 @@
     {
       "id": "Q173",
       "order": 173,
-      "sectionId": "sec-017",
+      "sectionId": "sec-020",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Apply",
       "topic": {
@@ -8486,7 +8618,7 @@
     {
       "id": "Q174",
       "order": 174,
-      "sectionId": "sec-017",
+      "sectionId": "sec-020",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Apply",
       "topic": {
@@ -8530,7 +8662,7 @@
     {
       "id": "Q175",
       "order": 175,
-      "sectionId": "sec-017",
+      "sectionId": "sec-020",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Apply",
       "topic": {
@@ -8574,7 +8706,7 @@
     {
       "id": "Q176",
       "order": 176,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -8618,7 +8750,7 @@
     {
       "id": "Q177",
       "order": 177,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -8662,7 +8794,7 @@
     {
       "id": "Q178",
       "order": 178,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -8706,7 +8838,7 @@
     {
       "id": "Q179",
       "order": 179,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -8750,7 +8882,7 @@
     {
       "id": "Q180",
       "order": 180,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -8794,7 +8926,7 @@
     {
       "id": "Q181",
       "order": 181,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -8838,7 +8970,7 @@
     {
       "id": "Q182",
       "order": 182,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -8882,7 +9014,7 @@
     {
       "id": "Q183",
       "order": 183,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -8926,7 +9058,7 @@
     {
       "id": "Q184",
       "order": 184,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -8970,7 +9102,7 @@
     {
       "id": "Q185",
       "order": 185,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9014,7 +9146,7 @@
     {
       "id": "Q186",
       "order": 186,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9058,7 +9190,7 @@
     {
       "id": "Q187",
       "order": 187,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9102,7 +9234,7 @@
     {
       "id": "Q188",
       "order": 188,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9146,7 +9278,7 @@
     {
       "id": "Q189",
       "order": 189,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9190,7 +9322,7 @@
     {
       "id": "Q190",
       "order": 190,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9236,7 +9368,7 @@
     {
       "id": "Q191",
       "order": 191,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9280,7 +9412,7 @@
     {
       "id": "Q192",
       "order": 192,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9324,7 +9456,7 @@
     {
       "id": "Q193",
       "order": 193,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9368,7 +9500,7 @@
     {
       "id": "Q194",
       "order": 194,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9412,7 +9544,7 @@
     {
       "id": "Q195",
       "order": 195,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9456,7 +9588,7 @@
     {
       "id": "Q196",
       "order": 196,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9500,7 +9632,7 @@
     {
       "id": "Q197",
       "order": 197,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9544,7 +9676,7 @@
     {
       "id": "Q198",
       "order": 198,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9588,7 +9720,7 @@
     {
       "id": "Q199",
       "order": 199,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9632,7 +9764,7 @@
     {
       "id": "Q200",
       "order": 200,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9678,7 +9810,7 @@
     {
       "id": "Q201",
       "order": 201,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9722,7 +9854,7 @@
     {
       "id": "Q202",
       "order": 202,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9766,7 +9898,7 @@
     {
       "id": "Q203",
       "order": 203,
-      "sectionId": "sec-019",
+      "sectionId": "sec-022",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -9810,7 +9942,7 @@
     {
       "id": "Q204",
       "order": 204,
-      "sectionId": "sec-021",
+      "sectionId": "sec-024",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Analyze",
       "topic": {
@@ -9854,7 +9986,7 @@
     {
       "id": "Q205",
       "order": 205,
-      "sectionId": "sec-021",
+      "sectionId": "sec-024",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Analyze",
       "topic": {
@@ -9898,7 +10030,7 @@
     {
       "id": "Q206",
       "order": 206,
-      "sectionId": "sec-021",
+      "sectionId": "sec-024",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Analyze",
       "topic": {
@@ -9942,7 +10074,7 @@
     {
       "id": "Q207",
       "order": 207,
-      "sectionId": "sec-021",
+      "sectionId": "sec-024",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Analyze",
       "topic": {
@@ -9986,7 +10118,7 @@
     {
       "id": "Q208",
       "order": 208,
-      "sectionId": "sec-021",
+      "sectionId": "sec-024",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10030,7 +10162,7 @@
     {
       "id": "Q209",
       "order": 209,
-      "sectionId": "sec-021",
+      "sectionId": "sec-024",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10074,7 +10206,7 @@
     {
       "id": "Q210",
       "order": 210,
-      "sectionId": "sec-021",
+      "sectionId": "sec-024",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10118,7 +10250,7 @@
     {
       "id": "Q211",
       "order": 211,
-      "sectionId": "sec-021",
+      "sectionId": "sec-024",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10162,7 +10294,7 @@
     {
       "id": "Q212",
       "order": 212,
-      "sectionId": "sec-021",
+      "sectionId": "sec-024",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10206,7 +10338,7 @@
     {
       "id": "Q213",
       "order": 213,
-      "sectionId": "sec-022",
+      "sectionId": "sec-025",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10252,7 +10384,7 @@
     {
       "id": "Q214",
       "order": 214,
-      "sectionId": "sec-022",
+      "sectionId": "sec-025",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10296,7 +10428,7 @@
     {
       "id": "Q215",
       "order": 215,
-      "sectionId": "sec-022",
+      "sectionId": "sec-025",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10340,7 +10472,7 @@
     {
       "id": "Q216",
       "order": 216,
-      "sectionId": "sec-022",
+      "sectionId": "sec-025",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10386,7 +10518,7 @@
     {
       "id": "Q217",
       "order": 217,
-      "sectionId": "sec-022",
+      "sectionId": "sec-025",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10430,7 +10562,7 @@
     {
       "id": "Q218",
       "order": 218,
-      "sectionId": "sec-022",
+      "sectionId": "sec-025",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10474,7 +10606,7 @@
     {
       "id": "Q219",
       "order": 219,
-      "sectionId": "sec-022",
+      "sectionId": "sec-025",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10518,7 +10650,7 @@
     {
       "id": "Q220",
       "order": 220,
-      "sectionId": "sec-022",
+      "sectionId": "sec-025",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10562,7 +10694,7 @@
     {
       "id": "Q221",
       "order": 221,
-      "sectionId": "sec-022",
+      "sectionId": "sec-025",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10606,7 +10738,7 @@
     {
       "id": "Q222",
       "order": 222,
-      "sectionId": "sec-022",
+      "sectionId": "sec-025",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10650,7 +10782,7 @@
     {
       "id": "Q223",
       "order": 223,
-      "sectionId": "sec-023",
+      "sectionId": "sec-027",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10694,7 +10826,7 @@
     {
       "id": "Q224",
       "order": 224,
-      "sectionId": "sec-023",
+      "sectionId": "sec-027",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10740,7 +10872,7 @@
     {
       "id": "Q225",
       "order": 225,
-      "sectionId": "sec-023",
+      "sectionId": "sec-027",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10784,7 +10916,7 @@
     {
       "id": "Q226",
       "order": 226,
-      "sectionId": "sec-023",
+      "sectionId": "sec-027",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10828,7 +10960,7 @@
     {
       "id": "Q227",
       "order": 227,
-      "sectionId": "sec-023",
+      "sectionId": "sec-027",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10872,7 +11004,7 @@
     {
       "id": "Q228",
       "order": 228,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10916,7 +11048,7 @@
     {
       "id": "Q229",
       "order": 229,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -10960,7 +11092,7 @@
     {
       "id": "Q230",
       "order": 230,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11004,7 +11136,7 @@
     {
       "id": "Q231",
       "order": 231,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11048,7 +11180,7 @@
     {
       "id": "Q232",
       "order": 232,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11092,7 +11224,7 @@
     {
       "id": "Q233",
       "order": 233,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11138,7 +11270,7 @@
     {
       "id": "Q234",
       "order": 234,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11182,7 +11314,7 @@
     {
       "id": "Q235",
       "order": 235,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11226,7 +11358,7 @@
     {
       "id": "Q236",
       "order": 236,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11270,7 +11402,7 @@
     {
       "id": "Q237",
       "order": 237,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11314,7 +11446,7 @@
     {
       "id": "Q238",
       "order": 238,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11358,7 +11490,7 @@
     {
       "id": "Q239",
       "order": 239,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11402,7 +11534,7 @@
     {
       "id": "Q240",
       "order": 240,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11446,7 +11578,7 @@
     {
       "id": "Q241",
       "order": 241,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11492,7 +11624,7 @@
     {
       "id": "Q242",
       "order": 242,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11536,7 +11668,7 @@
     {
       "id": "Q243",
       "order": 243,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11580,7 +11712,7 @@
     {
       "id": "Q244",
       "order": 244,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11624,7 +11756,7 @@
     {
       "id": "Q245",
       "order": 245,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11668,7 +11800,7 @@
     {
       "id": "Q246",
       "order": 246,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11712,7 +11844,7 @@
     {
       "id": "Q247",
       "order": 247,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11756,7 +11888,7 @@
     {
       "id": "Q248",
       "order": 248,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11800,7 +11932,7 @@
     {
       "id": "Q249",
       "order": 249,
-      "sectionId": "sec-025",
+      "sectionId": "sec-029",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -11844,7 +11976,7 @@
     {
       "id": "Q250",
       "order": 250,
-      "sectionId": "sec-027",
+      "sectionId": "sec-031",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -11888,7 +12020,7 @@
     {
       "id": "Q251",
       "order": 251,
-      "sectionId": "sec-027",
+      "sectionId": "sec-031",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -11932,7 +12064,7 @@
     {
       "id": "Q252",
       "order": 252,
-      "sectionId": "sec-027",
+      "sectionId": "sec-031",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -11976,7 +12108,7 @@
     {
       "id": "Q253",
       "order": 253,
-      "sectionId": "sec-027",
+      "sectionId": "sec-031",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12020,7 +12152,7 @@
     {
       "id": "Q254",
       "order": 254,
-      "sectionId": "sec-027",
+      "sectionId": "sec-031",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12064,7 +12196,7 @@
     {
       "id": "Q255",
       "order": 255,
-      "sectionId": "sec-027",
+      "sectionId": "sec-031",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12108,7 +12240,7 @@
     {
       "id": "Q256",
       "order": 256,
-      "sectionId": "sec-027",
+      "sectionId": "sec-031",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12152,7 +12284,7 @@
     {
       "id": "Q257",
       "order": 257,
-      "sectionId": "sec-028",
+      "sectionId": "sec-032",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12196,7 +12328,7 @@
     {
       "id": "Q258",
       "order": 258,
-      "sectionId": "sec-028",
+      "sectionId": "sec-032",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12240,7 +12372,7 @@
     {
       "id": "Q259",
       "order": 259,
-      "sectionId": "sec-028",
+      "sectionId": "sec-032",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12284,7 +12416,7 @@
     {
       "id": "Q260",
       "order": 260,
-      "sectionId": "sec-028",
+      "sectionId": "sec-032",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12328,7 +12460,7 @@
     {
       "id": "Q261",
       "order": 261,
-      "sectionId": "sec-028",
+      "sectionId": "sec-032",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12372,7 +12504,7 @@
     {
       "id": "Q262",
       "order": 262,
-      "sectionId": "sec-028",
+      "sectionId": "sec-032",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12416,7 +12548,7 @@
     {
       "id": "Q263",
       "order": 263,
-      "sectionId": "sec-028",
+      "sectionId": "sec-032",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12460,7 +12592,7 @@
     {
       "id": "Q264",
       "order": 264,
-      "sectionId": "sec-029",
+      "sectionId": "sec-034",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12506,7 +12638,7 @@
     {
       "id": "Q265",
       "order": 265,
-      "sectionId": "sec-029",
+      "sectionId": "sec-034",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12550,7 +12682,7 @@
     {
       "id": "Q266",
       "order": 266,
-      "sectionId": "sec-029",
+      "sectionId": "sec-034",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12594,7 +12726,7 @@
     {
       "id": "Q267",
       "order": 267,
-      "sectionId": "sec-029",
+      "sectionId": "sec-034",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12638,7 +12770,7 @@
     {
       "id": "Q268",
       "order": 268,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12684,7 +12816,7 @@
     {
       "id": "Q269",
       "order": 269,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12728,7 +12860,7 @@
     {
       "id": "Q270",
       "order": 270,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12772,7 +12904,7 @@
     {
       "id": "Q271",
       "order": 271,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12816,7 +12948,7 @@
     {
       "id": "Q272",
       "order": 272,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12862,7 +12994,7 @@
     {
       "id": "Q273",
       "order": 273,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12906,7 +13038,7 @@
     {
       "id": "Q274",
       "order": 274,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12950,7 +13082,7 @@
     {
       "id": "Q275",
       "order": 275,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -12994,7 +13126,7 @@
     {
       "id": "Q276",
       "order": 276,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -13038,7 +13170,7 @@
     {
       "id": "Q277",
       "order": 277,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -13082,7 +13214,7 @@
     {
       "id": "Q278",
       "order": 278,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -13128,7 +13260,7 @@
     {
       "id": "Q279",
       "order": 279,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -13172,7 +13304,7 @@
     {
       "id": "Q280",
       "order": 280,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -13216,7 +13348,7 @@
     {
       "id": "Q281",
       "order": 281,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -13260,7 +13392,7 @@
     {
       "id": "Q282",
       "order": 282,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -13306,7 +13438,7 @@
     {
       "id": "Q283",
       "order": 283,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -13350,7 +13482,7 @@
     {
       "id": "Q284",
       "order": 284,
-      "sectionId": "sec-031",
+      "sectionId": "sec-036",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -13394,7 +13526,7 @@
     {
       "id": "Q285",
       "order": 285,
-      "sectionId": "sec-033",
+      "sectionId": "sec-038",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Create",
       "topic": {
@@ -13440,7 +13572,7 @@
     {
       "id": "Q286",
       "order": 286,
-      "sectionId": "sec-033",
+      "sectionId": "sec-038",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Create",
       "topic": {
@@ -13486,7 +13618,7 @@
     {
       "id": "Q287",
       "order": 287,
-      "sectionId": "sec-033",
+      "sectionId": "sec-038",
       "standard": "ASHRAE 55-2023",
       "bloomLevel": "Create",
       "topic": {
@@ -13530,7 +13662,7 @@
     {
       "id": "Q288",
       "order": 288,
-      "sectionId": "sec-034",
+      "sectionId": "sec-039",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Create",
       "topic": {
@@ -13576,7 +13708,7 @@
     {
       "id": "Q289",
       "order": 289,
-      "sectionId": "sec-034",
+      "sectionId": "sec-039",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Create",
       "topic": {
@@ -13620,7 +13752,7 @@
     {
       "id": "Q290",
       "order": 290,
-      "sectionId": "sec-034",
+      "sectionId": "sec-039",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Create",
       "topic": {
@@ -13664,7 +13796,7 @@
     {
       "id": "Q291",
       "order": 291,
-      "sectionId": "sec-034",
+      "sectionId": "sec-039",
       "standard": "ASHRAE 52.2",
       "bloomLevel": "Create",
       "topic": {
@@ -13708,7 +13840,7 @@
     {
       "id": "Q292",
       "order": 292,
-      "sectionId": "sec-035",
+      "sectionId": "sec-041",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Create",
       "topic": {
@@ -13754,7 +13886,7 @@
     {
       "id": "Q293",
       "order": 293,
-      "sectionId": "sec-035",
+      "sectionId": "sec-041",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Create",
       "topic": {
@@ -13798,7 +13930,7 @@
     {
       "id": "Q294",
       "order": 294,
-      "sectionId": "sec-035",
+      "sectionId": "sec-041",
       "standard": "ASHRAE 62.1-2013",
       "bloomLevel": "Create",
       "topic": {
@@ -13842,7 +13974,7 @@
     {
       "id": "Q295",
       "order": 295,
-      "sectionId": "sec-037",
+      "sectionId": "sec-043",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Create",
       "topic": {
@@ -13888,7 +14020,7 @@
     {
       "id": "Q296",
       "order": 296,
-      "sectionId": "sec-037",
+      "sectionId": "sec-043",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Create",
       "topic": {
@@ -13934,7 +14066,7 @@
     {
       "id": "Q297",
       "order": 297,
-      "sectionId": "sec-037",
+      "sectionId": "sec-043",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Create",
       "topic": {
@@ -13978,7 +14110,7 @@
     {
       "id": "Q298",
       "order": 298,
-      "sectionId": "sec-037",
+      "sectionId": "sec-043",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Create",
       "topic": {
@@ -14022,7 +14154,7 @@
     {
       "id": "Q299",
       "order": 299,
-      "sectionId": "sec-037",
+      "sectionId": "sec-043",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Create",
       "topic": {
@@ -14068,7 +14200,7 @@
     {
       "id": "Q300",
       "order": 300,
-      "sectionId": "sec-037",
+      "sectionId": "sec-043",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Create",
       "topic": {
@@ -14112,7 +14244,7 @@
     {
       "id": "Q301",
       "order": 301,
-      "sectionId": "sec-037",
+      "sectionId": "sec-043",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Create",
       "topic": {
@@ -14158,7 +14290,7 @@
     {
       "id": "Q302",
       "order": 302,
-      "sectionId": "sec-037",
+      "sectionId": "sec-043",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Create",
       "topic": {
@@ -14202,7 +14334,7 @@
     {
       "id": "Q303",
       "order": 303,
-      "sectionId": "sec-037",
+      "sectionId": "sec-043",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Create",
       "topic": {
@@ -14246,7 +14378,7 @@
     {
       "id": "Q304",
       "order": 304,
-      "sectionId": "sec-037",
+      "sectionId": "sec-043",
       "standard": "ASHRAE 90.1-2022",
       "bloomLevel": "Create",
       "topic": {
@@ -14292,7 +14424,7 @@
     {
       "id": "Q305",
       "order": 305,
-      "sectionId": "sec-036",
+      "sectionId": "sec-007",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -14336,7 +14468,7 @@
     {
       "id": "Q306",
       "order": 306,
-      "sectionId": "sec-036",
+      "sectionId": "sec-007",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -14380,7 +14512,7 @@
     {
       "id": "Q307",
       "order": 307,
-      "sectionId": "sec-036",
+      "sectionId": "sec-007",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -14424,7 +14556,7 @@
     {
       "id": "Q308",
       "order": 308,
-      "sectionId": "sec-036",
+      "sectionId": "sec-007",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -14468,7 +14600,7 @@
     {
       "id": "Q309",
       "order": 309,
-      "sectionId": "sec-036",
+      "sectionId": "sec-007",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -14512,7 +14644,7 @@
     {
       "id": "Q310",
       "order": 310,
-      "sectionId": "sec-036",
+      "sectionId": "sec-007",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -14558,7 +14690,7 @@
     {
       "id": "Q311",
       "order": 311,
-      "sectionId": "sec-036",
+      "sectionId": "sec-007",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -14602,7 +14734,7 @@
     {
       "id": "Q312",
       "order": 312,
-      "sectionId": "sec-036",
+      "sectionId": "sec-007",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -14646,7 +14778,7 @@
     {
       "id": "Q313",
       "order": 313,
-      "sectionId": "sec-036",
+      "sectionId": "sec-007",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -14690,7 +14822,7 @@
     {
       "id": "Q314",
       "order": 314,
-      "sectionId": "sec-036",
+      "sectionId": "sec-007",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -14734,7 +14866,7 @@
     {
       "id": "Q315",
       "order": 315,
-      "sectionId": "sec-036",
+      "sectionId": "sec-007",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -14778,7 +14910,7 @@
     {
       "id": "Q316",
       "order": 316,
-      "sectionId": "sec-036",
+      "sectionId": "sec-007",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -14822,7 +14954,7 @@
     {
       "id": "Q317",
       "order": 317,
-      "sectionId": "sec-036",
+      "sectionId": "sec-007",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -14866,7 +14998,7 @@
     {
       "id": "Q318",
       "order": 318,
-      "sectionId": "sec-036",
+      "sectionId": "sec-007",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -14910,7 +15042,7 @@
     {
       "id": "Q319",
       "order": 319,
-      "sectionId": "sec-036",
+      "sectionId": "sec-007",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Remember",
       "topic": {
@@ -14954,7 +15086,7 @@
     {
       "id": "Q320",
       "order": 320,
-      "sectionId": "sec-036",
+      "sectionId": "sec-014",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -14998,7 +15130,7 @@
     {
       "id": "Q321",
       "order": 321,
-      "sectionId": "sec-036",
+      "sectionId": "sec-014",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -15042,7 +15174,7 @@
     {
       "id": "Q322",
       "order": 322,
-      "sectionId": "sec-036",
+      "sectionId": "sec-014",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -15086,7 +15218,7 @@
     {
       "id": "Q323",
       "order": 323,
-      "sectionId": "sec-036",
+      "sectionId": "sec-014",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -15130,7 +15262,7 @@
     {
       "id": "Q324",
       "order": 324,
-      "sectionId": "sec-036",
+      "sectionId": "sec-014",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -15174,7 +15306,7 @@
     {
       "id": "Q325",
       "order": 325,
-      "sectionId": "sec-036",
+      "sectionId": "sec-014",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -15218,7 +15350,7 @@
     {
       "id": "Q326",
       "order": 326,
-      "sectionId": "sec-036",
+      "sectionId": "sec-014",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -15262,7 +15394,7 @@
     {
       "id": "Q327",
       "order": 327,
-      "sectionId": "sec-036",
+      "sectionId": "sec-014",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -15306,7 +15438,7 @@
     {
       "id": "Q328",
       "order": 328,
-      "sectionId": "sec-036",
+      "sectionId": "sec-014",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -15350,7 +15482,7 @@
     {
       "id": "Q329",
       "order": 329,
-      "sectionId": "sec-036",
+      "sectionId": "sec-014",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -15394,7 +15526,7 @@
     {
       "id": "Q330",
       "order": 330,
-      "sectionId": "sec-036",
+      "sectionId": "sec-014",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -15438,7 +15570,7 @@
     {
       "id": "Q331",
       "order": 331,
-      "sectionId": "sec-036",
+      "sectionId": "sec-014",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -15482,7 +15614,7 @@
     {
       "id": "Q332",
       "order": 332,
-      "sectionId": "sec-036",
+      "sectionId": "sec-014",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -15526,7 +15658,7 @@
     {
       "id": "Q333",
       "order": 333,
-      "sectionId": "sec-036",
+      "sectionId": "sec-014",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -15570,7 +15702,7 @@
     {
       "id": "Q334",
       "order": 334,
-      "sectionId": "sec-036",
+      "sectionId": "sec-014",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Understand",
       "topic": {
@@ -15614,7 +15746,7 @@
     {
       "id": "Q335",
       "order": 335,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -15658,7 +15790,7 @@
     {
       "id": "Q336",
       "order": 336,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -15702,7 +15834,7 @@
     {
       "id": "Q337",
       "order": 337,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -15746,7 +15878,7 @@
     {
       "id": "Q338",
       "order": 338,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -15790,7 +15922,7 @@
     {
       "id": "Q339",
       "order": 339,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -15834,7 +15966,7 @@
     {
       "id": "Q340",
       "order": 340,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -15878,7 +16010,7 @@
     {
       "id": "Q341",
       "order": 341,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -15922,7 +16054,7 @@
     {
       "id": "Q342",
       "order": 342,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -15966,7 +16098,7 @@
     {
       "id": "Q343",
       "order": 343,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -16010,7 +16142,7 @@
     {
       "id": "Q344",
       "order": 344,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -16054,7 +16186,7 @@
     {
       "id": "Q345",
       "order": 345,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -16098,7 +16230,7 @@
     {
       "id": "Q346",
       "order": 346,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -16142,7 +16274,7 @@
     {
       "id": "Q347",
       "order": 347,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -16186,7 +16318,7 @@
     {
       "id": "Q348",
       "order": 348,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -16230,7 +16362,7 @@
     {
       "id": "Q349",
       "order": 349,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -16276,7 +16408,7 @@
     {
       "id": "Q350",
       "order": 350,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -16322,7 +16454,7 @@
     {
       "id": "Q351",
       "order": 351,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -16366,7 +16498,7 @@
     {
       "id": "Q352",
       "order": 352,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -16410,7 +16542,7 @@
     {
       "id": "Q353",
       "order": 353,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -16454,7 +16586,7 @@
     {
       "id": "Q354",
       "order": 354,
-      "sectionId": "sec-036",
+      "sectionId": "sec-021",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Apply",
       "topic": {
@@ -16500,7 +16632,7 @@
     {
       "id": "Q355",
       "order": 355,
-      "sectionId": "sec-036",
+      "sectionId": "sec-028",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -16544,7 +16676,7 @@
     {
       "id": "Q356",
       "order": 356,
-      "sectionId": "sec-036",
+      "sectionId": "sec-028",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -16588,7 +16720,7 @@
     {
       "id": "Q357",
       "order": 357,
-      "sectionId": "sec-036",
+      "sectionId": "sec-028",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -16632,7 +16764,7 @@
     {
       "id": "Q358",
       "order": 358,
-      "sectionId": "sec-036",
+      "sectionId": "sec-028",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -16676,7 +16808,7 @@
     {
       "id": "Q359",
       "order": 359,
-      "sectionId": "sec-036",
+      "sectionId": "sec-028",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -16722,7 +16854,7 @@
     {
       "id": "Q360",
       "order": 360,
-      "sectionId": "sec-036",
+      "sectionId": "sec-028",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -16766,7 +16898,7 @@
     {
       "id": "Q361",
       "order": 361,
-      "sectionId": "sec-036",
+      "sectionId": "sec-028",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -16810,7 +16942,7 @@
     {
       "id": "Q362",
       "order": 362,
-      "sectionId": "sec-036",
+      "sectionId": "sec-028",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -16854,7 +16986,7 @@
     {
       "id": "Q363",
       "order": 363,
-      "sectionId": "sec-036",
+      "sectionId": "sec-028",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -16898,7 +17030,7 @@
     {
       "id": "Q364",
       "order": 364,
-      "sectionId": "sec-036",
+      "sectionId": "sec-028",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -16942,7 +17074,7 @@
     {
       "id": "Q365",
       "order": 365,
-      "sectionId": "sec-036",
+      "sectionId": "sec-028",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -16986,7 +17118,7 @@
     {
       "id": "Q366",
       "order": 366,
-      "sectionId": "sec-036",
+      "sectionId": "sec-028",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -17030,7 +17162,7 @@
     {
       "id": "Q367",
       "order": 367,
-      "sectionId": "sec-036",
+      "sectionId": "sec-028",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -17074,7 +17206,7 @@
     {
       "id": "Q368",
       "order": 368,
-      "sectionId": "sec-036",
+      "sectionId": "sec-028",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -17118,7 +17250,7 @@
     {
       "id": "Q369",
       "order": 369,
-      "sectionId": "sec-036",
+      "sectionId": "sec-028",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Analyze",
       "topic": {
@@ -17164,7 +17296,7 @@
     {
       "id": "Q370",
       "order": 370,
-      "sectionId": "sec-036",
+      "sectionId": "sec-035",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -17208,7 +17340,7 @@
     {
       "id": "Q371",
       "order": 371,
-      "sectionId": "sec-036",
+      "sectionId": "sec-035",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -17252,7 +17384,7 @@
     {
       "id": "Q372",
       "order": 372,
-      "sectionId": "sec-036",
+      "sectionId": "sec-035",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -17296,7 +17428,7 @@
     {
       "id": "Q373",
       "order": 373,
-      "sectionId": "sec-036",
+      "sectionId": "sec-035",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -17340,7 +17472,7 @@
     {
       "id": "Q374",
       "order": 374,
-      "sectionId": "sec-036",
+      "sectionId": "sec-035",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -17384,7 +17516,7 @@
     {
       "id": "Q375",
       "order": 375,
-      "sectionId": "sec-036",
+      "sectionId": "sec-035",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -17428,7 +17560,7 @@
     {
       "id": "Q376",
       "order": 376,
-      "sectionId": "sec-036",
+      "sectionId": "sec-035",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Evaluate",
       "topic": {
@@ -17472,7 +17604,7 @@
     {
       "id": "Q377",
       "order": 377,
-      "sectionId": "sec-036",
+      "sectionId": "sec-042",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Create",
       "topic": {
@@ -17516,7 +17648,7 @@
     {
       "id": "Q378",
       "order": 378,
-      "sectionId": "sec-036",
+      "sectionId": "sec-042",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Create",
       "topic": {
@@ -17560,7 +17692,7 @@
     {
       "id": "Q379",
       "order": 379,
-      "sectionId": "sec-036",
+      "sectionId": "sec-042",
       "standard": "ASHRAE 62.1-2022",
       "bloomLevel": "Create",
       "topic": {
@@ -17600,6 +17732,2652 @@
       },
       "sourceText": "Reference: §4-§8, p. 7-33; Appendix A, p. 37-39\nDẫn chiếu: §4-§8, tr. 7-33; Phụ lục A, tr. 37-39",
       "images": []
+    },
+    {
+      "id": "Q380",
+      "order": 380,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "What is the primary purpose of ANSI/ASHRAE Standard 52.2-2017?",
+        "vi": "Mục đích cốt lõi của ANSI/ASHRAE Standard 52.2-2017 là gì?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "To prescribe the maximum indoor-air dust concentration.",
+          "vi": "Quy định nồng độ bụi tối đa cho không khí trong nhà."
+        },
+        {
+          "id": "B",
+          "en": "To establish a test procedure for evaluating the performance of air-cleaning devices as a function of particle size.",
+          "vi": "Thiết lập quy trình thử để đánh giá hiệu năng thiết bị làm sạch không khí theo kích thước hạt."
+        },
+        {
+          "id": "C",
+          "en": "To size ductwork for every ventilation system.",
+          "vi": "Thiết kế kích thước ống gió cho mọi hệ thống thông gió."
+        },
+        {
+          "id": "D",
+          "en": "To determine the actual field service life of every type of filter.",
+          "vi": "Xác định tuổi thọ thực tế của mọi loại bộ lọc tại công trình."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "B",
+      "topic": {
+        "en": "Purpose",
+        "vi": "Mục đích"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 1 và phần 'Not an Application Standard'.",
+      "explanation": {
+        "en": "The standard establishes a method for testing air-cleaning-device performance as a function of particle size. It neither sets room-air-quality limits nor directly predicts field service life.",
+        "vi": "Tiêu chuẩn thiết lập phương pháp thử hiệu năng thiết bị làm sạch không khí như một hàm của kích thước hạt. Tiêu chuẩn không đặt giới hạn chất lượng không khí trong phòng và không dự báo trực tiếp tuổi thọ tại hiện trường."
+      }
+    },
+    {
+      "id": "Q381",
+      "order": 381,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "What particle-diameter range is counted to determine particle-size efficiency under the standard?",
+        "vi": "Dải đường kính hạt được đếm để xác định hiệu suất theo kích thước hạt trong tiêu chuẩn là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "0.01-1.0 µm",
+          "vi": "0,01-1,0 µm"
+        },
+        {
+          "id": "B",
+          "en": "0.10-5.0 µm",
+          "vi": "0,10-5,0 µm"
+        },
+        {
+          "id": "C",
+          "en": "0.30-10 µm",
+          "vi": "0,30-10 µm"
+        },
+        {
+          "id": "D",
+          "en": "1.0-100 µm",
+          "vi": "1,0-100 µm"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "C",
+      "topic": {
+        "en": "Particle-size range",
+        "vi": "Phạm vi hạt"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 2.2 và 4.6.2-4.6.5.",
+      "explanation": {
+        "en": "The OPC counts particles from 0.30 to 10 µm and divides the range into 12 size intervals.",
+        "vi": "OPC đếm hạt trong dải 0,30-10 µm và chia thành 12 khoảng kích thước."
+      }
+    },
+    {
+      "id": "Q382",
+      "order": 382,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Which material is used as the standard test aerosol for determining PSE?",
+        "vi": "Aerosol thử chuẩn dùng để xác định PSE là vật liệu nào?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Dry, solid-phase, polydisperse KCl particles generated from an aqueous solution.",
+          "vi": "Hạt KCl pha rắn, khô, đa phân tán, tạo từ dung dịch nước."
+        },
+        {
+          "id": "B",
+          "en": "Liquid, monodisperse DOP droplets.",
+          "vi": "Hạt dầu DOP lỏng, đơn phân tán."
+        },
+        {
+          "id": "C",
+          "en": "Dry cement dust with a mean diameter of 10 µm.",
+          "vi": "Bụi xi măng khô có đường kính trung bình 10 µm."
+        },
+        {
+          "id": "D",
+          "en": "Untreated outdoor ambient smoke.",
+          "vi": "Khói môi trường ngoài trời không xử lý."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "A",
+      "topic": {
+        "en": "Test aerosol",
+        "vi": "Aerosol thử"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 4.3.1 và 6.1.",
+      "explanation": {
+        "en": "The standard uses dry, solid-phase, polydisperse potassium chloride (KCl) particles generated from an aqueous solution.",
+        "vi": "Tiêu chuẩn dùng hạt potassium chloride (KCl) pha rắn, khô và đa phân tán được tạo từ dung dịch nước."
+      }
+    },
+    {
+      "id": "Q383",
+      "order": 383,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "What is the principal square cross section of the test duct?",
+        "vi": "Tiết diện vuông chủ yếu của ống thử là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "305 x 305 mm",
+          "vi": "305 x 305 mm"
+        },
+        {
+          "id": "B",
+          "en": "457 x 457 mm",
+          "vi": "457 x 457 mm"
+        },
+        {
+          "id": "C",
+          "en": "500 x 500 mm",
+          "vi": "500 x 500 mm"
+        },
+        {
+          "id": "D",
+          "en": "610 x 610 mm",
+          "vi": "610 x 610 mm"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "D",
+      "topic": {
+        "en": "Test duct",
+        "vi": "Ống thử"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 4.2.1 và Hình 4-1.",
+      "explanation": {
+        "en": "The principal sections of the test duct have a 610 x 610 mm (24 x 24 in.) cross section.",
+        "vi": "Các đoạn chính của ống thử có tiết diện 610 x 610 mm (24 x 24 in.)."
+      }
+    },
+    {
+      "id": "Q384",
+      "order": 384,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Examine the diagram. Which identification pair is correct for items 14 and 15?",
+        "vi": "Quan sát sơ đồ. Cặp nhận diện nào đúng với số 14 và 15?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "14: aerosol generator; 15: upstream probe.",
+          "vi": "14: bộ tạo aerosol; 15: đầu dò phía thượng lưu."
+        },
+        {
+          "id": "B",
+          "en": "14: airflow-measuring nozzle; 15: mixer.",
+          "vi": "14: nozzle đo lưu lượng; 15: bộ trộn."
+        },
+        {
+          "id": "C",
+          "en": "14: air-cleaning device under test; 15: final filter installed only during dust loading.",
+          "vi": "14: thiết bị làm sạch không khí cần thử; 15: lọc cuối chỉ lắp khi nạp bụi."
+        },
+        {
+          "id": "D",
+          "en": "14: inlet HEPA filter; 15: supply fan.",
+          "vi": "14: lọc HEPA đầu vào; 15: quạt cấp."
+        }
+      ],
+      "images": [
+        "/assets/questions/img_0019.png"
+      ],
+      "correctOptionId": "C",
+      "topic": {
+        "en": "Test-rig identification",
+        "vi": "Nhận diện giàn thử"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Hình 4-1 và chú giải.",
+      "explanation": {
+        "en": "In the legend to Figure 4-1, item 14 is the device under test and item 15 is the final filter, which is installed only during the dust-loading phase.",
+        "vi": "Trong chú giải Hình 4-1, số 14 là thiết bị thử và số 15 là final filter, chỉ được lắp trong giai đoạn dust loading."
+      }
+    },
+    {
+      "id": "Q385",
+      "order": 385,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "What temperature and relative-humidity conditions are required for the air at the device under test?",
+        "vi": "Điều kiện nhiệt độ và độ ẩm tương đối của không khí tại thiết bị thử phải là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "20-25°C and 50% ± 2% RH.",
+          "vi": "20-25°C và 50% ± 2% RH."
+        },
+        {
+          "id": "B",
+          "en": "10-38°C and 45% ± 10% RH.",
+          "vi": "10-38°C và 45% ± 10% RH."
+        },
+        {
+          "id": "C",
+          "en": "5-45°C and less than 70% RH.",
+          "vi": "5-45°C và RH nhỏ hơn 70%."
+        },
+        {
+          "id": "D",
+          "en": "23°C ± 1°C and 30% ± 5% RH.",
+          "vi": "23°C ± 1°C và 30% ± 5% RH."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "B",
+      "topic": {
+        "en": "Test-air conditions",
+        "vi": "Điều kiện không khí thử"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 4.2.3.",
+      "explanation": {
+        "en": "The air at the device under test must be between 10 and 38°C, with a relative humidity of 45% ± 10%.",
+        "vi": "Không khí tại thiết bị thử phải ở 10-38°C, với RH 45% ± 10%."
+      }
+    },
+    {
+      "id": "Q386",
+      "order": 386,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Into how many size intervals must the OPC group the measured particles?",
+        "vi": "OPC phải phân nhóm hạt đo được thành bao nhiêu khoảng kích thước?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "3",
+          "vi": "3"
+        },
+        {
+          "id": "B",
+          "en": "6",
+          "vi": "6"
+        },
+        {
+          "id": "C",
+          "en": "10",
+          "vi": "10"
+        },
+        {
+          "id": "D",
+          "en": "12",
+          "vi": "12"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "D",
+      "topic": {
+        "en": "OPC",
+        "vi": "OPC"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 4.6.5 và Bảng 4-1.",
+      "explanation": {
+        "en": "Table 4-1 specifies 12 size intervals spanning 0.30 to 10 µm.",
+        "vi": "Bảng 4-1 quy định 12 khoảng kích thước từ 0,30 đến 10 µm."
+      }
+    },
+    {
+      "id": "Q387",
+      "order": 387,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Which pairing of efficiency index and particle-size group is correct?",
+        "vi": "Cách ghép đúng giữa chỉ số và nhóm kích thước là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "E1: 0.30-1.0 µm; E2: 1.0-3.0 µm; E3: 3.0-10 µm.",
+          "vi": "E1: 0,30-1,0 µm; E2: 1,0-3,0 µm; E3: 3,0-10 µm."
+        },
+        {
+          "id": "B",
+          "en": "E1: 0.30-3.0 µm; E2: 3.0-5.5 µm; E3: 5.5-10 µm.",
+          "vi": "E1: 0,30-3,0 µm; E2: 3,0-5,5 µm; E3: 5,5-10 µm."
+        },
+        {
+          "id": "C",
+          "en": "E1: 0.30-0.70 µm; E2: 0.70-3.0 µm; E3: 3.0-10 µm.",
+          "vi": "E1: 0,30-0,70 µm; E2: 0,70-3,0 µm; E3: 3,0-10 µm."
+        },
+        {
+          "id": "D",
+          "en": "E1, E2, and E3 are each the average over the entire 0.30-10 µm range.",
+          "vi": "E1, E2 và E3 đều là trung bình của toàn bộ 0,30-10 µm."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "A",
+      "topic": {
+        "en": "MERV size groups",
+        "vi": "Nhóm kích thước MERV"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Bảng 10-2 và Bảng 12-1.",
+      "explanation": {
+        "en": "Each E value is the average of the four size intervals within its corresponding group: E1, E2, or E3.",
+        "vi": "Mỗi E là trung bình của bốn khoảng kích thước trong nhóm tương ứng: E1, E2 và E3."
+      }
+    },
+    {
+      "id": "Q388",
+      "order": 388,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "What is the standard loading-dust composition by mass?",
+        "vi": "Thành phần bụi nạp chuẩn theo khối lượng là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "70% A2 Fine Test Dust, 25% carbon, and 5% cotton fiber.",
+          "vi": "70% A2 Fine Test Dust, 25% carbon, 5% sợi bông."
+        },
+        {
+          "id": "B",
+          "en": "75% A2 Fine Test Dust, 20% carbon, and 5% cotton fiber.",
+          "vi": "75% A2 Fine Test Dust, 20% carbon, 5% sợi bông."
+        },
+        {
+          "id": "C",
+          "en": "72% A2 Fine Test Dust, 23% powdered carbon, and 5% milled cotton linters.",
+          "vi": "72% A2 Fine Test Dust, 23% carbon bột, 5% cotton linters nghiền."
+        },
+        {
+          "id": "D",
+          "en": "72% KCl, 23% carbon, and 5% silica.",
+          "vi": "72% KCl, 23% carbon, 5% silica."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "C",
+      "topic": {
+        "en": "Loading dust",
+        "vi": "Bụi nạp"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 6.2.1.",
+      "explanation": {
+        "en": "The specified mixture is 72% ISO 12103-1 A2 Fine Test Dust, 23% powdered carbon, and 5% milled cotton linters.",
+        "vi": "Tỷ lệ chuẩn là 72% ISO 12103-1 A2 Fine Test Dust, 23% powdered carbon và 5% milled cotton linters."
+      }
+    },
+    {
+      "id": "Q389",
+      "order": 389,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "If the manufacturer does not specify a face velocity, what face velocity must be used for the test?",
+        "vi": "Nếu nhà sản xuất không chỉ định vận tốc mặt, thử nghiệm phải dùng vận tốc mặt nào?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "1.25 m/s",
+          "vi": "1,25 m/s"
+        },
+        {
+          "id": "B",
+          "en": "2.50 m/s",
+          "vi": "2,50 m/s"
+        },
+        {
+          "id": "C",
+          "en": "3.20 m/s",
+          "vi": "3,20 m/s"
+        },
+        {
+          "id": "D",
+          "en": "3.80 m/s",
+          "vi": "3,80 m/s"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "B",
+      "topic": {
+        "en": "Test airflow",
+        "vi": "Lưu lượng thử"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 8.1.2.",
+      "explanation": {
+        "en": "Section 8.1.2 specifies 2.50 m/s (492 fpm) when no velocity is specified.",
+        "vi": "Mục 8.1.2 quy định dùng 2,50 m/s (492 fpm) khi vận tốc không được chỉ định."
+      }
+    },
+    {
+      "id": "Q390",
+      "order": 390,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "If the manufacturer does not specify a final resistance, the test endpoint is:",
+        "vi": "Nếu nhà sản xuất không chỉ định trở lực cuối, điểm kết thúc thử là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "250 Pa, regardless of arrestance.",
+          "vi": "250 Pa, không xét arrestance."
+        },
+        {
+          "id": "B",
+          "en": "500 Pa or when PSE increases by 10 percentage points.",
+          "vi": "500 Pa hoặc khi PSE tăng 10 điểm phần trăm."
+        },
+        {
+          "id": "C",
+          "en": "Twice the initial resistance in every case.",
+          "vi": "Hai lần trở lực ban đầu trong mọi trường hợp."
+        },
+        {
+          "id": "D",
+          "en": "350 Pa or when arrestance falls below 85% of its maximum value, whichever occurs first.",
+          "vi": "350 Pa hoặc khi arrestance giảm dưới 85% giá trị cực đại, tùy điều kiện nào đến trước."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "D",
+      "topic": {
+        "en": "Dust-loading endpoint",
+        "vi": "Điểm kết thúc nạp bụi"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 8.1.3.",
+      "explanation": {
+        "en": "The default rule in Section 8.1.3 is 350 Pa or arrestance below 85% of its peak value, whichever occurs first.",
+        "vi": "Quy tắc mặc định của Mục 8.1.3 là 350 Pa hoặc arrestance thấp hơn 85% đỉnh, lấy điều kiện xảy ra trước."
+      }
+    },
+    {
+      "id": "Q391",
+      "order": 391,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "At which minimum test-airflow ratios must the resistance of the clean device be measured?",
+        "vi": "Trở lực của thiết bị sạch phải được đo tối thiểu tại các tỷ lệ lưu lượng thử nào?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "50%, 75%, 100%, and 125%",
+          "vi": "50%, 75%, 100% và 125%"
+        },
+        {
+          "id": "B",
+          "en": "25%, 50%, 75%, and 100%",
+          "vi": "25%, 50%, 75% và 100%"
+        },
+        {
+          "id": "C",
+          "en": "60%, 80%, 100%, and 120%",
+          "vi": "60%, 80%, 100% và 120%"
+        },
+        {
+          "id": "D",
+          "en": "100% only",
+          "vi": "Chỉ 100%"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "A",
+      "topic": {
+        "en": "Resistance versus airflow",
+        "vi": "Trở lực - lưu lượng"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 9.5 sau Addendum a (Mục 9.4 trong bản gốc).",
+      "explanation": {
+        "en": "The standard requires at least four points: 50%, 75%, 100%, and 125% of the test airflow rate.",
+        "vi": "Tiêu chuẩn yêu cầu tối thiểu bốn điểm: 50%, 75%, 100% và 125% lưu lượng thử."
+      }
+    },
+    {
+      "id": "Q392",
+      "order": 392,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "For the nine equal-area-point grid in Figure 5-1, what is the acceptance criterion for velocity uniformity?",
+        "vi": "Với lưới 9 điểm diện tích bằng nhau ở Hình 5-1, tiêu chí chấp nhận độ đồng đều vận tốc là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "CV ≤ 5%",
+          "vi": "CV ≤ 5%"
+        },
+        {
+          "id": "B",
+          "en": "CV < 8%",
+          "vi": "CV < 8%"
+        },
+        {
+          "id": "C",
+          "en": "CV < 10%",
+          "vi": "CV < 10%"
+        },
+        {
+          "id": "D",
+          "en": "CV < 15%",
+          "vi": "CV < 15%"
+        }
+      ],
+      "images": [
+        "/assets/questions/img_0020.png"
+      ],
+      "correctOptionId": "C",
+      "topic": {
+        "en": "Velocity uniformity",
+        "vi": "Độ đồng đều vận tốc"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 5.2.3 và Bảng 5-1.",
+      "explanation": {
+        "en": "The coefficient of variation of the nine corresponding velocity values must be less than 10% at each qualification airflow rate.",
+        "vi": "Hệ số biến thiên của chín giá trị vận tốc tương ứng phải nhỏ hơn 10% tại mỗi lưu lượng thẩm định."
+      }
+    },
+    {
+      "id": "Q393",
+      "order": 393,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "What is the acceptance criterion for upstream aerosol-concentration uniformity?",
+        "vi": "Tiêu chí chấp nhận độ đồng đều nồng độ aerosol phía thượng lưu là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "CV < 5%",
+          "vi": "CV < 5%"
+        },
+        {
+          "id": "B",
+          "en": "CV < 15%",
+          "vi": "CV < 15%"
+        },
+        {
+          "id": "C",
+          "en": "CV < 20%",
+          "vi": "CV < 20%"
+        },
+        {
+          "id": "D",
+          "en": "Not specified",
+          "vi": "Không quy định"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "B",
+      "topic": {
+        "en": "Aerosol uniformity",
+        "vi": "Độ đồng đều aerosol"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 5.3.3 và Bảng 5-1.",
+      "explanation": {
+        "en": "The CV of the nine points must be less than 15% at each airflow rate and in each OPC size interval.",
+        "vi": "CV của chín điểm phải nhỏ hơn 15% tại mỗi lưu lượng và trong từng khoảng kích thước của OPC."
+      }
+    },
+    {
+      "id": "Q394",
+      "order": 394,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "What is the acceptance criterion for the downstream aerosol-mixing test?",
+        "vi": "Tiêu chí chấp nhận phép thử hòa trộn aerosol phía hạ lưu là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "CV < 20%",
+          "vi": "CV < 20%"
+        },
+        {
+          "id": "B",
+          "en": "CV < 15%",
+          "vi": "CV < 15%"
+        },
+        {
+          "id": "C",
+          "en": "CV ≤ 12%",
+          "vi": "CV ≤ 12%"
+        },
+        {
+          "id": "D",
+          "en": "CV < 10%",
+          "vi": "CV < 10%"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "D",
+      "topic": {
+        "en": "Downstream mixing",
+        "vi": "Hòa trộn phía hạ lưu"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 5.4.5 và Bảng 5-1.",
+      "explanation": {
+        "en": "The CV of the total concentration at the nine injection locations must be less than 10% at each airflow rate.",
+        "vi": "CV của nồng độ tổng tại chín vị trí phun phải nhỏ hơn 10% ở mỗi lưu lượng."
+      }
+    },
+    {
+      "id": "Q395",
+      "order": 395,
+      "sectionId": "sec-005",
+      "bloomLevel": "Remember",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "What is the allowable test-duct leakage rate relative to the test airflow rate?",
+        "vi": "Tỷ lệ rò rỉ cho phép của ống thử so với lưu lượng thử là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Less than 1.0%",
+          "vi": "Nhỏ hơn 1,0%"
+        },
+        {
+          "id": "B",
+          "en": "Not greater than 2.0%",
+          "vi": "Không lớn hơn 2,0%"
+        },
+        {
+          "id": "C",
+          "en": "Less than 5.0%",
+          "vi": "Nhỏ hơn 5,0%"
+        },
+        {
+          "id": "D",
+          "en": "Not specified",
+          "vi": "Không quy định"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "A",
+      "topic": {
+        "en": "Test-duct leakage",
+        "vi": "Rò rỉ ống thử"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 5.9 và Bảng 5-1.",
+      "explanation": {
+        "en": "The measured leakage airflow must be less than 1.0% of the corresponding test airflow rate.",
+        "vi": "Lưu lượng rò đo được phải nhỏ hơn 1,0% lưu lượng thử tương ứng."
+      }
+    },
+    {
+      "id": "Q396",
+      "order": 396,
+      "sectionId": "sec-012",
+      "bloomLevel": "Understand",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Which interpretation of the phrase 'Not an Application Standard' is most accurate?",
+        "vi": "Cách hiểu nào đúng nhất về cụm 'Not an Application Standard'?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "A MERV result automatically determines the air quality of every building.",
+          "vi": "Kết quả MERV tự động xác định chất lượng không khí mọi công trình."
+        },
+        {
+          "id": "B",
+          "en": "The standard is intended only for HEPA filters in hospitals.",
+          "vi": "Tiêu chuẩn chỉ dùng cho lọc HEPA trong bệnh viện."
+        },
+        {
+          "id": "C",
+          "en": "It is a test method for standardized comparison; the result alone does not predict room cleanliness or field service life.",
+          "vi": "Đây là phương pháp thử để so sánh chuẩn hóa; kết quả không tự nó dự báo độ sạch phòng hoặc tuổi thọ tại hiện trường."
+        },
+        {
+          "id": "D",
+          "en": "The standard cannot be used to support an engineer's filter selection.",
+          "vi": "Tiêu chuẩn không thể dùng để hỗ trợ kỹ sư lựa chọn bộ lọc."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "C",
+      "topic": {
+        "en": "Meaning of the standard",
+        "vi": "Ý nghĩa tiêu chuẩn"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, phần 'Not an Application Standard' và Phụ lục C1.",
+      "explanation": {
+        "en": "The results provide a basis for comparison and specification, but field conditions, bypass leakage, dust loading, and airflow can differ substantially.",
+        "vi": "Kết quả tạo cơ sở so sánh và chỉ định, nhưng điều kiện thực địa, rò lọt, tải bụi và lưu lượng có thể khác đáng kể."
+      }
+    },
+    {
+      "id": "Q397",
+      "order": 397,
+      "sectionId": "sec-012",
+      "bloomLevel": "Understand",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Why must the correlation ratio R be determined with no test device installed?",
+        "vi": "Tại sao phải xác định correlation ratio R khi không lắp thiết bị thử?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "To calculate the filter's final resistance.",
+          "vi": "Để tính trở lực cuối của bộ lọc."
+        },
+        {
+          "id": "B",
+          "en": "To correct bias between the upstream and downstream sampling/counting systems.",
+          "vi": "Để hiệu chỉnh sai lệch giữa hệ lấy mẫu/đếm phía thượng lưu và hạ lưu."
+        },
+        {
+          "id": "C",
+          "en": "To determine the loading-dust composition.",
+          "vi": "Để xác định thành phần bụi nạp."
+        },
+        {
+          "id": "D",
+          "en": "To convert MERV into CADR.",
+          "vi": "Để chuyển MERV thành CADR."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "B",
+      "topic": {
+        "en": "Correlation ratio",
+        "vi": "Correlation ratio"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, định nghĩa correlation ratio; Mục 10.3 và 10.6.3.6.",
+      "explanation": {
+        "en": "R reflects duct bias, mixing, sampling-line losses, and/or differences between the two OPCs; the observed penetration is corrected using R.",
+        "vi": "R phản ánh thiên lệch của ống, mức hòa trộn, tổn thất đường lấy mẫu và/hoặc hai OPC; penetration quan sát được hiệu chỉnh bằng R."
+      }
+    },
+    {
+      "id": "Q398",
+      "order": 398,
+      "sectionId": "sec-012",
+      "bloomLevel": "Understand",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "What does isokinetic sampling mean?",
+        "vi": "Lấy mẫu đẳng động học (isokinetic sampling) có nghĩa là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "The flow rate through the probe always equals the total duct flow rate.",
+          "vi": "Lưu lượng trong đầu dò luôn bằng lưu lượng toàn ống."
+        },
+        {
+          "id": "B",
+          "en": "The pressure inside the probe equals atmospheric pressure.",
+          "vi": "Áp suất trong đầu dò bằng áp suất khí quyển."
+        },
+        {
+          "id": "C",
+          "en": "All particles have the same optical diameter.",
+          "vi": "Mọi hạt đều có cùng đường kính quang học."
+        },
+        {
+          "id": "D",
+          "en": "The flow at the sampling-probe inlet has the same velocity and direction as the flow being sampled.",
+          "vi": "Dòng tại miệng đầu lấy mẫu có cùng vận tốc và hướng với dòng đang được lấy mẫu."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "D",
+      "topic": {
+        "en": "Isokinetic sampling",
+        "vi": "Lấy mẫu đẳng động học"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, định nghĩa isokinetic sampling; Mục 4.4.5.",
+      "explanation": {
+        "en": "The purpose is to avoid inertial bias as particles enter the probe; the standard requires the condition to be maintained within 10%.",
+        "vi": "Mục tiêu là tránh thiên lệch quán tính khi hạt đi vào đầu dò; tiêu chuẩn yêu cầu duy trì trong phạm vi 10%."
+      }
+    },
+    {
+      "id": "Q399",
+      "order": 399,
+      "sectionId": "sec-012",
+      "bloomLevel": "Understand",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "What are the two principal functions of the downstream mixing orifice?",
+        "vi": "Hai chức năng chính của mixing orifice phía hạ lưu là gì?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "To straighten the flow after the bend and mix aerosol that penetrates the device so that the sampling probe obtains a representative sample.",
+          "vi": "Nắn lại dòng sau đoạn cong và hòa trộn aerosol xuyên qua thiết bị để đầu dò lấy mẫu đại diện."
+        },
+        {
+          "id": "B",
+          "en": "To generate KCl and neutralize electrical charge.",
+          "vi": "Tạo KCl và trung hòa điện tích."
+        },
+        {
+          "id": "C",
+          "en": "To separate loading dust from the airflow and weigh the dust.",
+          "vi": "Tách bụi nạp khỏi dòng khí và cân bụi."
+        },
+        {
+          "id": "D",
+          "en": "To reduce humidity below 10% and cool the airflow.",
+          "vi": "Giảm độ ẩm xuống dưới 10% và làm mát dòng khí."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "A",
+      "topic": {
+        "en": "Downstream mixing orifice",
+        "vi": "Bộ trộn phía hạ lưu"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, chú thích 3 của Mục 4.2.4.",
+      "explanation": {
+        "en": "The downstream orifice helps straighten the flow after the bend and mixes aerosol that penetrates the device so the downstream measurement is representative.",
+        "vi": "Orifice phía hạ lưu vừa hỗ trợ chỉnh dòng sau bend, vừa trộn phần aerosol xuyên qua thiết bị để phép đo downstream đại diện."
+      }
+    },
+    {
+      "id": "Q400",
+      "order": 400,
+      "sectionId": "sec-012",
+      "bloomLevel": "Understand",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Why is dilution of only the upstream sample prohibited?",
+        "vi": "Vì sao không được chỉ pha loãng mẫu phía thượng lưu?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Because it would raise the duct temperature above 38°C.",
+          "vi": "Vì sẽ làm nhiệt độ ống vượt 38°C."
+        },
+        {
+          "id": "B",
+          "en": "Because an OPC operates only with undiluted air.",
+          "vi": "Vì OPC chỉ hoạt động với khí không pha loãng."
+        },
+        {
+          "id": "C",
+          "en": "Because unequal dilution biases the upstream/downstream ratio and the calculated efficiency.",
+          "vi": "Vì độ pha loãng không cân bằng tạo thiên lệch cho tỷ số upstream/downstream và hiệu suất."
+        },
+        {
+          "id": "D",
+          "en": "Because KCl would become a liquid aerosol.",
+          "vi": "Vì KCl sẽ biến thành aerosol lỏng."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "C",
+      "topic": {
+        "en": "Sample dilution",
+        "vi": "Pha loãng mẫu"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 4.4.3.",
+      "explanation": {
+        "en": "If diluters are used, both sides must be diluted equally; diluting only the upstream sample biases penetration and correlation.",
+        "vi": "Nếu dùng diluter, cả hai phía phải được pha loãng như nhau; chỉ pha phía upstream làm sai penetration/correlation."
+      }
+    },
+    {
+      "id": "Q401",
+      "order": 401,
+      "sectionId": "sec-012",
+      "bloomLevel": "Understand",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "The combined requirements for rigid, grounded metal tubing with smooth interiors and equivalent upstream/downstream geometry are primarily intended to:",
+        "vi": "Tổ hợp yêu cầu 'ống kim loại cứng, nối đất, mặt trong nhẵn và hình học hai phía tương đương' chủ yếu nhằm:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Increase the resistance of the test filter.",
+          "vi": "Làm tăng trở lực của bộ lọc thử."
+        },
+        {
+          "id": "B",
+          "en": "Reduce and balance particle losses and electrostatic effects between the two sampling paths.",
+          "vi": "Giảm và cân bằng tổn thất hạt/tác động tĩnh điện giữa hai tuyến lấy mẫu."
+        },
+        {
+          "id": "C",
+          "en": "Evaporate KCl particles before they reach the OPC.",
+          "vi": "Làm bay hơi hạt KCl trước OPC."
+        },
+        {
+          "id": "D",
+          "en": "Allow the correlation test to be omitted.",
+          "vi": "Cho phép bỏ correlation test."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "B",
+      "topic": {
+        "en": "Sampling lines",
+        "vi": "Đường lấy mẫu"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 4.4.2(d-f) và 4.4.4.",
+      "explanation": {
+        "en": "This design limits deposition and electrostatic attraction while reducing bias caused by nonequivalent sampling paths.",
+        "vi": "Thiết kế này hạn chế lắng đọng và hút bám tĩnh điện, đồng thời giảm thiên lệch do hai tuyến lấy mẫu không tương đương."
+      }
+    },
+    {
+      "id": "Q402",
+      "order": 402,
+      "sectionId": "sec-012",
+      "bloomLevel": "Understand",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Which description correctly explains how the three E1, E2, and E3 values used for MERV are derived?",
+        "vi": "Mô tả nào đúng về cách hình thành ba giá trị E1, E2, E3 dùng cho MERV?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Use the highest initial clean efficiency in each group.",
+          "vi": "Lấy hiệu suất ban đầu sạch cao nhất trong từng nhóm."
+        },
+        {
+          "id": "B",
+          "en": "Average all particles counted in one test run.",
+          "vi": "Lấy trung bình của mọi hạt đếm được trong một lần thử."
+        },
+        {
+          "id": "C",
+          "en": "Use only the efficiency at final resistance and discard all earlier stages.",
+          "vi": "Lấy hiệu suất ở trạng thái trở lực cuối rồi bỏ các giai đoạn trước."
+        },
+        {
+          "id": "D",
+          "en": "Construct a composite curve from the lowest PSE among the six curves in each interval, then average the four points in each group.",
+          "vi": "Lập đường composite bằng giá trị PSE nhỏ nhất của sáu đường ở từng khoảng; sau đó trung bình bốn điểm trong mỗi nhóm."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "D",
+      "topic": {
+        "en": "Derivation of MERV",
+        "vi": "Cách hình thành MERV"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 10.8.1-10.8.3.",
+      "explanation": {
+        "en": "This method ensures that MERV reflects the minimum performance observed during the test cycle, not merely the clean or final efficiency.",
+        "vi": "Cách làm bảo đảm MERV phản ánh hiệu năng tối thiểu quan sát được trong chu kỳ thử, không chỉ hiệu suất khi sạch hoặc ở cuối."
+      }
+    },
+    {
+      "id": "Q403",
+      "order": 403,
+      "sectionId": "sec-012",
+      "bloomLevel": "Understand",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Why must DHC not be used directly in a report to calculate a filter's field service life?",
+        "vi": "Vì sao không được dùng trực tiếp DHC trong báo cáo để tính tuổi thọ bộ lọc tại công trình?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Because DHC uses synthetic dust in an accelerated test, whereas field dust loading and conditions differ.",
+          "vi": "Vì DHC dùng bụi tổng hợp và thử tăng tốc, trong khi tải bụi và điều kiện hiện trường khác nhau."
+        },
+        {
+          "id": "B",
+          "en": "Because DHC measures only the mass of KCl used in the PSE test.",
+          "vi": "Vì DHC chỉ đo khối lượng KCl của phép thử PSE."
+        },
+        {
+          "id": "C",
+          "en": "Because DHC is unrelated to the mass of dust retained.",
+          "vi": "Vì DHC không liên quan đến lượng bụi giữ lại."
+        },
+        {
+          "id": "D",
+          "en": "Because DHC applies only to electronic filters.",
+          "vi": "Vì DHC chỉ áp dụng cho bộ lọc điện tử."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "A",
+      "topic": {
+        "en": "Meaning of DHC",
+        "vi": "Ý nghĩa DHC"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, định nghĩa DHC và Phụ lục C2.1, mục giải thích 17.",
+      "explanation": {
+        "en": "DHC is the mass of synthetic loading dust retained during the test. It is useful for comparison under the test method, but it is not a field-life model.",
+        "vi": "DHC là khối lượng bụi nạp tổng hợp giữ lại trong phép thử; nó hữu ích để so sánh theo phương pháp nhưng không phải mô hình tuổi thọ hiện trường."
+      }
+    },
+    {
+      "id": "Q404",
+      "order": 404,
+      "sectionId": "sec-012",
+      "bloomLevel": "Understand",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "What is the principal purpose of the optional procedure in Appendix J?",
+        "vi": "Mục đích chính của quy trình tùy chọn tại Phụ lục J là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "To replace the main test method completely for every product.",
+          "vi": "Thay hoàn toàn phép thử chính cho mọi sản phẩm."
+        },
+        {
+          "id": "B",
+          "en": "To measure VOC gas-removal efficiency.",
+          "vi": "Đo hiệu suất khử khí VOC."
+        },
+        {
+          "id": "C",
+          "en": "To use fine KCl aerosol to indicate efficiency degradation that may occur in service, especially for electret media.",
+          "vi": "Dùng aerosol KCl mịn để biểu thị mức suy giảm hiệu suất có thể xảy ra ngoài hiện trường, đặc biệt với vật liệu electret."
+        },
+        {
+          "id": "D",
+          "en": "To determine the germicidal efficiency of an uncontained UV lamp.",
+          "vi": "Xác định hiệu suất diệt khuẩn của đèn UV không chứa kín."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "C",
+      "topic": {
+        "en": "Appendix J",
+        "vi": "Phụ lục J"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Phụ lục J1.",
+      "explanation": {
+        "en": "Appendix J is an optional conditioning procedure for investigating efficiency degradation. The same filter specimen must not be used for both the main method and the Appendix J method.",
+        "vi": "Phụ lục J là phép conditioning tùy chọn để khảo sát suy giảm hiệu suất. Cùng một mẫu lọc không được dùng cho cả phương pháp chính và phương pháp J."
+      }
+    },
+    {
+      "id": "Q405",
+      "order": 405,
+      "sectionId": "sec-012",
+      "bloomLevel": "Understand",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Which distinction between MERV and MERV-A is correct?",
+        "vi": "Phân biệt nào đúng giữa MERV và MERV-A?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "MERV-A is MERV converted to I-P units.",
+          "vi": "MERV-A là MERV đổi sang đơn vị I-P."
+        },
+        {
+          "id": "B",
+          "en": "MERV-A is the result after the optional Appendix J KCl-conditioning procedure; MERV is the result of the main procedure.",
+          "vi": "MERV-A là kết quả sau quy trình conditioning KCl tùy chọn của Phụ lục J; MERV là kết quả quy trình chính."
+        },
+        {
+          "id": "C",
+          "en": "MERV-A is only the average arrestance for MERV 1-4.",
+          "vi": "MERV-A chỉ là trung bình arrestance của MERV 1-4."
+        },
+        {
+          "id": "D",
+          "en": "The two designations are completely synonymous and interchangeable.",
+          "vi": "Hai ký hiệu hoàn toàn đồng nghĩa và có thể dùng thay nhau."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "B",
+      "topic": {
+        "en": "MERV-A",
+        "vi": "MERV-A"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Phụ lục J1, J2.2 và J11.",
+      "explanation": {
+        "en": "The separate designation tells the user that the result includes the fine-KCl conditioning step of Appendix J.",
+        "vi": "Ký hiệu riêng giúp người dùng nhận biết kết quả có bước conditioning bằng KCl mịn của Phụ lục J."
+      }
+    },
+    {
+      "id": "Q406",
+      "order": 406,
+      "sectionId": "sec-012",
+      "bloomLevel": "Understand",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "According to Addendum b-2020, how are PM1₅₂.₂, PM2.5₅₂.₂, and PM10₅₂.₂ derived?",
+        "vi": "Theo Addendum b-2020, PM1₅₂.₂, PM2.5₅₂.₂ và PM10₅₂.₂ được suy ra như thế nào?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "From a single loading-dust gravimetric measurement, without PSE data.",
+          "vi": "Từ phép cân bụi nạp duy nhất, không dùng PSE."
+        },
+        {
+          "id": "B",
+          "en": "From 24-hour field PM concentrations.",
+          "vi": "Từ nồng độ PM đo tại công trình trong 24 giờ."
+        },
+        {
+          "id": "C",
+          "en": "From E1, E2, and E3 multiplied by resistance.",
+          "vi": "Từ ba giá trị E1, E2, E3 bằng cách nhân với trở lực."
+        },
+        {
+          "id": "D",
+          "en": "From averages of the minimum PSE values for, respectively, 4, 8, and 12 intervals of the composite curve.",
+          "vi": "Từ trung bình các PSE tối thiểu: lần lượt 4, 8 và 12 khoảng kích thước của đường composite."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "D",
+      "topic": {
+        "en": "PM52.2",
+        "vi": "PM52.2"
+      },
+      "sourceText": "ANSI/ASHRAE Addendum b-2020, Mục 10.8.4, Bảng 10-3 và Mục 11.2(m).",
+      "explanation": {
+        "en": "Addendum b adds estimated PM efficiencies derived from Standard 52.2 data over 0.30-1.0, 0.30-3.0, and 0.30-10 µm.",
+        "vi": "Addendum b bổ sung các hiệu suất PM ước tính từ dữ liệu Standard 52.2: 0,30-1,0; 0,30-3,0; và 0,30-10 µm."
+      }
+    },
+    {
+      "id": "Q407",
+      "order": 407,
+      "sectionId": "sec-012",
+      "bloomLevel": "Understand",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "What principle does Appendix K use to simulate a two-stage filtration system?",
+        "vi": "Phụ lục K mô phỏng hệ lọc hai cấp bằng nguyên tắc nào?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "A prefilter is installed ahead of a final filter; the prefilter is replaced at final resistance, and testing continues until the final filter reaches final resistance.",
+          "vi": "Prefilter đứng trước final filter; thay prefilter khi đạt trở lực cuối và tiếp tục đến khi final filter đạt trở lực cuối."
+        },
+        {
+          "id": "B",
+          "en": "The two filters are installed in parallel and always replaced together.",
+          "vi": "Hai lọc mắc song song và luôn thay đồng thời."
+        },
+        {
+          "id": "C",
+          "en": "Only total resistance is measured; individual filter resistance is not measured.",
+          "vi": "Chỉ đo trở lực tổng, không đo từng lọc."
+        },
+        {
+          "id": "D",
+          "en": "Dust loading is omitted and only the clean condition is tested.",
+          "vi": "Bỏ nạp bụi và chỉ thử trạng thái sạch."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "A",
+      "topic": {
+        "en": "Appendix K",
+        "vi": "Phụ lục K"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Phụ lục K1, K5 và K6.",
+      "explanation": {
+        "en": "The procedure evaluates two filters in series, tracks their individual resistance, and allows multiple prefilter replacements before the final filter completes its cycle.",
+        "vi": "Quy trình đánh giá hệ hai lọc nối tiếp, theo dõi trở lực riêng và cho phép thay nhiều prefilter trước khi final filter kết thúc chu kỳ."
+      }
+    },
+    {
+      "id": "Q408",
+      "order": 408,
+      "sectionId": "sec-012",
+      "bloomLevel": "Understand",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "What is the principal change made by Addendum a-2018 to Section 9?",
+        "vi": "Thay đổi cốt lõi của Addendum a-2018 đối với Mục 9 là gì?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "It deletes all nozzle-based airflow measurements.",
+          "vi": "Xóa toàn bộ phép đo lưu lượng bằng nozzle."
+        },
+        {
+          "id": "B",
+          "en": "It replaces KCl with NaCl in the PSE test.",
+          "vi": "Thay KCl bằng NaCl trong phép thử PSE."
+        },
+        {
+          "id": "C",
+          "en": "It removes the moist-air-density chart and adds equations based on wet-bulb temperature, dry-bulb temperature, and atmospheric pressure, followed by correction to the orifice inlet.",
+          "vi": "Xóa biểu đồ mật độ không khí ẩm và bổ sung phương trình tính từ nhiệt độ bầu ướt, bầu khô, áp suất khí quyển rồi hiệu chỉnh về cửa vào orifice."
+        },
+        {
+          "id": "D",
+          "en": "It reduces resistance measurement from four points to one.",
+          "vi": "Giảm số điểm đo trở lực từ bốn xuống một."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "C",
+      "topic": {
+        "en": "Addendum a",
+        "vi": "Addendum a"
+      },
+      "sourceText": "ANSI/ASHRAE Addendum a-2018, Foreword và Mục 9.3.1-9.3.2.",
+      "explanation": {
+        "en": "Addendum a makes the moist-air-density method easier to program and clearer, while retaining use of the density at the orifice inlet in the airflow equation.",
+        "vi": "Addendum a làm phương pháp xác định mật độ khí ẩm dễ lập trình và rõ hơn, đồng thời vẫn dùng mật độ tại inlet của orifice trong phương trình lưu lượng."
+      }
+    },
+    {
+      "id": "Q409",
+      "order": 409,
+      "sectionId": "sec-012",
+      "bloomLevel": "Understand",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "How did the errata dated October 15, 2020 revise Appendix E?",
+        "vi": "Errata ngày 15/10/2020 sửa Phụ lục E bằng cách nào?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "It added a mandatory requirement to use Table E-1 for filter selection.",
+          "vi": "Thêm yêu cầu bắt buộc dùng Table E-1 để chọn lọc."
+        },
+        {
+          "id": "B",
+          "en": "It deleted the statement that HEPA/ULPA filters are added to the reporting system and assigned MERV ratings based on IEST standards.",
+          "vi": "Xóa câu nói HEPA/ULPA được thêm vào hệ báo cáo và được gán MERV dựa trên tiêu chuẩn IEST."
+        },
+        {
+          "id": "C",
+          "en": "It replaced every MERV value with ISO ePM.",
+          "vi": "Thay mọi giá trị MERV bằng ISO ePM."
+        },
+        {
+          "id": "D",
+          "en": "It deleted Appendix E in its entirety.",
+          "vi": "Xóa toàn bộ Phụ lục E."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "B",
+      "topic": {
+        "en": "2020 Errata",
+        "vi": "Errata 2020"
+      },
+      "sourceText": "Errata Sheet for ANSI/ASHRAE 52.2-2017, 15/10/2020, trang 44, E1.1.",
+      "explanation": {
+        "en": "The errata revise only E1.1 by deleting the text on adding HEPA/ULPA filters and assigning MERV ratings; the remaining guidance was not deleted in full.",
+        "vi": "Errata chỉ sửa E1.1 bằng cách xóa nội dung về việc thêm HEPA/ULPA và gán MERV; các hướng dẫn còn lại không bị xóa toàn bộ."
+      }
+    },
+    {
+      "id": "Q410",
+      "order": 410,
+      "sectionId": "sec-019",
+      "bloomLevel": "Apply",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "A filter has a face area of 0.48 m². The manufacturer specifies no face velocity. According to Section 8.1.2, the test airflow rate is:",
+        "vi": "Một bộ lọc có diện tích mặt 0,48 m². Không có vận tốc do nhà sản xuất chỉ định. Lưu lượng thử theo Mục 8.1.2 là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "0.192 m³/s",
+          "vi": "0,192 m³/s"
+        },
+        {
+          "id": "B",
+          "en": "0.48 m³/s",
+          "vi": "0,48 m³/s"
+        },
+        {
+          "id": "C",
+          "en": "2.50 m³/s",
+          "vi": "2,50 m³/s"
+        },
+        {
+          "id": "D",
+          "en": "1.20 m³/s",
+          "vi": "1,20 m³/s"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "D",
+      "topic": {
+        "en": "Airflow calculation",
+        "vi": "Tính lưu lượng"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 8.1.1-8.1.4.",
+      "explanation": {
+        "en": "Q = face velocity x face area = 2.50 x 0.48 = 1.20 m³/s; this value lies within the usable range of the test rig.",
+        "vi": "Q = vận tốc mặt x diện tích mặt = 2,50 x 0,48 = 1,20 m³/s; giá trị này nằm trong dải khả dụng của giàn thử."
+      }
+    },
+    {
+      "id": "Q411",
+      "order": 411,
+      "sectionId": "sec-019",
+      "bloomLevel": "Apply",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "If the corrected penetration for one size interval is P = 0.18, the PSE is:",
+        "vi": "Nếu penetration đã hiệu chỉnh của một khoảng kích thước là P = 0,18 thì PSE bằng:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "82%",
+          "vi": "82%"
+        },
+        {
+          "id": "B",
+          "en": "18%",
+          "vi": "18%"
+        },
+        {
+          "id": "C",
+          "en": "55.6%",
+          "vi": "55,6%"
+        },
+        {
+          "id": "D",
+          "en": "118%",
+          "vi": "118%"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "A",
+      "topic": {
+        "en": "PSE calculation",
+        "vi": "Tính PSE"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Phương trình 10-26.",
+      "explanation": {
+        "en": "PSE = (1 - P) x 100 = (1 - 0.18) x 100 = 82%.",
+        "vi": "PSE = (1 - P) x 100 = (1 - 0,18) x 100 = 82%."
+      }
+    },
+    {
+      "id": "Q412",
+      "order": 412,
+      "sectionId": "sec-019",
+      "bloomLevel": "Apply",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "The mean observed penetration is Po = 0.245 and the correlation ratio is R = 0.980. The closest final PSE is:",
+        "vi": "Penetration quan sát trung bình Po = 0,245 và correlation ratio R = 0,980. PSE cuối cùng gần nhất là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "24.5%",
+          "vi": "24,5%"
+        },
+        {
+          "id": "B",
+          "en": "74.0%",
+          "vi": "74,0%"
+        },
+        {
+          "id": "C",
+          "en": "75.0%",
+          "vi": "75,0%"
+        },
+        {
+          "id": "D",
+          "en": "98.0%",
+          "vi": "98,0%"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "C",
+      "topic": {
+        "en": "Penetration correction",
+        "vi": "Hiệu chỉnh penetration"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Phương trình 10-19 và 10-26.",
+      "explanation": {
+        "en": "P = Po/R = 0.245/0.980 = 0.250; therefore, PSE = (1 - 0.250) x 100 = 75.0%.",
+        "vi": "P = Po/R = 0,245/0,980 = 0,250; do đó PSE = (1 - 0,250) x 100 = 75,0%."
+      }
+    },
+    {
+      "id": "Q413",
+      "order": 413,
+      "sectionId": "sec-019",
+      "bloomLevel": "Apply",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "In one increment, the mass of dust fed is Wu = 120 g and the mass of dust passing the device is Wd = 18 g. The arrestance Ai is:",
+        "vi": "Trong một increment, khối lượng bụi nạp Wu = 120 g và bụi đi qua Wd = 18 g. Arrestance Ai là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "15%",
+          "vi": "15%"
+        },
+        {
+          "id": "B",
+          "en": "85%",
+          "vi": "85%"
+        },
+        {
+          "id": "C",
+          "en": "102%",
+          "vi": "102%"
+        },
+        {
+          "id": "D",
+          "en": "666.7%",
+          "vi": "666,7%"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "B",
+      "topic": {
+        "en": "Arrestance",
+        "vi": "Arrestance"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Phương trình 10-27.",
+      "explanation": {
+        "en": "Ai = 100(1 - Wd/Wu) = 100(1 - 18/120) = 85%.",
+        "vi": "Ai = 100(1 - Wd/Wu) = 100(1 - 18/120) = 85%."
+      }
+    },
+    {
+      "id": "Q414",
+      "order": 414,
+      "sectionId": "sec-019",
+      "bloomLevel": "Apply",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Two increments have (Wu, Wd) values of (100 g, 12 g) and (150 g, 15 g), respectively. The total DHC is:",
+        "vi": "Hai increment có (Wu, Wd) lần lượt là (100 g, 12 g) và (150 g, 15 g). Tổng DHC bằng:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "27 g",
+          "vi": "27 g"
+        },
+        {
+          "id": "B",
+          "en": "196 g",
+          "vi": "196 g"
+        },
+        {
+          "id": "C",
+          "en": "250 g",
+          "vi": "250 g"
+        },
+        {
+          "id": "D",
+          "en": "223 g",
+          "vi": "223 g"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "D",
+      "topic": {
+        "en": "DHC",
+        "vi": "DHC"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Phương trình 10-28 và 10-31.",
+      "explanation": {
+        "en": "DHC = (100 - 12) + (150 - 15) = 88 + 135 = 223 g.",
+        "vi": "DHC = (100 - 12) + (150 - 15) = 88 + 135 = 223 g."
+      }
+    },
+    {
+      "id": "Q415",
+      "order": 415,
+      "sectionId": "sec-019",
+      "bloomLevel": "Apply",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "A device receives 50 g of loading dust at 80% arrestance and 150 g at 92% arrestance. The loading-dust-weighted Aavg is:",
+        "vi": "Một thiết bị có 50 g bụi nạp tại arrestance 80% và 150 g tại arrestance 92%. Aavg theo trọng số bụi nạp là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "89%",
+          "vi": "89%"
+        },
+        {
+          "id": "B",
+          "en": "86%",
+          "vi": "86%"
+        },
+        {
+          "id": "C",
+          "en": "172%",
+          "vi": "172%"
+        },
+        {
+          "id": "D",
+          "en": "90%",
+          "vi": "90%"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "A",
+      "topic": {
+        "en": "Average arrestance",
+        "vi": "Arrestance trung bình"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Phương trình 10-30.",
+      "explanation": {
+        "en": "Aavg = (50 x 80 + 150 x 92)/(50 + 150) = 17,800/200 = 89%.",
+        "vi": "Aavg = (50 x 80 + 150 x 92)/(50 + 150) = 17.800/200 = 89%."
+      }
+    },
+    {
+      "id": "Q416",
+      "order": 416,
+      "sectionId": "sec-019",
+      "bloomLevel": "Apply",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "A filter has E1 = 48%, E2 = 82%, and E3 = 94%. What is the highest MERV it satisfies under Table 12-1?",
+        "vi": "Một bộ lọc có E1 = 48%, E2 = 82%, E3 = 94%. MERV cao nhất thỏa Bảng 12-1 là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "MERV 10",
+          "vi": "MERV 10"
+        },
+        {
+          "id": "B",
+          "en": "MERV 11",
+          "vi": "MERV 11"
+        },
+        {
+          "id": "C",
+          "en": "MERV 12",
+          "vi": "MERV 12"
+        },
+        {
+          "id": "D",
+          "en": "MERV 13",
+          "vi": "MERV 13"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "C",
+      "topic": {
+        "en": "MERV classification",
+        "vi": "Phân loại MERV"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Bảng 12-1.",
+      "explanation": {
+        "en": "MERV 12 requires E1 ≥35, E2 ≥80, and E3 ≥90. MERV 13 requires E1 ≥50, which is not met; therefore, the highest rating is MERV 12.",
+        "vi": "MERV 12 cần E1 ≥35, E2 ≥80, E3 ≥90. MERV 13 cần E1 ≥50 nên không đạt; vì vậy mức cao nhất là MERV 12."
+      }
+    },
+    {
+      "id": "Q417",
+      "order": 417,
+      "sectionId": "sec-019",
+      "bloomLevel": "Apply",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "A filter has E1 = 88%, E2 = 93%, and E3 = 97%. What is its highest MERV?",
+        "vi": "Một bộ lọc có E1 = 88%, E2 = 93%, E3 = 97%. MERV cao nhất là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "MERV 14",
+          "vi": "MERV 14"
+        },
+        {
+          "id": "B",
+          "en": "MERV 15",
+          "vi": "MERV 15"
+        },
+        {
+          "id": "C",
+          "en": "MERV 16",
+          "vi": "MERV 16"
+        },
+        {
+          "id": "D",
+          "en": "MERV 13",
+          "vi": "MERV 13"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "B",
+      "topic": {
+        "en": "MERV classification",
+        "vi": "Phân loại MERV"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Bảng 12-1.",
+      "explanation": {
+        "en": "The filter meets MERV 15 (85/90/95) but not MERV 16, because MERV 16 requires E1, E2, and E3 all to be at least 95%.",
+        "vi": "Bộ lọc đạt MERV 15 (85/90/95) nhưng chưa đạt MERV 16 vì MERV 16 đòi hỏi cả E1, E2, E3 đều ít nhất 95%."
+      }
+    },
+    {
+      "id": "Q418",
+      "order": 418,
+      "sectionId": "sec-019",
+      "bloomLevel": "Apply",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "A filter has E3 = 17% and Aavg = 72%. According to Table 12-1, what rating must be reported?",
+        "vi": "Một bộ lọc có E3 = 17% và Aavg = 72%. Theo Bảng 12-1, mức báo cáo là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "MERV 1",
+          "vi": "MERV 1"
+        },
+        {
+          "id": "B",
+          "en": "MERV 2",
+          "vi": "MERV 2"
+        },
+        {
+          "id": "C",
+          "en": "MERV 4",
+          "vi": "MERV 4"
+        },
+        {
+          "id": "D",
+          "en": "MERV 3",
+          "vi": "MERV 3"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "D",
+      "topic": {
+        "en": "MERV 1-4",
+        "vi": "MERV 1-4"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 12.3 và Bảng 12-1.",
+      "explanation": {
+        "en": "Because E3 <20%, the filter is classified using arrestance. Aavg of 72% meets the MERV 3 threshold (≥70%) but not the MERV 4 threshold (≥75%).",
+        "vi": "Vì E3 <20%, bộ lọc thuộc nhóm dùng arrestance. Aavg 72% đạt ngưỡng MERV 3 (≥70%) nhưng chưa đạt MERV 4 (≥75%)."
+      }
+    },
+    {
+      "id": "Q419",
+      "order": 419,
+      "sectionId": "sec-019",
+      "bloomLevel": "Apply",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "The twelve minimum PSE values are 40, 50, 60, 70, 75, 80, 85, 90, 92, 94, 96, and 98 (%). The set (PM1₅₂.₂; PM2.5₅₂.₂; PM10₅₂.₂) is:",
+        "vi": "Mười hai PSE tối thiểu lần lượt là 40, 50, 60, 70, 75, 80, 85, 90, 92, 94, 96, 98 (%). Bộ ba (PM1₅₂.₂; PM2.5₅₂.₂; PM10₅₂.₂) là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "55.0%; 68.75%; 77.5%",
+          "vi": "55,0%; 68,75%; 77,5%"
+        },
+        {
+          "id": "B",
+          "en": "70.0%; 90.0%; 98.0%",
+          "vi": "70,0%; 90,0%; 98,0%"
+        },
+        {
+          "id": "C",
+          "en": "40.0%; 75.0%; 92.0%",
+          "vi": "40,0%; 75,0%; 92,0%"
+        },
+        {
+          "id": "D",
+          "en": "68.75%; 77.5%; 85.0%",
+          "vi": "68,75%; 77,5%; 85,0%"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "A",
+      "topic": {
+        "en": "PM52.2 calculation",
+        "vi": "Tính PM52.2"
+      },
+      "sourceText": "ANSI/ASHRAE Addendum b-2020, Mục 10.8.4 và Bảng 10-3.",
+      "explanation": {
+        "en": "PM1 is the average of the first 4 values = 55.0%; PM2.5 is the average of the first 8 values = 68.75%; PM10 is the average of all 12 values = 77.5%.",
+        "vi": "PM1 là trung bình 4 điểm đầu = 55,0%; PM2.5 là trung bình 8 điểm đầu = 68,75%; PM10 là trung bình cả 12 điểm = 77,5%."
+      }
+    },
+    {
+      "id": "Q420",
+      "order": 420,
+      "sectionId": "sec-019",
+      "bloomLevel": "Apply",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "The estimated total upstream count for one interval is only 480, while all other criteria are met. What is the appropriate action?",
+        "vi": "Tổng số đếm upstream ước tính của một khoảng chỉ đạt 480; các tiêu chí khác đạt. Hành động phù hợp là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Accept the result because 480 is close to 500.",
+          "vi": "Chấp nhận vì 480 gần 500."
+        },
+        {
+          "id": "B",
+          "en": "Set the efficiency for that interval to 0%.",
+          "vi": "Đặt hiệu suất khoảng đó bằng 0%."
+        },
+        {
+          "id": "C",
+          "en": "Increase sampling time or aerosol concentration without exceeding the OPC concentration limit.",
+          "vi": "Tăng thời gian lấy mẫu hoặc nồng độ aerosol nhưng không vượt giới hạn concentration của OPC."
+        },
+        {
+          "id": "D",
+          "en": "Reduce aerosol concentration and the number of samples.",
+          "vi": "Giảm nồng độ aerosol và số mẫu."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "C",
+      "topic": {
+        "en": "Count criterion",
+        "vi": "Tiêu chí số đếm"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 10.6.2.4 và 10.6.4.3.",
+      "explanation": {
+        "en": "The estimated total upstream count must be at least 500. Sampling time or concentration may be increased, but the OPC must not be overloaded.",
+        "vi": "Tổng upstream ước tính phải ít nhất 500. Có thể tăng thời gian hoặc nồng độ, nhưng không được gây quá tải OPC."
+      }
+    },
+    {
+      "id": "Q421",
+      "order": 421,
+      "sectionId": "sec-019",
+      "bloomLevel": "Apply",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "In an Appendix L test, Cupstream = 1200 CFU/m³, Cdownstream = 240 CFU/m³, and Pno_device = 0.80. The corrected efficiency is:",
+        "vi": "Trong phép thử Phụ lục L: Cupstream = 1200 CFU/m³, Cdownstream = 240 CFU/m³ và Pno_device = 0,80. Hiệu suất hiệu chỉnh là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "20%",
+          "vi": "20%"
+        },
+        {
+          "id": "B",
+          "en": "75%",
+          "vi": "75%"
+        },
+        {
+          "id": "C",
+          "en": "80%",
+          "vi": "80%"
+        },
+        {
+          "id": "D",
+          "en": "96%",
+          "vi": "96%"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "B",
+      "topic": {
+        "en": "Bioaerosol efficiency",
+        "vi": "Hiệu suất bioaerosol"
+      },
+      "sourceText": "ANSI/ASHRAE Addendum c-2022, Phụ lục L, Phương trình L-3.",
+      "explanation": {
+        "en": "ηcorr = [1 - 240/(1200 x 0.80)] x 100 = (1 - 0.25) x 100 = 75%.",
+        "vi": "ηcorr = [1 - 240/(1200 x 0,80)] x 100 = (1 - 0,25) x 100 = 75%."
+      }
+    },
+    {
+      "id": "Q422",
+      "order": 422,
+      "sectionId": "sec-026",
+      "bloomLevel": "Analyze",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "The correlation ratio is out of tolerance mainly for particles <1.0 µm, while larger particles meet the criterion. Which cause should be suspected first?",
+        "vi": "Correlation ratio ngoài giới hạn chủ yếu ở các hạt <1,0 µm, trong khi các hạt lớn đạt. Nguyên nhân nên nghi ngờ trước tiên là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "The final filter captures dust too efficiently.",
+          "vi": "Final filter giữ bụi quá tốt."
+        },
+        {
+          "id": "B",
+          "en": "The resistance of the test filter is too low.",
+          "vi": "Trở lực bộ lọc thử quá thấp."
+        },
+        {
+          "id": "C",
+          "en": "The cotton linters have not been dried.",
+          "vi": "Cotton linters chưa được sấy."
+        },
+        {
+          "id": "D",
+          "en": "The aerosol is not fully mixed at the upstream probe, or the injection tube requires adjustment.",
+          "vi": "Aerosol chưa hòa trộn đầy đủ tại đầu dò upstream hoặc ống phun cần căn chỉnh."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "D",
+      "topic": {
+        "en": "Correlation diagnosis",
+        "vi": "Chẩn đoán correlation"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 5.8, chú thích 26.",
+      "explanation": {
+        "en": "The note in Section 5.8 indicates that small-particle deviations are commonly associated with upstream mixing. Unequal sampling-line losses become the primary suspicion when small particles pass but large particles do not.",
+        "vi": "Ghi chú của Mục 5.8 chỉ ra sai lệch ở hạt nhỏ thường liên quan tới hòa trộn upstream; nếu hạt nhỏ đạt mà hạt lớn không đạt thì mới ưu tiên nghi ngờ tổn thất đường lấy mẫu không bằng nhau."
+      }
+    },
+    {
+      "id": "Q423",
+      "order": 423,
+      "sectionId": "sec-026",
+      "bloomLevel": "Analyze",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "A HEPA/ULPA test produces only 98.7% PSE even though the device and OPC are functioning normally. The problem appears when switching from upstream to downstream sampling. What is the most reasonable corrective action?",
+        "vi": "Phép thử với HEPA/ULPA chỉ cho PSE 98,7% dù thiết bị và OPC bình thường. Hiện tượng xuất hiện khi chuyển từ upstream sang downstream. Xử lý hợp lý nhất là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Increase the purge time, then repeat the 100%-efficiency test.",
+          "vi": "Tăng purge time rồi lặp lại phép thử 100% efficiency."
+        },
+        {
+          "id": "B",
+          "en": "Reduce the OPC size intervals from 12 to 3.",
+          "vi": "Giảm số khoảng OPC từ 12 xuống 3."
+        },
+        {
+          "id": "C",
+          "en": "Increase test-duct leakage to reduce downstream concentration.",
+          "vi": "Tăng rò rỉ ống thử để giảm nồng độ downstream."
+        },
+        {
+          "id": "D",
+          "en": "Omit background sampling.",
+          "vi": "Bỏ bước background sampling."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "A",
+      "topic": {
+        "en": "Purge time",
+        "vi": "Purge time"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 5.7.1-5.7.3.",
+      "explanation": {
+        "en": "An insufficient purge time allows particles remaining from the upstream sample to enter the downstream count, causing apparent PSE to fall below 99%.",
+        "vi": "Purge quá ngắn khiến hạt còn sót từ mẫu upstream đi vào phép đếm downstream, làm PSE biểu kiến thấp hơn 99%."
+      }
+    },
+    {
+      "id": "Q424",
+      "order": 424,
+      "sectionId": "sec-026",
+      "bloomLevel": "Analyze",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "After a dust-loading stage, the calculation gives PSE = -3% in one size interval. What value must be reported under the standard?",
+        "vi": "Sau một giai đoạn nạp bụi, phép tính cho PSE = -3% ở một khoảng kích thước. Báo cáo theo tiêu chuẩn phải ghi:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "-3%",
+          "vi": "-3%"
+        },
+        {
+          "id": "B",
+          "en": "3%",
+          "vi": "3%"
+        },
+        {
+          "id": "C",
+          "en": "0%",
+          "vi": "0%"
+        },
+        {
+          "id": "D",
+          "en": "N/A",
+          "vi": "N/A"
+        }
+      ],
+      "images": [],
+      "correctOptionId": "C",
+      "topic": {
+        "en": "Negative PSE",
+        "vi": "PSE âm"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 10.7.3.4.",
+      "explanation": {
+        "en": "If PSE is negative in a run, the efficiency for that interval must be reported as 0%.",
+        "vi": "Nếu PSE âm trong một run, hiệu suất của khoảng đó phải được báo cáo bằng 0%."
+      }
+    },
+    {
+      "id": "Q425",
+      "order": 425,
+      "sectionId": "sec-026",
+      "bloomLevel": "Analyze",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "A filter has high initial efficiency but drops markedly when the media charge is shielded. Which supplementary test is most appropriate for investigating this risk?",
+        "vi": "Một bộ lọc có hiệu suất ban đầu cao nhưng giảm rõ rệt khi điện tích của media bị che chắn. Phép thử bổ sung nào phù hợp nhất để khảo sát rủi ro này?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Measure resistance only at 125% airflow.",
+          "vi": "Chỉ đo trở lực ở 125% lưu lượng."
+        },
+        {
+          "id": "B",
+          "en": "Apply fine-KCl conditioning under Appendix J and report MERV-A.",
+          "vi": "Conditioning KCl mịn theo Phụ lục J và báo cáo MERV-A."
+        },
+        {
+          "id": "C",
+          "en": "Test two filters in series under Appendix K.",
+          "vi": "Thử hai lọc nối tiếp theo Phụ lục K."
+        },
+        {
+          "id": "D",
+          "en": "Weigh only the final filter after 100 g of dust.",
+          "vi": "Chỉ cân final filter sau 100 g bụi."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "B",
+      "topic": {
+        "en": "Electret degradation",
+        "vi": "Suy giảm electret"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Foreword, Phụ lục A2.1.1 và Phụ lục J1.",
+      "explanation": {
+        "en": "Appendix J was developed to indicate possible efficiency degradation and is particularly useful for passively charged/electret media.",
+        "vi": "Phụ lục J được xây dựng để biểu thị mức giảm hiệu suất có thể xảy ra, đặc biệt hữu ích đối với media thụ động tích điện/electret."
+      }
+    },
+    {
+      "id": "Q426",
+      "order": 426,
+      "sectionId": "sec-026",
+      "bloomLevel": "Analyze",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "The OPC viewed-sample flow rates at both the upstream and downstream locations are within ±5% of nominal, but the difference between the two locations is 3%. What is the conclusion?",
+        "vi": "Lưu lượng viewed sample của OPC ở cả upstream và downstream đều nằm trong ±5% giá trị danh định, nhưng chênh lệch giữa hai vị trí là 3%. Kết luận là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Pass, because each individual value is within ±5%.",
+          "vi": "Đạt vì từng giá trị riêng lẻ nằm trong ±5%."
+        },
+        {
+          "id": "B",
+          "en": "Pass if the correlation ratio equals 1.00.",
+          "vi": "Đạt nếu correlation ratio bằng 1,00."
+        },
+        {
+          "id": "C",
+          "en": "Only a temperature correction is required.",
+          "vi": "Chỉ cần hiệu chỉnh bằng nhiệt độ."
+        },
+        {
+          "id": "D",
+          "en": "Fail, because the upstream/downstream difference must not exceed 2%.",
+          "vi": "Không đạt vì chênh lệch upstream/downstream không được vượt 2%."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "D",
+      "topic": {
+        "en": "OPC sample-flow stability",
+        "vi": "Ổn định lưu lượng OPC"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 5.16.4-5.16.5.",
+      "explanation": {
+        "en": "Two independent conditions must both be met: each flow rate must be within ±5% of nominal, and the upstream/downstream difference must not exceed 2%.",
+        "vi": "Hai điều kiện độc lập phải cùng đạt: mỗi lưu lượng trong ±5% định mức và chênh giữa upstream/downstream không quá 2%."
+      }
+    },
+    {
+      "id": "Q427",
+      "order": 427,
+      "sectionId": "sec-026",
+      "bloomLevel": "Analyze",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "If the challenge concentration exceeds the OPC's non-overload range, what trend does coincidence error generally cause?",
+        "vi": "Nếu nồng độ challenge vượt vùng không quá tải của OPC, coincidence error thường dẫn đến xu hướng nào?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "The OPC undercounts upstream particles, apparent penetration increases, and measured efficiency decreases.",
+          "vi": "OPC đếm thiếu phía upstream, penetration biểu kiến tăng và hiệu suất đo được giảm."
+        },
+        {
+          "id": "B",
+          "en": "The OPC overcounts upstream particles, and efficiency always rises to 100%.",
+          "vi": "OPC đếm thừa phía upstream, hiệu suất luôn tăng tới 100%."
+        },
+        {
+          "id": "C",
+          "en": "Only resistance changes; PSE is unaffected.",
+          "vi": "Chỉ trở lực thay đổi, PSE không bị ảnh hưởng."
+        },
+        {
+          "id": "D",
+          "en": "The test-duct size decreases automatically.",
+          "vi": "Kích thước ống thử tự động giảm."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "A",
+      "topic": {
+        "en": "Coincidence error",
+        "vi": "Coincidence error"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 5.6 và chú thích 21.",
+      "explanation": {
+        "en": "Too many particles passing through the sensing volume together may be recorded as fewer events, causing the challenge to be underestimated and the apparent efficiency to be reduced.",
+        "vi": "Quá nhiều hạt cùng đi qua vùng đo có thể bị ghi nhận như ít sự kiện hơn, làm challenge bị đánh giá thấp và do đó hiệu suất biểu kiến bị hạ."
+      }
+    },
+    {
+      "id": "Q428",
+      "order": 428,
+      "sectionId": "sec-026",
+      "bloomLevel": "Analyze",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "With no test device installed, 100.0 g of dust is fed and the final filter gains 97.4 g. What is the correct conclusion?",
+        "vi": "Khi không lắp thiết bị thử, nạp 100,0 g bụi và final filter tăng 97,4 g. Kết luận đúng là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Pass, because more than 95 g was retained.",
+          "vi": "Đạt vì giữ trên 95 g."
+        },
+        {
+          "id": "B",
+          "en": "Pass, because the final filter needs to retain only 90%.",
+          "vi": "Đạt vì final filter chỉ cần giữ 90%."
+        },
+        {
+          "id": "C",
+          "en": "Fail, because the mass gain must be within 100 ± 2 g.",
+          "vi": "Không đạt vì khối lượng tăng phải nằm trong 100 ± 2 g."
+        },
+        {
+          "id": "D",
+          "en": "The result cannot be evaluated without knowing the MERV.",
+          "vi": "Không thể đánh giá nếu chưa biết MERV."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "C",
+      "topic": {
+        "en": "Final-filter qualification",
+        "vi": "Final filter qualification"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 5.14 và Bảng 5-1.",
+      "explanation": {
+        "en": "The criterion is a collected mass of 100 ± 2 g when 100 g is fed. A gain of 97.4 g is below the lower limit of 98.0 g and therefore fails.",
+        "vi": "Tiêu chí là 100 ± 2 g thu được khi nạp 100 g; 97,4 g thấp hơn giới hạn 98,0 g nên không đạt."
+      }
+    },
+    {
+      "id": "Q429",
+      "order": 429,
+      "sectionId": "sec-026",
+      "bloomLevel": "Analyze",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "The primary reference filter differs by more than 5 percentage points in one channel; the secondary filter differs by only 2 points, and both resistance values pass. What action is appropriate?",
+        "vi": "Reference filter chính lệch hơn 5 điểm phần trăm ở một kênh; filter phụ chỉ lệch 2 điểm và trở lực đều đạt. Hành động phù hợp là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Recalibrate the OPC immediately without considering the filter.",
+          "vi": "Hiệu chuẩn lại OPC ngay, không xét filter."
+        },
+        {
+          "id": "B",
+          "en": "Replace the primary filter with an identical filter or establish a new reference-filter set.",
+          "vi": "Thay filter chính bằng filter giống hệt hoặc thiết lập bộ reference filter mới."
+        },
+        {
+          "id": "C",
+          "en": "Omit the biweekly check.",
+          "vi": "Bỏ kiểm tra hai tuần một lần."
+        },
+        {
+          "id": "D",
+          "en": "Increase the allowable deviation to 10 percentage points.",
+          "vi": "Tăng ngưỡng lệch cho phép lên 10 điểm phần trăm."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "B",
+      "topic": {
+        "en": "Reference filter",
+        "vi": "Reference filter"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 5.18.1.1 và 5.18.1.6.",
+      "explanation": {
+        "en": "When only one reference filter deviates while the comparison filter does not, the problem may be the filter itself; there is no basis for immediately requiring OPC recalibration.",
+        "vi": "Khi chỉ một reference filter lệch còn filter đối chứng không lệch, vấn đề có thể nằm ở chính filter; không có cơ sở buộc hiệu chuẩn lại OPC ngay."
+      }
+    },
+    {
+      "id": "Q430",
+      "order": 430,
+      "sectionId": "sec-026",
+      "bloomLevel": "Analyze",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "In an Appendix K test, the prefilter reaches final resistance but the final filter has not. What is the next step?",
+        "vi": "Trong phép thử Phụ lục K, prefilter đạt trở lực cuối nhưng final filter chưa đạt. Bước tiếp theo là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "End the entire test.",
+          "vi": "Kết thúc toàn bộ phép thử."
+        },
+        {
+          "id": "B",
+          "en": "Keep the old prefilter and raise the airflow to 125%.",
+          "vi": "Giữ prefilter cũ và tăng lưu lượng 125%."
+        },
+        {
+          "id": "C",
+          "en": "Remove the final filter and continue with the prefilter only.",
+          "vi": "Tháo final filter và chỉ tiếp tục với prefilter."
+        },
+        {
+          "id": "D",
+          "en": "Replace the prefilter with an identical prefilter, then continue until the final filter reaches final resistance.",
+          "vi": "Thay prefilter bằng một prefilter giống hệt, rồi tiếp tục đến khi final filter đạt trở lực cuối."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "D",
+      "topic": {
+        "en": "Two-stage filtration system",
+        "vi": "Hệ lọc hai cấp"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Phụ lục K6.1-K6.2.",
+      "explanation": {
+        "en": "Appendix K simulates multiple prefilter cycles protecting one final filter; every replacement prefilter must be identical to the filter it replaces.",
+        "vi": "Phụ lục K mô phỏng nhiều chu kỳ prefilter bảo vệ một final filter; mọi prefilter thay thế phải giống filter bị thay."
+      }
+    },
+    {
+      "id": "Q431",
+      "order": 431,
+      "sectionId": "sec-026",
+      "bloomLevel": "Analyze",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "For one OPC sampling sequentially as shown, which sequence is correct for one measurement set?",
+        "vi": "Với một OPC lấy mẫu tuần tự như hình, chuỗi đúng của một tập đo là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Upstream sampling -> purge U to D -> downstream sampling -> purge D to U -> upstream sampling.",
+          "vi": "Upstream sampling -> purge U sang D -> downstream sampling -> purge D sang U -> upstream sampling."
+        },
+        {
+          "id": "B",
+          "en": "Downstream sampling -> purge -> upstream sampling, then stop.",
+          "vi": "Downstream sampling -> purge -> upstream sampling rồi dừng."
+        },
+        {
+          "id": "C",
+          "en": "Upstream and downstream are always measured simultaneously, with no purge.",
+          "vi": "Upstream và downstream luôn đo đồng thời, không có purge."
+        },
+        {
+          "id": "D",
+          "en": "Measure only upstream before and after; do not measure downstream.",
+          "vi": "Chỉ đo upstream trước và sau, không đo downstream."
+        }
+      ],
+      "images": [
+        "/assets/questions/img_0021.png"
+      ],
+      "correctOptionId": "A",
+      "topic": {
+        "en": "Sampling sequence",
+        "vi": "Chuỗi lấy mẫu"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 10.2 và Hình 10-1.",
+      "explanation": {
+        "en": "A sequential set interpolates between two upstream samples that bracket one downstream sample. With two OPCs measuring simultaneously, no purge applies and the directly observed upstream value is used.",
+        "vi": "Một tập tuần tự được nội suy giữa hai mẫu upstream bao quanh một mẫu downstream. Với hai OPC đo đồng thời, purge không áp dụng và dùng upstream quan sát trực tiếp."
+      }
+    },
+    {
+      "id": "Q432",
+      "order": 432,
+      "sectionId": "sec-033",
+      "bloomLevel": "Evaluate",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "A report measures PSE only with the filter clean and then labels the filter 'MERV 13'; there is no dust loading or composite curve. Which evaluation is correct?",
+        "vi": "Một báo cáo chỉ đo PSE khi bộ lọc sạch rồi ghi nhãn 'MERV 13'; không có nạp bụi và đường composite. Đánh giá đúng là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Valid if clean E1 is ≥50%.",
+          "vi": "Hợp lệ nếu E1 khi sạch ≥50%."
+        },
+        {
+          "id": "B",
+          "en": "Valid if self-declared by the manufacturer.",
+          "vi": "Hợp lệ nếu nhà sản xuất tự công bố."
+        },
+        {
+          "id": "C",
+          "en": "Invalid: the term MERV may be used only when the complete specified procedure has been performed.",
+          "vi": "Không hợp lệ: thuật ngữ MERV chỉ được dùng khi thực hiện toàn bộ quy trình quy định."
+        },
+        {
+          "id": "D",
+          "en": "Valid if initial resistance is below 100 Pa.",
+          "vi": "Hợp lệ nếu trở lực ban đầu dưới 100 Pa."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "C",
+      "topic": {
+        "en": "MERV-label validity",
+        "vi": "Tính hợp lệ nhãn MERV"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 12.1 và 12.5.",
+      "explanation": {
+        "en": "MERV is the result of the complete test sequence, including dust-loading stages and the minimum-efficiency curve; a clean-only test is insufficient.",
+        "vi": "MERV là kết quả của chuỗi thử đầy đủ, gồm các giai đoạn nạp bụi và đường hiệu suất tối thiểu; thử sạch đơn lẻ không đủ."
+      }
+    },
+    {
+      "id": "Q433",
+      "order": 433,
+      "sectionId": "sec-033",
+      "bloomLevel": "Evaluate",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Two filters are both labeled MERV 13 but were tested at different airflow rates. What is the best technical comparison?",
+        "vi": "Hai bộ lọc cùng ghi MERV 13 nhưng thử tại lưu lượng khác nhau. Cách đánh giá kỹ thuật tốt nhất là:"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Treat them as fully equivalent because they have the same MERV number.",
+          "vi": "Xem chúng hoàn toàn tương đương vì cùng số MERV."
+        },
+        {
+          "id": "B",
+          "en": "Compare the MERV designator at the test airflow, the PSE curve, resistance, and expected operating conditions.",
+          "vi": "So sánh cả designator MERV tại lưu lượng thử, đường PSE, trở lực và điều kiện vận hành dự kiến."
+        },
+        {
+          "id": "C",
+          "en": "Select only the filter with the higher DHC and ignore resistance.",
+          "vi": "Chỉ chọn bộ lọc có DHC lớn hơn, bỏ qua trở lực."
+        },
+        {
+          "id": "D",
+          "en": "Select only the filter with greater geometric depth.",
+          "vi": "Chỉ chọn bộ lọc sâu hơn về kích thước hình học."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "B",
+      "topic": {
+        "en": "Report comparison",
+        "vi": "So sánh báo cáo"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 12.4; Phụ lục C2 và D1.",
+      "explanation": {
+        "en": "The standard designator combines MERV with the test airflow rate. The same MERV does not ensure identical resistance, particle-size efficiency, or system suitability.",
+        "vi": "Designator chuẩn kết hợp MERV và lưu lượng thử. Cùng MERV không bảo đảm cùng trở lực, hiệu suất từng cỡ hạt hoặc phù hợp hệ thống."
+      }
+    },
+    {
+      "id": "Q434",
+      "order": 434,
+      "sectionId": "sec-033",
+      "bloomLevel": "Evaluate",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "An engineer divides laboratory DHC by the average field dust concentration to state the exact filter-replacement date. Which evaluation is correct?",
+        "vi": "Kỹ sư lấy DHC phòng thí nghiệm chia cho nồng độ bụi trung bình tại công trình để khẳng định chính xác ngày thay lọc. Đánh giá nào đúng?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "The method is always accurate when the MERV is the same.",
+          "vi": "Phương pháp luôn chính xác nếu cùng MERV."
+        },
+        {
+          "id": "B",
+          "en": "The method is mandatory under Standard 52.2.",
+          "vi": "Phương pháp bắt buộc trong Standard 52.2."
+        },
+        {
+          "id": "C",
+          "en": "The method becomes valid simply by multiplying by 1.25.",
+          "vi": "Chỉ cần nhân thêm hệ số 1,25 là hợp lệ."
+        },
+        {
+          "id": "D",
+          "en": "Such an exact conclusion is not justified; DHC measured with synthetic dust does not by itself predict field service life.",
+          "vi": "Không được kết luận chính xác như vậy; DHC thử bằng bụi tổng hợp không tự nó dự báo tuổi thọ hiện trường."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "D",
+      "topic": {
+        "en": "Service-life prediction",
+        "vi": "Dự báo tuổi thọ"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Phụ lục A2.1 và C1.2-C1.3, C2.1(17).",
+      "explanation": {
+        "en": "Field dust loading, particle-size distribution, humidity, bypass leakage, and operating mode differ from the accelerated laboratory test.",
+        "vi": "Tải bụi, phân bố cỡ hạt, độ ẩm, rò lọt và chế độ vận hành ngoài hiện trường khác thử nghiệm tăng tốc."
+      }
+    },
+    {
+      "id": "Q435",
+      "order": 435,
+      "sectionId": "sec-033",
+      "bloomLevel": "Evaluate",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Which qualification data set simultaneously meets all relevant limits?",
+        "vi": "Bộ số liệu thẩm định nào dưới đây đồng thời đạt các giới hạn liên quan?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Velocity CV 9%; aerosol CV 14%; mixing CV 9%; leakage 0.8%; zero count 8/min; HEPA PSE 99.3%.",
+          "vi": "CV vận tốc 9%; CV aerosol 14%; CV mixing 9%; rò 0,8%; zero count 8/phút; HEPA PSE 99,3%."
+        },
+        {
+          "id": "B",
+          "en": "Velocity CV 8%; aerosol CV 16%; mixing CV 8%; leakage 0.5%; zero count 6/min; HEPA PSE 99.5%.",
+          "vi": "CV vận tốc 8%; CV aerosol 16%; CV mixing 8%; rò 0,5%; zero count 6/phút; HEPA PSE 99,5%."
+        },
+        {
+          "id": "C",
+          "en": "Velocity CV 9%; aerosol CV 14%; mixing CV 9%; leakage 1.0%; zero count 8/min; HEPA PSE 99.4%.",
+          "vi": "CV vận tốc 9%; CV aerosol 14%; CV mixing 9%; rò 1,0%; zero count 8/phút; HEPA PSE 99,4%."
+        },
+        {
+          "id": "D",
+          "en": "Velocity CV 7%; aerosol CV 10%; mixing CV 8%; leakage 0.7%; zero count 5/min; HEPA PSE exactly 99.0%.",
+          "vi": "CV vận tốc 7%; CV aerosol 10%; CV mixing 8%; rò 0,7%; zero count 5/phút; HEPA PSE đúng 99,0%."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "A",
+      "topic": {
+        "en": "Test-rig evaluation",
+        "vi": "Đánh giá giàn thử"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Bảng 5-1; Mục 5.7, 5.9 và 5.10.",
+      "explanation": {
+        "en": "Option A satisfies <10%, <15%, <10%, <1.0%, <10 counts/min, and >99%. B fails aerosol uniformity; C fails because leakage must be less than 1.0%; D fails because PSE must be greater than, not equal to, 99%.",
+        "vi": "Phương án A thỏa: <10%, <15%, <10%, <1,0%, <10 count/phút và >99%. B hỏng aerosol; C hỏng vì rò phải nhỏ hơn 1,0%; D hỏng vì PSE phải lớn hơn 99%, không phải bằng 99%."
+      }
+    },
+    {
+      "id": "Q436",
+      "order": 436,
+      "sectionId": "sec-033",
+      "bloomLevel": "Evaluate",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Which evaluation is correct when selecting a test method for a UV-C device?",
+        "vi": "Đánh giá nào đúng khi lựa chọn phép thử cho thiết bị UV-C?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Every UV-C device must use Appendix L and receive a MERV rating.",
+          "vi": "Mọi thiết bị UV-C bắt buộc dùng Phụ lục L và nhận MERV."
+        },
+        {
+          "id": "B",
+          "en": "An uncontained UV device requires no bioaerosol test.",
+          "vi": "Thiết bị UV không chứa kín không cần phép thử bioaerosol."
+        },
+        {
+          "id": "C",
+          "en": "Appendix L may be used for contained UV; in-duct irradiating UV that is not contained must be tested under Standard 185.1; the Appendix L result is removal/inactivation efficiency, not MERV.",
+          "vi": "Phụ lục L có thể dùng cho UV chứa kín; UV chiếu ra ống (không chứa kín) phải thử theo Standard 185.1; kết quả L là hiệu suất loại bỏ/bất hoạt, không phải MERV."
+        },
+        {
+          "id": "D",
+          "en": "Appendix L applies only to MERV 1-4 mechanical filters.",
+          "vi": "Phụ lục L chỉ áp dụng cho lọc cơ học MERV 1-4."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "C",
+      "topic": {
+        "en": "Bioaerosol-method selection",
+        "vi": "Chọn phương pháp bioaerosol"
+      },
+      "sourceText": "ANSI/ASHRAE Addendum c-2022, Phụ lục L1 và L8.1.",
+      "explanation": {
+        "en": "This limitation prevents misuse of the 52.2 test rig for uncontained UV devices. Appendix L also makes clear that its output is the efficiency for the challenge organism.",
+        "vi": "Giới hạn này tránh áp dụng sai giàn thử 52.2 cho UV không được bao kín; Phụ lục L cũng nói rõ đầu ra là hiệu suất của sinh vật thử."
+      }
+    },
+    {
+      "id": "Q437",
+      "order": 437,
+      "sectionId": "sec-040",
+      "bloomLevel": "Create",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "A laboratory has replaced the upstream mixing orifice and changed the sampling-line geometry. Which plan is most appropriate before issuing new results?",
+        "vi": "Phòng thử vừa thay mixing orifice upstream và thay đổi hình học đường lấy mẫu. Kế hoạch nào hợp lý nhất trước khi công bố kết quả mới?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Check only the OPC zero count and begin testing immediately.",
+          "vi": "Chỉ kiểm tra zero count của OPC rồi thử ngay."
+        },
+        {
+          "id": "B",
+          "en": "Identify the affected qualification tests; repeat aerosol/velocity uniformity and the relevant mixing, correlation, leakage, and transport checks; document the maintenance and test only after all criteria pass.",
+          "vi": "Xác định các phép qualification bị ảnh hưởng, lặp aerosol/velocity uniformity và các kiểm tra mixing, correlation, leakage/transport liên quan; ghi nhận bảo trì và chỉ thử khi mọi tiêu chí đạt."
+        },
+        {
+          "id": "C",
+          "en": "Measure only the resistance of the empty test section.",
+          "vi": "Chỉ đo trở lực của test section rỗng."
+        },
+        {
+          "id": "D",
+          "en": "No requalification is needed if the new equipment uses the same material.",
+          "vi": "Không cần tái thẩm định nếu thiết bị mới có cùng vật liệu."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "B",
+      "topic": {
+        "en": "Requalification plan",
+        "vi": "Kế hoạch tái thẩm định"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 5.1, Bảng 5-1 và Bảng 5-2.",
+      "explanation": {
+        "en": "The changes can affect both mixing and sampling losses. A sound plan covers all affected tests under Table 5-2, not just one isolated check.",
+        "vi": "Thay đổi này có thể tác động cả hòa trộn và tổn thất lấy mẫu. Kế hoạch tốt phải bao quát các phép bị ảnh hưởng theo Bảng 5-2, không chỉ một kiểm tra đơn lẻ."
+      }
+    },
+    {
+      "id": "Q438",
+      "order": 438,
+      "sectionId": "sec-040",
+      "bloomLevel": "Create",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Which two-stage test plan best complies with Appendix K?",
+        "vi": "Kế hoạch thử hai cấp nào phù hợp nhất với Phụ lục K?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Install the two filters directly adjacent, measure only total resistance, and never replace the prefilter.",
+          "vi": "Đặt hai lọc sát nhau, chỉ đo trở lực tổng và không thay prefilter."
+        },
+        {
+          "id": "B",
+          "en": "Space the filters 50 mm apart and replace the final filter before the prefilter.",
+          "vi": "Đặt hai lọc cách 50 mm; final filter thay trước prefilter."
+        },
+        {
+          "id": "C",
+          "en": "Install the two filters in parallel and divide the airflow equally.",
+          "vi": "Mắc song song hai lọc và chia đôi lưu lượng."
+        },
+        {
+          "id": "D",
+          "en": "Install them in series 203-914 mm apart; measure the resistance of each filter and the system; replace the prefilter with an identical unit at final resistance; use final-filter resistance progression to schedule PSE stages.",
+          "vi": "Đặt nối tiếp cách 203-914 mm; đo trở lực từng lọc và hệ; thay prefilter bằng loại giống hệt khi đạt trở lực cuối; dùng tiến triển trở lực final filter để bố trí các giai đoạn PSE."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "D",
+      "topic": {
+        "en": "Two-stage test design",
+        "vi": "Thiết kế thử hai cấp"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Phụ lục K3-K7.",
+      "explanation": {
+        "en": "Option D correctly combines the required geometry, measurements, prefilter replacement, and PSE-stage logic for the two-stage test.",
+        "vi": "Phương án D kết hợp đúng hình học, đo lường, thay thế prefilter và logic điểm PSE của phép thử hai cấp."
+      }
+    },
+    {
+      "id": "Q439",
+      "order": 439,
+      "sectionId": "sec-040",
+      "bloomLevel": "Create",
+      "standard": "ASHRAE 52.2-2017",
+      "stem": {
+        "en": "Which option produces the most complete report when applying the 2017 standard together with the provided updates?",
+        "vi": "Phương án nào tạo bộ báo cáo đầy đủ nhất khi áp dụng bản 2017 cùng các cập nhật được cung cấp?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "en": "Report all Section 11 data, including raw data from six runs; resistance, PSE, and composite curves; MERV with airflow; release rate; DHC/Aavg where applicable; and the three PM indices from Addendum b. If Appendix L is used, include a separate bioaerosol section identifying the organism, sampler, CFU/PFU, and uncorrected/corrected efficiency, without converting the result to MERV.",
+          "vi": "Báo cáo đủ dữ liệu Mục 11 (kể cả dữ liệu thô sáu run), đường trở lực/PSE/composite, MERV kèm lưu lượng, release rate, DHC/Aavg khi áp dụng và ba chỉ số PM theo Addendum b; nếu thử Phụ lục L thì lập phần bioaerosol riêng với sinh vật, sampler, CFU/PFU và hiệu suất trước/sau hiệu chỉnh, không đổi thành MERV."
+        },
+        {
+          "id": "B",
+          "en": "Report only one MERV number and the product name; omit all raw data.",
+          "vi": "Chỉ ghi một số MERV và tên sản phẩm; bỏ toàn bộ dữ liệu thô."
+        },
+        {
+          "id": "C",
+          "en": "Combine bioaerosol efficiency with E1 and increase MERV by one level.",
+          "vi": "Gộp hiệu suất bioaerosol vào E1 rồi tăng MERV một cấp."
+        },
+        {
+          "id": "D",
+          "en": "Report only initial resistance and PM2.5; the test airflow is unnecessary.",
+          "vi": "Chỉ báo cáo trở lực ban đầu và PM2.5, không cần lưu lượng thử."
+        }
+      ],
+      "images": [],
+      "correctOptionId": "A",
+      "topic": {
+        "en": "Integrated report structure",
+        "vi": "Cấu trúc báo cáo tích hợp"
+      },
+      "sourceText": "ANSI/ASHRAE 52.2-2017, Mục 11-12; Addendum b-2020; Addendum c-2022, Phụ lục L8; Errata 2020.",
+      "explanation": {
+        "en": "Option A preserves the mandatory report structure, adds PM52.2, and keeps Appendix L bioaerosol output separate; it does not combine fundamentally different metrics.",
+        "vi": "Phương án A giữ đúng cấu trúc báo cáo bắt buộc, bổ sung PM52.2 và tách riêng đầu ra bioaerosol theo Phụ lục L; nó không trộn các thước đo khác bản chất."
+      }
     }
   ]
 }

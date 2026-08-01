@@ -40,13 +40,15 @@ DOCX_NAME    = "HVAC_ASHRAE_VSCD_2026_Question_Bank_Full_Bilingual_EN_VI.docx"
 DOCX_PATH    = PROJECT_ROOT / DOCX_NAME
 DOCX2_NAME   = "Bo_75_cau_trac_nghiem_HVAC_song_ngu_Anh_Viet_ASHRAE_62_1_2022.docx"
 DOCX2_PATH   = PROJECT_ROOT / DOCX2_NAME
+DOCX3_NAME   = "Bo_60_cau_trac_nghiem_ASHRAE_52_2_2017_Bloom_Song_ngu_EN_VI.docx"
+DOCX3_PATH   = PROJECT_ROOT / DOCX3_NAME
 
 DATA_DIR       = PROJECT_ROOT / "data"
 IMG_DIR        = PROJECT_ROOT / "public" / "assets" / "questions"
 QUESTIONS_JSON = DATA_DIR / "questions.json"
 REPORT_JSON    = DATA_DIR / "import-report.json"
 
-EXPECTED_COUNT = 379
+EXPECTED_COUNT = 439
 
 # ─── Validate DOCX exists ─────────────────────────────────────────────────────
 if not DOCX_PATH.exists():
@@ -54,6 +56,9 @@ if not DOCX_PATH.exists():
     sys.exit(1)
 if not DOCX2_PATH.exists():
     print(f"ERROR: Không tìm thấy file Word '{DOCX2_NAME}' trong {PROJECT_ROOT}")
+    sys.exit(1)
+if not DOCX3_PATH.exists():
+    print(f"ERROR: Không tìm thấy file Word '{DOCX3_NAME}' trong {PROJECT_ROOT}")
     sys.exit(1)
 
 DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -371,6 +376,189 @@ def parse_ashrae62_2022_docx(doc_path: Path, start_qid_num=305, start_img_num=14
             
     return questions_raw, warnings, img_blobs
 
+def parse_ashrae522_2017_docx(doc_path: Path, start_qid_num=380, start_img_num=19):
+    doc = Document(str(doc_path))
+    warnings = []
+    
+    img_map, img_blobs = extract_all_images_ashrae62(doc, start_num=start_img_num)
+    print(f"  Đã trích xuất {len(img_map)} ảnh cho ASHRAE 52.2-2017")
+    
+    part_ii_idx = len(doc.paragraphs)
+    for i, p in enumerate(doc.paragraphs):
+        if "PART II" in p.text.strip() or "PHẦN II" in p.text.strip():
+            part_ii_idx = i
+            break
+            
+    answers_map = {}
+    current_q_num = None
+    cur_exp_lines = []
+    cur_source = ""
+    in_explanation = False
+    
+    def save_cur_ans():
+        if current_q_num and current_q_num in answers_map:
+            exp_text = "\n".join(cur_exp_lines).strip()
+            en_exp = exp_text
+            vi_exp = exp_text
+            if "Giải thích:" in exp_text:
+                parts = exp_text.split("Giải thích:", 1)
+                en_exp = re.sub(r"^Explanation:\s*", "", parts[0].strip())
+                vi_exp = parts[1].strip()
+            elif "\n" in exp_text:
+                parts = exp_text.split("\n", 1)
+                en_exp = re.sub(r"^Explanation:\s*", "", parts[0].strip())
+                vi_exp = parts[1].strip()
+            else:
+                en_exp = re.sub(r"^Explanation:\s*", "", en_exp)
+                
+            answers_map[current_q_num]["explanation"] = {"en": en_exp, "vi": vi_exp}
+            if cur_source:
+                answers_map[current_q_num]["sourceText"] = re.sub(r"^Source / Nguồn:\s*", "", cur_source).strip()
+            elif "sourceText" not in answers_map[current_q_num]:
+                answers_map[current_q_num]["sourceText"] = "ANSI/ASHRAE Standard 52.2-2017"
+
+    for p in doc.paragraphs[part_ii_idx:]:
+        st = p.style.name
+        txt = p.text.strip()
+        if not txt:
+            continue
+        if st == "Quiz Answer" or re.search(r"Câu\s+(\d+)\.\s*Đáp án:", txt) or re.search(r"Answer:\s*([ABCD])", txt):
+            save_cur_ans()
+            cur_exp_lines = []
+            cur_source = ""
+            in_explanation = True
+            
+            lines = [l.strip() for l in txt.split("\n") if l.strip()]
+            q_num = None
+            ans_letter = None
+            topic_en = "ASHRAE 52.2-2017"
+            topic_vi = "ASHRAE 52.2-2017"
+            
+            for line in lines:
+                m1 = re.search(r"Câu\s+(\d+)\.\s*Đáp án:\s*([ABCD])(?:\s*\|\s*(.*))?", line, re.IGNORECASE)
+                if m1:
+                    q_num = int(m1.group(1))
+                    ans_letter = m1.group(2).upper()
+                    if m1.group(3):
+                        topic_vi = m1.group(3).strip()
+                else:
+                    m2 = re.search(r"Answer:\s*([ABCD])(?:\s*\|\s*(.*))?", line, re.IGNORECASE)
+                    if m2:
+                        ans_letter = m2.group(1).upper()
+                        if m2.group(2):
+                            topic_en = m2.group(2).strip()
+                            
+            if q_num and ans_letter:
+                current_q_num = q_num
+                answers_map[q_num] = {
+                    "correctOptionId": ans_letter,
+                    "topic": {"en": topic_en, "vi": topic_vi}
+                }
+        elif st == "Quiz Source" or txt.startswith("Source / Nguồn:"):
+            cur_source = txt
+            in_explanation = False
+        elif current_q_num and in_explanation and (st == "Normal" or txt.startswith("Explanation:") or txt.startswith("Giải thích:")):
+            cur_exp_lines.append(txt)
+            
+    save_cur_ans()
+    
+    questions_list = []
+    cur_bloom = "Remember"
+    cur_q = None
+    pending_images = []
+    
+    for i, p in enumerate(doc.paragraphs[:part_ii_idx]):
+        st = p.style.name
+        txt = p.text.strip()
+        rids = get_para_image_rids(p)
+        for rid in rids:
+            if rid in img_map and img_map[rid] not in pending_images:
+                pending_images.append(img_map[rid])
+                
+        if not txt and not rids:
+            continue
+            
+        if "Heading" in st:
+            if "Level 1" in txt or "Remember" in txt or "Nhớ" in txt:
+                cur_bloom = "Remember"
+            elif "Level 2" in txt or "Understand" in txt or "Hiểu" in txt:
+                cur_bloom = "Understand"
+            elif "Level 3" in txt or "Apply" in txt or "Vận dụng" in txt:
+                cur_bloom = "Apply"
+            elif "Level 4" in txt or "Analyze" in txt or "Phân tích" in txt:
+                cur_bloom = "Analyze"
+            elif "Level 5" in txt or "Evaluate" in txt or "Đánh giá" in txt:
+                cur_bloom = "Evaluate"
+            elif "Level 6" in txt or "Create" in txt or "Sáng tạo" in txt:
+                cur_bloom = "Create"
+        elif st == "Quiz Question":
+            if cur_q and len(cur_q["options"]) == 4:
+                questions_list.append(cur_q)
+                
+            lines = [l.strip() for l in txt.split("\n") if l.strip()]
+            en_stem = lines[0] if len(lines) > 0 else txt
+            vi_stem = lines[1] if len(lines) > 1 else en_stem
+            
+            q_num = len(questions_list) + 1
+            m_num = re.search(r"Câu\s+(\d+)\.", txt)
+            if m_num:
+                q_num = int(m_num.group(1))
+                
+            vi_stem = re.sub(r"^Câu\s+\d+\.\s*", "", vi_stem).strip()
+            en_stem_clean = re.sub(r"^\[.*?\]\s*", "", en_stem).strip()
+            vi_stem_clean = re.sub(r"^\[.*?\]\s*", "", vi_stem).strip()
+            
+            global_qid_num = start_qid_num + len(questions_list)
+            qid_str = f"Q{global_qid_num:03d}"
+            
+            cur_q = {
+                "id": qid_str,
+                "order": global_qid_num,
+                "sectionId": "sec-temp",
+                "bloomLevel": cur_bloom,
+                "standard": "ASHRAE 52.2-2017",
+                "stem": {"en": en_stem_clean, "vi": vi_stem_clean},
+                "options": [],
+                "images": [],
+                "correctOptionId": "",
+                "topic": {"en": "", "vi": ""},
+                "sourceText": "",
+                "explanation": {"en": "", "vi": ""},
+                "_orig_qnum": q_num
+            }
+            if pending_images:
+                cur_q["images"].extend(pending_images)
+                pending_images = []
+        elif st == "Quiz Option" and cur_q is not None:
+            lines = [l.strip() for l in txt.split("\n") if l.strip()]
+            if len(lines) >= 2:
+                en_opt = lines[0]
+                vi_opt = lines[1]
+                opt_id_char = chr(65 + len(cur_q["options"]))
+                vi_opt_clean = re.sub(r"^[ABCD]\.\s*", "", vi_opt).strip()
+                en_opt_clean = re.sub(r"^[ABCD]\.\s*", "", en_opt).strip()
+                cur_q["options"].append({
+                    "id": opt_id_char,
+                    "en": en_opt_clean,
+                    "vi": vi_opt_clean
+                })
+
+    if cur_q and len(cur_q["options"]) == 4:
+        questions_list.append(cur_q)
+
+    for q in questions_list:
+        orig_n = q.pop("_orig_qnum", None)
+        if orig_n and orig_n in answers_map:
+            ans_info = answers_map[orig_n]
+            q["correctOptionId"] = ans_info["correctOptionId"]
+            q["topic"] = ans_info["topic"]
+            q["explanation"] = ans_info.get("explanation", {"en": "", "vi": ""})
+            q["sourceText"] = ans_info.get("sourceText", "ANSI/ASHRAE Standard 52.2-2017")
+        else:
+            warnings.append(f"Không tìm thấy đáp án cho câu hỏi thứ {orig_n} ({q['id']})")
+
+    return questions_list, warnings, img_blobs
+
 # ─── Main Parse ───────────────────────────────────────────────────────────────
 def parse_docx(doc_path: Path):
     doc = Document(str(doc_path))
@@ -619,30 +807,52 @@ def parse_docx(doc_path: Path):
     
     return sections, questions, warnings, img_map, img_blobs
 
-def merge_ashrae62_into_sections(sections, q2, all_questions):
+def merge_ashrae_sections(sections, q2, q3, all_questions):
     blooms = ["Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"]
     for b in blooms:
-        b_qs = [q for q in q2 if q["bloomLevel"] == b]
+        b_621_qs = [q for q in q2 if q["bloomLevel"] == b]
+        b_522_qs = [q for q in q3 if q["bloomLevel"] == b]
         l1_secs = [s for s in sections if s["level"] == 1 and b.lower() in s["titleEn"].lower()]
         if l1_secs:
             l1_sec = l1_secs[0]
-            new_sec = {
-                "id": "temp_id",
+            
+            # Insert ASHRAE 52.2-2017 right after ASHRAE 52.2
+            new_sec_522 = {
+                "id": f"temp_522_{b}",
                 "order": 0,
-                "titleEn": f"ASHRAE 62.1-2022 · {len(b_qs)} câu",
-                "titleVi": f"ASHRAE 62.1-2022 · {len(b_qs)} câu",
+                "titleEn": f"ASHRAE 52.2-2017 · {len(b_522_qs)} câu",
+                "titleVi": f"ASHRAE 52.2-2017 · {len(b_522_qs)} câu",
+                "level": 2,
+                "bloomLevel": None,
+                "standard": "ASHRAE 52.2-2017",
+                "parentId": l1_sec["id"],
+                "questionIds": [q["id"] for q in b_522_qs],
+            }
+            insert_idx = len(sections) - 1
+            for idx, s in enumerate(sections):
+                if s["level"] == 2 and s["parentId"] == l1_sec["id"] and "52.2" in str(s.get("standard", "")):
+                    insert_idx = idx + 1
+                    break
+            sections.insert(insert_idx, new_sec_522)
+            
+            # Insert ASHRAE 62.1-2022 right after ASHRAE 62.1-2013
+            new_sec_621 = {
+                "id": f"temp_621_{b}",
+                "order": 0,
+                "titleEn": f"ASHRAE 62.1-2022 · {len(b_621_qs)} câu",
+                "titleVi": f"ASHRAE 62.1-2022 · {len(b_621_qs)} câu",
                 "level": 2,
                 "bloomLevel": None,
                 "standard": "ASHRAE 62.1-2022",
                 "parentId": l1_sec["id"],
-                "questionIds": [q["id"] for q in b_qs],
+                "questionIds": [q["id"] for q in b_621_qs],
             }
             insert_idx = len(sections) - 1
             for idx, s in enumerate(sections):
                 if s["level"] == 2 and s["parentId"] == l1_sec["id"] and "62.1-2013" in str(s.get("standard", "")):
                     insert_idx = idx + 1
                     break
-            sections.insert(insert_idx, new_sec)
+            sections.insert(insert_idx, new_sec_621)
 
     # Re-index all section IDs and Orders
     id_map = {}
@@ -685,10 +895,10 @@ def validate(questions, sections, warnings, img_blobs):
         errors.append(f"Cấu trúc section: mong đợi 1 Root level 0, thực tế {len(root_secs)}")
     if len(bloom_secs) != 6:
         errors.append(f"Cấu trúc section: mong đợi 6 Bloom level 1, thực tế {len(bloom_secs)}")
-    if len(std_secs) != 30:
-        errors.append(f"Cấu trúc section: mong đợi 30 Standard level 2, thực tế {len(std_secs)}")
-    if len(sections) != 37:
-        errors.append(f"Cấu trúc section: mong đợi tổng 37 section, thực tế {len(sections)}")
+    if len(std_secs) != 36:
+        errors.append(f"Cấu trúc section: mong đợi 36 Standard level 2, thực tế {len(std_secs)}")
+    if len(sections) != 43:
+        errors.append(f"Cấu trúc section: mong đợi tổng 43 section, thực tế {len(sections)}")
         
     for s in sections:
         if s["level"] == 0 and s["parentId"] is not None:
@@ -707,15 +917,15 @@ def validate(questions, sections, warnings, img_blobs):
         std_counts[std] = std_counts.get(std, 0) + 1
         
     expected_blooms = {
-        "Remember": 91, "Understand": 77, "Apply": 85,
-        "Analyze": 61, "Evaluate": 42, "Create": 23
+        "Remember": 107, "Understand": 91, "Apply": 97,
+        "Analyze": 71, "Evaluate": 47, "Create": 26
     }
     for b, count in expected_blooms.items():
         if bloom_counts.get(b, 0) != count:
             errors.append(f"Số câu Bloom '{b}' sai: mong đợi {count}, thực tế {bloom_counts.get(b, 0)}")
 
     expected_stds = {
-        "ASHRAE 55-2023": 65, "ASHRAE 52.2": 70,
+        "ASHRAE 55-2023": 65, "ASHRAE 52.2": 70, "ASHRAE 52.2-2017": 60,
         "ASHRAE 62.1-2013": 35, "ASHRAE 62.1-2022": 75,
         "ASHRAE 90.1-2022": 134
     }
@@ -723,12 +933,12 @@ def validate(questions, sections, warnings, img_blobs):
         if std_counts.get(std, 0) != count:
             errors.append(f"Số câu Tiêu chuẩn '{std}' sai: mong đợi {count}, thực tế {std_counts.get(std, 0)}")
 
-    if len(img_blobs) != 18:
-        errors.append(f"Số file ảnh trích xuất không đúng: mong đợi 18, thực tế {len(img_blobs)}")
+    if len(img_blobs) != 21:
+        errors.append(f"Số file ảnh trích xuất không đúng: mong đợi 21, thực tế {len(img_blobs)}")
     
     total_img_refs = sum(len(q["images"]) for q in questions)
-    if total_img_refs != 50:
-        errors.append(f"Tổng số liên kết ảnh–câu không đúng: mong đợi 50, thực tế {total_img_refs}")
+    if total_img_refs != 53:
+        errors.append(f"Tổng số liên kết ảnh–câu không đúng: mong đợi 53, thực tế {total_img_refs}")
 
     used_images = set()
     for q in questions:
@@ -740,8 +950,8 @@ def validate(questions, sections, warnings, img_blobs):
             if img_path not in img_blobs:
                 errors.append(f"{qid}: Ảnh bị gắn không tồn tại trong tập trích xuất: {img_path}")
 
-    if len(used_images) != 17:
-        errors.append(f"Số ảnh nội dung được dùng trong câu hỏi không đúng: mong đợi 17, thực tế {len(used_images)}")
+    if len(used_images) != 20:
+        errors.append(f"Số ảnh nội dung được dùng trong câu hỏi không đúng: mong đợi 20, thực tế {len(used_images)}")
 
     for q in questions:
         qid = q["id"]
@@ -778,9 +988,10 @@ def validate(questions, sections, warnings, img_blobs):
     return errors
 
 # ─── Build Report ─────────────────────────────────────────────────────────────
-def build_report(docx_path, docx2_path, sections, questions, warnings, errors, img_count):
+def build_report(docx_path, docx2_path, docx3_path, sections, questions, warnings, errors, img_count):
     sha1 = sha256_file(docx_path)
     sha2 = sha256_file(docx2_path)
+    sha3 = sha256_file(docx3_path)
     now = datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z")
     
     sec_dist = {}
@@ -798,8 +1009,8 @@ def build_report(docx_path, docx2_path, sections, questions, warnings, errors, i
         std_dist[s] = std_dist.get(s, 0) + 1
     
     return {
-        "sourceFile": f"{docx_path.name}, {docx2_path.name}",
-        "sha256": f"{sha1}_{sha2}",
+        "sourceFile": f"{docx_path.name}, {docx2_path.name}, {docx3_path.name}",
+        "sha256": f"{sha1}_{sha2}_{sha3}",
         "importedAt": now,
         "questionCount": len(questions),
         "sectionCount": len(sections),
@@ -829,6 +1040,7 @@ def main():
     print("=" * 70)
     print(f"File 1     : {DOCX_PATH}")
     print(f"File 2     : {DOCX2_PATH}")
+    print(f"File 3     : {DOCX3_PATH}")
     print(f"Thư mục ảnh: {IMG_DIR}")
     print(f"Output     : {QUESTIONS_JSON}")
     print()
@@ -841,7 +1053,12 @@ def main():
         questions.extend(q2)
         warnings.extend(warnings2)
         img_blobs.update(img_blobs2)
-        merge_ashrae62_into_sections(sections, q2, questions)
+        print("  Phân tích file Word thứ 3 (ASHRAE 52.2-2017)...")
+        q3, warnings3, img_blobs3 = parse_ashrae522_2017_docx(DOCX3_PATH, start_qid_num=len(questions) + 1, start_img_num=len(img_blobs) + 1)
+        questions.extend(q3)
+        warnings.extend(warnings3)
+        img_blobs.update(img_blobs3)
+        merge_ashrae_sections(sections, q2, q3, questions)
     except Exception as e:
         print(f"ERROR: {e}")
         traceback.print_exc()
@@ -874,7 +1091,7 @@ def main():
     print()
     
     print("Bước 3: Ghi báo cáo nhập dữ liệu...")
-    report = build_report(DOCX_PATH, DOCX2_PATH, sections, questions, warnings, errors, len(img_blobs))
+    report = build_report(DOCX_PATH, DOCX2_PATH, DOCX3_PATH, sections, questions, warnings, errors, len(img_blobs))
     safe_write_json(REPORT_JSON, report)
     print(f"  ✓ {REPORT_JSON}")
     
@@ -903,13 +1120,14 @@ def main():
                 
     sha1 = sha256_file(DOCX_PATH)
     sha2 = sha256_file(DOCX2_PATH)
+    sha3 = sha256_file(DOCX3_PATH)
     now = datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z")
     
     output = {
         "schemaVersion": 1,
         "source": {
-            "fileName": f"{DOCX_PATH.name}, {DOCX2_PATH.name}",
-            "sha256": f"{sha1}_{sha2}",
+            "fileName": f"{DOCX_PATH.name}, {DOCX2_PATH.name}, {DOCX3_PATH.name}",
+            "sha256": f"{sha1}_{sha2}_{sha3}",
             "importedAt": now,
             "questionCount": len(questions),
         },

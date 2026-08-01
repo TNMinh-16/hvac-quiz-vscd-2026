@@ -59,9 +59,9 @@ Kết quả thành công sẽ hiển thị:
 
 ```
 KẾT QUẢ: THÀNH CÔNG
-  Câu hỏi : 379
-  Phần    : 37
-  Ảnh     : 18
+  Câu hỏi : 439
+  Phần    : 43
+  Ảnh     : 21
 ```
 
 Nếu có lỗi, xem chi tiết tại `data/import-report.json`.
@@ -129,7 +129,7 @@ on_tap/
 │   └── package.json
 │
 ├── data/
-│   ├── questions.json     ← Toàn bộ 379 câu hỏi (tạo sau import-docx)
+│   ├── questions.json     ← Toàn bộ 439 câu hỏi (tạo sau import-docx)
 │   ├── history.json       ← Lịch sử làm bài
 │   ├── settings.json      ← Cài đặt người dùng
 │   └── import-report.json ← Báo cáo nhập dữ liệu
@@ -225,7 +225,7 @@ npm test
 ```
 
 Các bài kiểm thử bao gồm:
-- Kiểm tra đủ 379 câu hỏi
+- Kiểm tra đủ 439 câu hỏi
 - Kiểm tra 4 phương án A, B, C, D
 - Kiểm tra đáp án đúng hợp lệ
 - Kiểm tra ảnh tồn tại
