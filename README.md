@@ -1,13 +1,13 @@
 # HVAC Quiz – ASHRAE VSCD 2026
 
-Ứng dụng web luyện trắc nghiệm chuyên sâu các tiêu chuẩn HVAC (ASHRAE 52.2, 52.2-2017, 55, 62.1, 62.1-2022, 90.1 và các cấp độ tư duy Bloom 1–6) dựa trên tài liệu **ASHRAE VSCD 2026**.
+Ứng dụng web luyện trắc nghiệm chuyên sâu các tiêu chuẩn HVAC (ASHRAE 52.2, 52.2-2017, 55, 62.1, 62.1-2022, 90.1, 90.1-2019 và các cấp độ tư duy Bloom 1–6) dựa trên tài liệu **ASHRAE VSCD 2026**.
 
 ## 🎯 Mục tiêu & Đặc điểm Kiến trúc
 - **Không yêu cầu đăng ký / đăng nhập (No Auth):** Đây là hệ thống ôn tập thi cử chuyên sâu, mọi thao tác luyện tập lập tức sẵn sàng khi truy cập mà không rào cản tài khoản hay quảng cáo.
 - **Lịch sử chung toàn cầu (Global Cloud History):** Khi chạy trên internet, bộ lịch sử làm bài được đồng bộ chung trên nền tảng cloud của **Supabase PostgreSQL**, phục vụ tra cứu và tiếp tục bài thi đang làm dở tại bất cứ trình duyệt nào.
-- **Dữ liệu 439 câu hỏi trọn vẹn (Nguyên bản tuyệt đối):** Toàn bộ 439 câu hỏi cùng 21 tệp hình ảnh kỹ thuật gốc được trích xuất từ 3 tài liệu chính thức (`HVAC_ASHRAE_VSCD_2026_Question_Bank_Full_Bilingual_EN_VI.docx`, `Bo_75_cau_trac_nghiem_HVAC_song_ngu_Anh_Viet_ASHRAE_62_1_2022.docx` và `Bo_60_cau_trac_nghiem_ASHRAE_52_2_2017_Bloom_Song_ngu_EN_VI.docx`).
+- **Dữ liệu 499 câu hỏi trọn vẹn (Nguyên bản tuyệt đối):** Toàn bộ 499 câu hỏi cùng 23 tệp hình ảnh kỹ thuật gốc được trích xuất từ 4 tài liệu chính thức (`HVAC_ASHRAE_VSCD_2026_Question_Bank_Full_Bilingual_EN_VI.docx`, `Bo_75_cau_trac_nghiem_HVAC_song_ngu_Anh_Viet_ASHRAE_62_1_2022.docx`, `Bo_60_cau_trac_nghiem_ASHRAE_52_2_2017_Bloom_Song_ngu_EN_VI.docx` và `HVAC_Competition_60_MCQs_Bilingual_ASHRAE_90_1_2019.docx`).
   - **Mã SHA-256 đối chiếu (Word 1):** `f56e685cc94cc7a9cc2ddf48666c177fe40df7c5a386bdfecd1b54fc8374dab0`
-  - **Mã SHA-256 đối chiếu (questions.json):** `a94cd56d0cce0c19b7b95dbbcb9827640abc540066796268386249db2a1a91c6`
+  - **Mã SHA-256 đối chiếu (questions.json):** `353c3865e469e1fa5274c0a78e767beb21409da6e37e50b546ae366455512c02`
   - Hình ảnh phục vụ nguyên bản không compress, không crop, chất lượng cao nhất.
 - **Bảo mật lời giải tầng Server:** Khi đang thi (`in_progress`), mọi trường đáp án (`correctOptionId`) và lời giải chi tiết (`explanation`) đều bị vô hiệu hóa hoàn toàn trước khi trả về Frontend. Mã lỗi HTTP `403 Forbidden` sẽ lập tức được thực thi nếu vi phạm hay nỗ lực đọc trước đáp án.
 
@@ -57,11 +57,11 @@ Cài đặt Environment Variables tại Dashboard Render:
 | `DATABASE_URL` | `postgresql://...` | Chuỗi kết nối từ Supabase Connection Pooler |
 
 - **Quá trình Build tự động:**
-  Command: `npm install && npm test && npm run build` (Tự kiểm chứng 42 test suite tự động bảo vệ tính chính xác của bộ 439 câu hỏi trước khi đóng gói).
+  Command: `npm install && npm test && npm run build` (Tự kiểm chứng 42 test suite tự động bảo vệ tính chính xác của bộ 499 câu hỏi trước khi đóng gói).
 - **Quá trình Start tự động:**
   Command: `node server/index.js` (Bind 0.0.0.0 theo chuẩn yêu cầu cloud).
 - **Trạng thái theo dõi sức khỏe:**
-  Truy cập endpoint **`/api/health`** để test sống kết nối Database và kiểm tra con số 439 câu hỏi (Trả về 200 OK nếu healthy hoặc 503 nếu lỗi ngắt mạng).
+  Truy cập endpoint **`/api/health`** để test sống kết nối Database và kiểm tra con số 499 câu hỏi (Trả về 200 OK nếu healthy hoặc 503 nếu lỗi ngắt mạng).
 
 ---
 

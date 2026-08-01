@@ -1,10 +1,10 @@
 {
-  "sourceFile": "HVAC_ASHRAE_VSCD_2026_Question_Bank_Full_Bilingual_EN_VI.docx, Bo_75_cau_trac_nghiem_HVAC_song_ngu_Anh_Viet_ASHRAE_62_1_2022.docx, Bo_60_cau_trac_nghiem_ASHRAE_52_2_2017_Bloom_Song_ngu_EN_VI.docx",
-  "sha256": "f56e685cc94cc7a9cc2ddf48666c177fe40df7c5a386bdfecd1b54fc8374dab0_32307d835031cd3dc78e5483935d593fa28f4361af7c6db0c712cba5b28237ef_e95965524933cecac65558511d36cdd07897ef2e5cd78c61373883aebc10cbb9",
-  "importedAt": "2026-08-01T17:53:09.921807Z",
-  "questionCount": 439,
-  "sectionCount": 43,
-  "imageCount": 21,
+  "sourceFile": "HVAC_ASHRAE_VSCD_2026_Question_Bank_Full_Bilingual_EN_VI.docx, Bo_75_cau_trac_nghiem_HVAC_song_ngu_Anh_Viet_ASHRAE_62_1_2022.docx, Bo_60_cau_trac_nghiem_ASHRAE_52_2_2017_Bloom_Song_ngu_EN_VI.docx, HVAC_Competition_60_MCQs_Bilingual_ASHRAE_90_1_2019.docx",
+  "sha256": "f56e685cc94cc7a9cc2ddf48666c177fe40df7c5a386bdfecd1b54fc8374dab0_32307d835031cd3dc78e5483935d593fa28f4361af7c6db0c712cba5b28237ef_e95965524933cecac65558511d36cdd07897ef2e5cd78c61373883aebc10cbb9_ded106f935cc9e4b5e189c9741d80f7fb5387f87d23f15c5b6df38d66867d02e",
+  "importedAt": "2026-08-01T18:29:13.218166Z",
+  "questionCount": 499,
+  "sectionCount": 49,
+  "imageCount": 23,
   "distributionBySection": {
     "sec-001": {
       "title": "PHẦN I · ĐỀ TRẮC NGHIỆM",
@@ -39,153 +39,177 @@
       "count": 30
     },
     "sec-009": {
+      "title": "ASHRAE 90.1-2019 · 10 câu",
+      "count": 10
+    },
+    "sec-010": {
       "title": "BLOOM 2 · UNDERSTAND / THÔNG HIỂU",
       "count": 0
     },
-    "sec-010": {
-      "title": "ASHRAE 55-2023 · 14 câu",
-      "count": 14
-    },
     "sec-011": {
-      "title": "ASHRAE 52.2 · Addendum d supplied · 14 câu",
+      "title": "ASHRAE 55-2023 · 14 câu",
       "count": 14
     },
     "sec-012": {
-      "title": "ASHRAE 52.2-2017 · 14 câu",
+      "title": "ASHRAE 52.2 · Addendum d supplied · 14 câu",
       "count": 14
     },
     "sec-013": {
+      "title": "ASHRAE 52.2-2017 · 14 câu",
+      "count": 14
+    },
+    "sec-014": {
       "title": "ASHRAE 62.1-2013 · Addendum p · 7 câu",
       "count": 7
     },
-    "sec-014": {
+    "sec-015": {
       "title": "ASHRAE 62.1-2022 · 15 câu",
       "count": 15
     },
-    "sec-015": {
+    "sec-016": {
       "title": "ASHRAE 90.1-2022 · HVAC · 27 câu",
       "count": 27
     },
-    "sec-016": {
+    "sec-017": {
+      "title": "ASHRAE 90.1-2019 · 10 câu",
+      "count": 10
+    },
+    "sec-018": {
       "title": "BLOOM 3 · APPLY / VẬN DỤNG",
       "count": 0
     },
-    "sec-017": {
+    "sec-019": {
       "title": "ASHRAE 55-2023 · 14 câu",
       "count": 14
     },
-    "sec-018": {
+    "sec-020": {
       "title": "ASHRAE 52.2 · Addendum d supplied · 15 câu",
       "count": 15
     },
-    "sec-019": {
+    "sec-021": {
       "title": "ASHRAE 52.2-2017 · 12 câu",
       "count": 12
     },
-    "sec-020": {
+    "sec-022": {
       "title": "ASHRAE 62.1-2013 · Addendum p · 8 câu",
       "count": 8
     },
-    "sec-021": {
+    "sec-023": {
       "title": "ASHRAE 62.1-2022 · 20 câu",
       "count": 20
     },
-    "sec-022": {
+    "sec-024": {
       "title": "ASHRAE 90.1-2022 · HVAC · 28 câu",
       "count": 28
     },
-    "sec-023": {
+    "sec-025": {
+      "title": "ASHRAE 90.1-2019 · 16 câu",
+      "count": 16
+    },
+    "sec-026": {
       "title": "BLOOM 4 · ANALYZE / PHÂN TÍCH",
       "count": 0
     },
-    "sec-024": {
+    "sec-027": {
       "title": "ASHRAE 55-2023 · 9 câu",
       "count": 9
     },
-    "sec-025": {
+    "sec-028": {
       "title": "ASHRAE 52.2 · Addendum d supplied · 10 câu",
       "count": 10
     },
-    "sec-026": {
+    "sec-029": {
       "title": "ASHRAE 52.2-2017 · 10 câu",
       "count": 10
     },
-    "sec-027": {
+    "sec-030": {
       "title": "ASHRAE 62.1-2013 · Addendum p · 5 câu",
       "count": 5
     },
-    "sec-028": {
+    "sec-031": {
       "title": "ASHRAE 62.1-2022 · 15 câu",
       "count": 15
     },
-    "sec-029": {
+    "sec-032": {
       "title": "ASHRAE 90.1-2022 · HVAC · 22 câu",
       "count": 22
     },
-    "sec-030": {
+    "sec-033": {
+      "title": "ASHRAE 90.1-2019 · 12 câu",
+      "count": 12
+    },
+    "sec-034": {
       "title": "BLOOM 5 · EVALUATE / ĐÁNH GIÁ",
       "count": 0
     },
-    "sec-031": {
+    "sec-035": {
       "title": "ASHRAE 55-2023 · 7 câu",
       "count": 7
     },
-    "sec-032": {
+    "sec-036": {
       "title": "ASHRAE 52.2 · Addendum d supplied · 7 câu",
       "count": 7
     },
-    "sec-033": {
+    "sec-037": {
       "title": "ASHRAE 52.2-2017 · 5 câu",
       "count": 5
     },
-    "sec-034": {
+    "sec-038": {
       "title": "ASHRAE 62.1-2013 · Addendum p · 4 câu",
       "count": 4
     },
-    "sec-035": {
+    "sec-039": {
       "title": "ASHRAE 62.1-2022 · 7 câu",
       "count": 7
     },
-    "sec-036": {
+    "sec-040": {
       "title": "ASHRAE 90.1-2022 · HVAC · 17 câu",
       "count": 17
     },
-    "sec-037": {
+    "sec-041": {
+      "title": "ASHRAE 90.1-2019 · 8 câu",
+      "count": 8
+    },
+    "sec-042": {
       "title": "BLOOM 6 · CREATE / SÁNG TẠO",
       "count": 0
     },
-    "sec-038": {
+    "sec-043": {
       "title": "ASHRAE 55-2023 · 3 câu",
       "count": 3
     },
-    "sec-039": {
+    "sec-044": {
       "title": "ASHRAE 52.2 · Addendum d supplied · 4 câu",
       "count": 4
     },
-    "sec-040": {
+    "sec-045": {
       "title": "ASHRAE 52.2-2017 · 3 câu",
       "count": 3
     },
-    "sec-041": {
+    "sec-046": {
       "title": "ASHRAE 62.1-2013 · Addendum p · 3 câu",
       "count": 3
     },
-    "sec-042": {
+    "sec-047": {
       "title": "ASHRAE 62.1-2022 · 3 câu",
       "count": 3
     },
-    "sec-043": {
+    "sec-048": {
       "title": "ASHRAE 90.1-2022 · HVAC · 10 câu",
       "count": 10
+    },
+    "sec-049": {
+      "title": "ASHRAE 90.1-2019 · 4 câu",
+      "count": 4
     }
   },
   "distributionByBloom": {
-    "Remember": 107,
-    "Understand": 91,
-    "Apply": 97,
-    "Analyze": 71,
-    "Evaluate": 47,
-    "Create": 26
+    "Remember": 117,
+    "Understand": 101,
+    "Apply": 113,
+    "Analyze": 83,
+    "Evaluate": 55,
+    "Create": 30
   },
   "distributionByStandard": {
     "ASHRAE 55-2023": 65,
@@ -193,7 +217,8 @@
     "ASHRAE 62.1-2013": 35,
     "ASHRAE 90.1-2022": 134,
     "ASHRAE 62.1-2022": 75,
-    "ASHRAE 52.2-2017": 60
+    "ASHRAE 52.2-2017": 60,
+    "ASHRAE 90.1-2019": 60
   },
   "warnings": [],
   "errors": [],

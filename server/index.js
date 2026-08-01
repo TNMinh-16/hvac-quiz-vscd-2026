@@ -99,7 +99,7 @@ app.get("/api/health", async (req, res) => {
     } catch (e) {
       // lỗi đọc file questions
     }
-    const isHealthy = dbStatus.status === "ok" && questionCount === 439;
+    const isHealthy = dbStatus.status === "ok" && questionCount === 499;
     res.status(isHealthy ? 200 : 503).json({
       status: isHealthy ? "healthy" : "unhealthy",
       backend: dbStatus.backend,

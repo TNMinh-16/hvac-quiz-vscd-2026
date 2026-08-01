@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 verify_fingerprint.py - Tạo và xác minh dấu vân tay (snapshot + SHA-256 hash)
-của toàn bộ 439 câu hỏi trong data/questions.json theo đúng Yêu cầu số 1.
+của toàn bộ 499 câu hỏi trong data/questions.json theo đúng Yêu cầu số 1.
 """
 
 import json
