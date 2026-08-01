@@ -30,7 +30,9 @@ export default function ShuffleSetupPage({ lang }: Props) {
 
   // Estimate filtered count
   const subsections = sections.filter(s => s.level === 2);
-  let filteredCount = subsections.reduce((sum, s) => sum + s.questionIds.length, 0);
+  let filteredCount = sections
+    .flatMap(s => s.questionIds)
+    .filter((_, __, all) => true).length;
 
   // Rough estimate (full estimate needs backend)
   // Just show total for now; backend will filter precisely
@@ -178,14 +180,14 @@ export default function ShuffleSetupPage({ lang }: Props) {
 
               {countMode === 'custom' && (
                 <div className="form-group" style={{ marginBottom: '1rem' }}>
-                  <label className="form-label" htmlFor="custom-count">Số câu (1–1000)</label>
+                  <label className="form-label" htmlFor="custom-count">Số câu (1–304)</label>
                   <input
                     id="custom-count"
                     type="number"
                     min={1}
-                    max={1000}
+                    max={304}
                     value={customCount}
-                    onChange={e => setCustomCount(Math.max(1, Math.min(1000, +e.target.value)))}
+                    onChange={e => setCustomCount(Math.max(1, Math.min(304, +e.target.value)))}
                   />
                 </div>
               )}

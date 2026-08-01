@@ -5,9 +5,9 @@
 ## 🎯 Mục tiêu & Đặc điểm Kiến trúc
 - **Không yêu cầu đăng ký / đăng nhập (No Auth):** Đây là hệ thống ôn tập thi cử chuyên sâu, mọi thao tác luyện tập lập tức sẵn sàng khi truy cập mà không rào cản tài khoản hay quảng cáo.
 - **Lịch sử chung toàn cầu (Global Cloud History):** Khi chạy trên internet, bộ lịch sử làm bài được đồng bộ chung trên nền tảng cloud của **Supabase PostgreSQL**, phục vụ tra cứu và tiếp tục bài thi đang làm dở tại bất cứ trình duyệt nào.
-- **Dữ liệu 3000 câu hỏi trọn vẹn (Nguyên bản tuyệt đối):** Toàn bộ 3000 câu hỏi cùng 13 tệp hình ảnh kỹ thuật gốc được trích xuất từ tài liệu chính thức (`HVAC_ASHRAE_VSCD_2026_Question_Bank_3000_Bilingual_EN_VI.docx`).
-  - **Mã SHA-256 đối chiếu (Word):** `688a6dca64fb7ebcc75a3889205392e2faedd89155b6bf25853e9f9c267eb30d`
-  - **Mã SHA-256 đối chiếu (questions.json):** `86b155d19f44409fea249ab740c5e268985ae830d035952f2dd6240244aad779`
+- **Dữ liệu 304 câu hỏi trọn vẹn (Nguyên bản tuyệt đối):** Toàn bộ 304 câu hỏi cùng 13 tệp hình ảnh kỹ thuật gốc được trích xuất từ tài liệu chính thức (`HVAC_ASHRAE_VSCD_2026_Question_Bank_Full_Bilingual_EN_VI.docx`).
+  - **Mã SHA-256 đối chiếu (Word):** `f56e685cc94cc7a9cc2ddf48666c177fe40df7c5a386bdfecd1b54fc8374dab0`
+  - **Mã SHA-256 đối chiếu (questions.json):** `a06a94c67537c5e05f2a2ab4db0583db1cef65a20615cd29203a22fad1f53be4`
   - Hình ảnh phục vụ nguyên bản không compress, không crop, chất lượng cao nhất.
 - **Bảo mật lời giải tầng Server:** Khi đang thi (`in_progress`), mọi trường đáp án (`correctOptionId`) và lời giải chi tiết (`explanation`) đều bị vô hiệu hóa hoàn toàn trước khi trả về Frontend. Mã lỗi HTTP `403 Forbidden` sẽ lập tức được thực thi nếu vi phạm hay nỗ lực đọc trước đáp án.
 
@@ -57,11 +57,11 @@ Cài đặt Environment Variables tại Dashboard Render:
 | `DATABASE_URL` | `postgresql://...` | Chuỗi kết nối từ Supabase Connection Pooler |
 
 - **Quá trình Build tự động:**
-  Command: `npm install && npm test && npm run build` (Tự kiểm chứng 42 test suite tự động bảo vệ tính chính xác của bộ 3000 câu hỏi trước khi đóng gói).
+  Command: `npm install && npm test && npm run build` (Tự kiểm chứng 42 test suite tự động bảo vệ tính chính xác của bộ 304 câu hỏi trước khi đóng gói).
 - **Quá trình Start tự động:**
   Command: `node server/index.js` (Bind 0.0.0.0 theo chuẩn yêu cầu cloud).
 - **Trạng thái theo dõi sức khỏe:**
-  Truy cập endpoint **`/api/health`** để test sống kết nối Database và kiểm tra con số 3000 câu hỏi (Trả về 200 OK nếu healthy hoặc 503 nếu lỗi ngắt mạng).
+  Truy cập endpoint **`/api/health`** để test sống kết nối Database và kiểm tra con số 304 câu hỏi (Trả về 200 OK nếu healthy hoặc 503 nếu lỗi ngắt mạng).
 
 ---
 

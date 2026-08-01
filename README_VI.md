@@ -58,7 +58,7 @@ Kết quả thành công sẽ hiển thị:
 
 ```
 KẾT QUẢ: THÀNH CÔNG
-  Câu hỏi : 3000
+  Câu hỏi : 304
   Phần    : 31
   Ảnh     : 13
 ```
@@ -127,7 +127,7 @@ on_tap/
 │   └── package.json
 │
 ├── data/
-│   ├── questions.json     ← Toàn bộ 3000 câu hỏi (tạo sau import-docx)
+│   ├── questions.json     ← Toàn bộ 304 câu hỏi (tạo sau import-docx)
 │   ├── history.json       ← Lịch sử làm bài
 │   ├── settings.json      ← Cài đặt người dùng
 │   └── import-report.json ← Báo cáo nhập dữ liệu
@@ -223,7 +223,7 @@ npm test
 ```
 
 Các bài kiểm thử bao gồm:
-- Kiểm tra đủ 3000 câu hỏi
+- Kiểm tra đủ 304 câu hỏi
 - Kiểm tra 4 phương án A, B, C, D
 - Kiểm tra đáp án đúng hợp lệ
 - Kiểm tra ảnh tồn tại

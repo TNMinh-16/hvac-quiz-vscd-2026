@@ -31,11 +31,10 @@ export function useTimer(initialSeconds = 0, running = true) {
 
   useEffect(() => {
     if (running) {
-      setSeconds(initialSeconds); // sync with any updated initial value
       ref.current = setInterval(() => setSeconds((s) => s + 1), 1000);
     }
     return () => { if (ref.current) clearInterval(ref.current); };
-  }, [running]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [running]);
 
   return seconds;
 }

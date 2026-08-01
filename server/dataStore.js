@@ -20,7 +20,6 @@ function getDataDir() {
 function setDataDir(dir) {
   currentDataDir = path.resolve(dir);
   _questionsCache = null;
-  _mapsCache = null;
   ensureDir(currentDataDir);
 }
 
@@ -62,24 +61,12 @@ function writeJson(filePath, data) {
   }
 }
 
-// ─── Questions (read-only after import) ─────────────────────────────
+// ─── Questions (read-only after import) ──────────────────────────────────
 let _questionsCache = null;
-let _mapsCache = null;
-let _questionsMtime = 0;
 
 function getQuestions() {
-  const filePath = getPath("questions.json");
-  // Invalidate cache if file has been modified since last load
-  try {
-    const mtime = fs.statSync(filePath).mtimeMs;
-    if (mtime !== _questionsMtime) {
-      _questionsCache = null;
-      _mapsCache = null;
-      _questionsMtime = mtime;
-    }
-  } catch { /* file may not exist yet */ }
-
   if (_questionsCache) return _questionsCache;
+  const filePath = getPath("questions.json");
   const data = readJson(filePath, null);
   if (!data) {
     throw new Error(
@@ -90,16 +77,14 @@ function getQuestions() {
   return _questionsCache;
 }
 
-// Build lookup maps (cached – rebuilt only when questions file changes)
+// Build lookup maps
 function getQuestionMaps() {
-  if (_mapsCache) return _mapsCache;
   const db = getQuestions();
   const qMap  = {};
   const sMap  = {};
   for (const q of db.questions)  qMap[q.id] = q;
   for (const s of db.sections)   sMap[s.id] = s;
-  _mapsCache = { db, qMap, sMap };
-  return _mapsCache;
+  return { db, qMap, sMap };
 }
 
 // ─── History ──────────────────────────────────────────────────────────────

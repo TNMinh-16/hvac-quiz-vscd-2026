@@ -80,9 +80,9 @@ export default function SectionsPage({ lang }: Props) {
             className="btn btn-primary"
             onClick={startAll}
             disabled={starting === 'all'}
-            aria-label="Luyện toàn bộ 1000 câu theo thứ tự"
+            aria-label="Luyện toàn bộ 304 câu theo thứ tự"
           >
-            {starting === 'all' ? '⏳ Đang tạo...' : '▶ Luyện toàn bộ 1000 câu'}
+            {starting === 'all' ? '⏳ Đang tạo...' : '▶ Luyện toàn bộ 304 câu'}
           </button>
         </div>
 
@@ -104,7 +104,7 @@ export default function SectionsPage({ lang }: Props) {
                   color: '#fff', fontWeight: 800, fontSize: '.9rem',
                   flexShrink: 0,
                 }}>
-                  B{(bloom1.indexOf(b1) + 1)}
+                  B{b1.titleEn.match(/BLOOM\s+(\d)/i)?.[1] || '?'}
                 </div>
                 <div>
                   <div className="font-bold" style={{ color, fontSize: '1.0625rem' }}>

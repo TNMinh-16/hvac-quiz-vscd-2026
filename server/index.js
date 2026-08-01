@@ -99,7 +99,7 @@ app.get("/api/health", async (req, res) => {
     } catch (e) {
       // lỗi đọc file questions
     }
-    const isHealthy = dbStatus.status === "ok" && questionCount === 1000;
+    const isHealthy = dbStatus.status === "ok" && questionCount === 304;
     res.status(isHealthy ? 200 : 503).json({
       status: isHealthy ? "healthy" : "unhealthy",
       backend: dbStatus.backend,
@@ -149,33 +149,13 @@ app.get("/api/questions", (req, res) => {
     
     let questions = db.questions;
     if (ids) {
-      if (typeof ids !== "string" || ids.length > 50000) {
+      if (typeof ids !== "string" || ids.length > 3000) {
         return res.status(400).json({ error: "Tham số ids không hợp lệ hoặc quá dài" });
       }
       const idList = ids.split(",").map((s) => s.trim());
       questions = idList.map((id) => qMap[id]).filter(Boolean);
     }
     
-    res.json(questions.map(stripQuestion));
-  } catch (e) {
-    res.status(503).json({ error: e.message });
-  }
-});
-
-// POST /api/questions – Tải câu hỏi theo danh sách IDs (tránh giới hạn URL với 3000 IDs)
-app.post("/api/questions", (req, res) => {
-  try {
-    const { db, qMap } = dataStore.getQuestionMaps();
-    const { ids } = req.body;
-
-    let questions = db.questions;
-    if (ids !== undefined) {
-      if (!Array.isArray(ids) || ids.length > 3100) {
-        return res.status(400).json({ error: "ids phải là mảng và không vượt quá 3100 phần tử" });
-      }
-      questions = ids.map((id) => qMap[id]).filter(Boolean);
-    }
-
     res.json(questions.map(stripQuestion));
   } catch (e) {
     res.status(503).json({ error: e.message });
@@ -199,11 +179,10 @@ app.post("/api/sessions", writeLimiter, async (req, res) => {
         const secSet = new Set(sectionIds);
         questionOrder = db.questions
           .filter((q) => secSet.has(q.sectionId))
-          .slice()
           .sort((a, b) => a.order - b.order)
           .map((q) => q.id);
       } else {
-        questionOrder = [...db.questions]
+        questionOrder = db.questions
           .sort((a, b) => a.order - b.order)
           .map((q) => q.id);
       }

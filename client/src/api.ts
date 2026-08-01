@@ -23,14 +23,9 @@ export const getSections = () => request<Section[]>('/sections');
 
 // ─── Questions ─────────────────────────────────────────────────────────
 export const getQuestions = (ids?: string[]) => {
-  if (ids && ids.length > 0) {
-    // Use POST to avoid 414 URI Too Long with large id lists (e.g. 3000 question sequential mode)
-    return request<Question[]>('/questions', {
-      method: 'POST',
-      body: JSON.stringify({ ids }),
-    });
-  }
-  return request<Question[]>('/questions');
+  const qs = new URLSearchParams();
+  if (ids) qs.set('ids', ids.join(','));
+  return request<Question[]>(`/questions?${qs}`);
 };
 
 export const getSessionQuestions = (sessionId: string) =>
