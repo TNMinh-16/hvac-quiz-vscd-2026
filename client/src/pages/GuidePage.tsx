@@ -18,8 +18,8 @@ export default function GuidePage({ lang }: Props) {
           <div className="hero-title">{isVi ? '📖 Hướng Dẫn Sử Dụng & Khai Thác Hệ Thống' : '📖 System User Guide & Features'}</div>
           <div className="hero-sub" style={{ maxWidth: '720px', marginBottom: '1.25rem' }}>
             {isVi 
-              ? 'Cẩm nang toàn diện giúp bạn tối ưu thời gian ôn thi các tiêu chuẩn ASHRAE 52.2, 55, 62.1 và 90.1 với 304 câu hỏi ngân hàng chính thức VSCD 2026.'
-              : 'A comprehensive operational manual to help you efficiently study ASHRAE standards 52.2, 55, 62.1, and 90.1 using the complete 304 bilingual question bank.'
+              ? 'Cẩm nang toàn diện giúp bạn tối ưu thời gian ôn thi các tiêu chuẩn ASHRAE 52.2, 55, 62.1, 62.1-2022 và 90.1 với 379 câu hỏi ngân hàng chính thức VSCD 2026.'
+              : 'A comprehensive operational manual to help you efficiently study ASHRAE standards 52.2, 55, 62.1, 62.1-2022, and 90.1 using the complete 379 bilingual question bank.'
             }
           </div>
           <div className="hero-chips">
@@ -63,7 +63,7 @@ export default function GuidePage({ lang }: Props) {
                   <h2 style={{ fontSize: '1.35rem', margin: 0 }}>
                     {isVi ? '1. Nguồn Dữ Liệu Chuẩn & Các Chế Độ Luyện Đề' : '1. Authentic Dataset & Flexible Study Modes'}
                   </h2>
-                  <div className="text-sm text-muted">Ngân hàng 304 câu hỏi VSCD 2026 chính thức song ngữ Anh – Việt</div>
+                  <div className="text-sm text-muted">Ngân hàng 379 câu hỏi VSCD 2026 chính thức song ngữ Anh – Việt</div>
                 </div>
               </div>
 
@@ -73,7 +73,7 @@ export default function GuidePage({ lang }: Props) {
                     <span>📖 Luyện Theo Phần (Sequential)</span>
                   </h3>
                   <p style={{ fontSize: '0.92rem', color: 'var(--clr-neutral-700)', lineHeight: '1.6' }}>
-                    Cho phép làm tuần tự từ Q001 đến Q304 theo đúng trình tự sách thi của ASHRAE. Bạn có thể bấm chọn riêng từng <strong>Cấp độ nhận thức Bloom</strong> (<em>Remember, Understand, Apply, Analyze, Evaluate, Create</em>) hoặc thi chuyên sâu vào các tiêu chuẩn con bên dưới (ASHRAE 52.2, 55, 62.1, 90.1).
+                    Cho phép làm tuần tự từ Q001 đến Q379 theo đúng trình tự sách thi của ASHRAE. Bạn có thể bấm chọn riêng từng <strong>Cấp độ nhận thức Bloom</strong> (<em>Remember, Understand, Apply, Analyze, Evaluate, Create</em>) hoặc thi chuyên sâu vào các tiêu chuẩn con bên dưới (ASHRAE 52.2, 55, 62.1, 62.1-2022, 90.1).
                   </p>
                   <button className="btn btn-primary btn-sm mt-3" style={{ marginTop: '0.85rem' }} onClick={() => navigate('/sections')}>
                     Khám phá danh mục →

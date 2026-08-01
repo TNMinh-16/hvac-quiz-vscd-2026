@@ -42,10 +42,11 @@ pip3 install -r scripts/requirements.txt
 
 ### Bước 3: Nhập dữ liệu từ file Word
 
-Đảm bảo file Word đã có trong thư mục dự án:
+Đảm bảo các file Word đã có trong thư mục dự án:
 
 ```
 HVAC_ASHRAE_VSCD_2026_Question_Bank_Full_Bilingual_EN_VI.docx
+Bo_75_cau_trac_nghiem_HVAC_song_ngu_Anh_Viet_ASHRAE_62_1_2022.docx
 ```
 
 Chạy lệnh import:
@@ -58,9 +59,9 @@ Kết quả thành công sẽ hiển thị:
 
 ```
 KẾT QUẢ: THÀNH CÔNG
-  Câu hỏi : 304
-  Phần    : 31
-  Ảnh     : 13
+  Câu hỏi : 379
+  Phần    : 37
+  Ảnh     : 18
 ```
 
 Nếu có lỗi, xem chi tiết tại `data/import-report.json`.
@@ -106,6 +107,7 @@ Chế độ này chạy đồng thời:
 ```
 on_tap/
 ├── HVAC_ASHRAE_VSCD_2026_Question_Bank_Full_Bilingual_EN_VI.docx
+├── Bo_75_cau_trac_nghiem_HVAC_song_ngu_Anh_Viet_ASHRAE_62_1_2022.docx
 ├── start.bat              ← Khởi động nhanh trên Windows
 ├── package.json           ← Scripts gốc
 ├── README_VI.md           ← Hướng dẫn tiếng Việt
@@ -127,7 +129,7 @@ on_tap/
 │   └── package.json
 │
 ├── data/
-│   ├── questions.json     ← Toàn bộ 304 câu hỏi (tạo sau import-docx)
+│   ├── questions.json     ← Toàn bộ 379 câu hỏi (tạo sau import-docx)
 │   ├── history.json       ← Lịch sử làm bài
 │   ├── settings.json      ← Cài đặt người dùng
 │   └── import-report.json ← Báo cáo nhập dữ liệu
@@ -223,7 +225,7 @@ npm test
 ```
 
 Các bài kiểm thử bao gồm:
-- Kiểm tra đủ 304 câu hỏi
+- Kiểm tra đủ 379 câu hỏi
 - Kiểm tra 4 phương án A, B, C, D
 - Kiểm tra đáp án đúng hợp lệ
 - Kiểm tra ảnh tồn tại

@@ -92,17 +92,17 @@ afterAll(done => {
 
 // ─── Tests ────────────────────────────────────────────────────────────────────
 describe("Server API", () => {
-  test("GET /api/health – trả về healthy và đúng 304 câu hỏi", async () => {
+  test("GET /api/health – trả về healthy và đúng 379 câu hỏi", async () => {
     const res = await httpGet(`${BASE}/api/health`);
     expect(res.status).toBe(200);
     expect(res.body.status).toBe("healthy");
-    expect(res.body.questionCount).toBe(304);
+    expect(res.body.questionCount).toBe(379);
   });
 
-  test("GET /api/metadata – 304 câu, có standards", async () => {
+  test("GET /api/metadata – 379 câu, có standards", async () => {
     const res = await httpGet(`${BASE}/api/metadata`);
     expect(res.status).toBe(200);
-    expect(res.body.questionCount).toBe(304);
+    expect(res.body.questionCount).toBe(379);
     expect(Array.isArray(res.body.standards)).toBe(true);
     expect(res.body.standards.length).toBeGreaterThan(0);
   });
@@ -118,7 +118,7 @@ describe("Server API", () => {
     const res = await httpGet(`${BASE}/api/questions`);
     expect(res.status).toBe(200);
     expect(Array.isArray(res.body)).toBe(true);
-    expect(res.body.length).toBe(304);
+    expect(res.body.length).toBe(379);
     // correctOptionId và explanation phải bị ẩn
     for (const q of res.body.slice(0, 20)) {
       expect(q.correctOptionId).toBeUndefined();
@@ -135,16 +135,16 @@ describe("Server API", () => {
     }
   });
 
-  test("POST /api/sessions – sequential 304 câu theo thứ tự", async () => {
+  test("POST /api/sessions – sequential 379 câu theo thứ tự", async () => {
     const res = await httpPost(`${BASE}/api/sessions`, { mode: "sequential" });
     expect(res.status).toBe(201);
     expect(res.body.id).toBeDefined();
     expect(res.body.status).toBe("in_progress");
     expect(res.body.mode).toBe("sequential");
-    expect(res.body.questionOrder).toHaveLength(304);
-    // Thứ tự phải từ Q001 đến Q304 (tuần tự)
+    expect(res.body.questionOrder).toHaveLength(379);
+    // Thứ tự phải từ Q001 đến Q379 (tuần tự)
     expect(res.body.questionOrder[0]).toBe("Q001");
-    expect(res.body.questionOrder[303]).toBe("Q304");
+    expect(res.body.questionOrder[378]).toBe("Q379");
   });
 
   test("POST /api/sessions – shuffled count=10, không trùng câu", async () => {
